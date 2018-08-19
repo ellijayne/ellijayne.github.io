@@ -187,13 +187,22 @@ font-size: 1.5rem;
       text-align: center;
   }
 
+  .outer-photo-container {
+    border: $light-grey-t solid 2px;
+  }
+
+  .photo-container {
+    border: $peach-t solid 5px;
+  }
 
   .screenshots {
-    width: 70%;
+    width: 90%;
     border-radius: 4px;
+    padding: 10px 0px;
   }
 
   .project-head {
+    padding-top: 1em;
     color: $teal;
     font-family: $para2-font;
     font-size: 1.5em;
