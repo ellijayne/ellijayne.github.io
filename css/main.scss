@@ -108,6 +108,7 @@ font-size: 1.5rem;
   font-size: 12vw;
   text-align: centre;
   font-family: $bold-font;
+  padding-bottom: 12%;
 
 
   .name {
@@ -151,7 +152,7 @@ font-size: 1.5rem;
 //////////////ABOUT ME/////////////
 
 #aboutme-section {
-  padding-top: 15%;
+
   padding-bottom: 10%;
   width: 60%;
   margin: 0 auto;
@@ -231,12 +232,13 @@ font-size: 1.5rem;
 
 .project-link-container {
   text-align: center;
-  margin-bottom: 10%;
+  margin-top: 1%;
+  margin-bottom: 2%;
   .project-links {
     text-decoration: none;
     font-family: $para2-font;
     color: $peach;
-    font-size: 1.1em;
+    font-size: 1.2em;
   }
 }
 
