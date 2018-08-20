@@ -37,7 +37,7 @@ $para2-font: 'Roboto Condensed', sans-serif;
 $font-color: #42464B;
 
 $pink: #EAAAA0;
-$pink-t: rgba(234, 170, 160, 0.6);
+$pink-t: rgba(234, 170, 160, 0.8);
 $light-grey: #919191;
 $light-grey-t: rgba(145, 145, 145, 0.8);
 $dark-grey: #424648;
@@ -54,8 +54,8 @@ $font-image: url('../images/copper_foil.png');
 
 body {
   color: $font-color;
-  // background: rgb(253, 245, 230);
-  background-image: url('../images/leaves-chunky.jpg');
+  background: rgba(162, 169, 175, 0.6); //rgb(253, 245, 230);
+  background-image: url('../images/cherryb.png');
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -101,17 +101,17 @@ font-size: 1.5rem;
 
 .page-container {
   margin: 0 auto;
-  border: 3px $light-grey solid;
-  // background: $pink-t;
+  // border: 3px solid;
+  background: $pink-t;
   // width: 90%;
   text-align: center;
-  background: $font-image;
-  background-blend-mode: lighten;
-  background-attachment: fixed;
-  background-size: 100vh;
-  background-repeat:repeat;
-  -webkit-fill-color: transparent;
-  -webkit-background-clip: content-box;
+  // background: $font-image;
+  // background-blend-mode: lighten;
+  // background-attachment: fixed;
+  // background-size: 100vh;
+  // background-repeat:repeat;
+  // -webkit-fill-color: transparent;
+  // -webkit-background-clip: content-box;
   display:block;
 
  height: calc(100vh - 8em);
