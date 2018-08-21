@@ -3,31 +3,43 @@
 <head>
 	<title>EJ Willard | Developer | Designer | 🍩</title>
 	<link rel="stylesheet" href="css/main.min.css">
+	<script src="js/jquery.js"></script>
+	<script src="js/main.js"></script>
 </head>
 
 
 <body>
 
-		<nav>
 
-			<a class="nav-link" href="#aboutme-section">About Me</a>
-
-			<a class="nav-link" href="#portfolio-section">Portfolio</a>
-
-			<a class="nav-link" href="#contact-section">Contact</a>
-
-			<a class="nav-link" target="_blank" href="images/EJ_Willard_resume.pdf">Resume</a>
-
-		</nav>
 
 		<div class="outer-container">
 
 			<div class="page-container">
 
+				<nav>
+
+
+					<!-- <a href="#"> -->
+						<a href="#" id="home" class="nav-link">
+							Home
+						<!-- </li> -->
+					</a>
+
+					<a class="nav-link" href="#aboutme-section">About Me</a>
+
+
+					<a class="nav-link" href="#portfolio-section">Portfolio</a>
+
+					<a class="nav-link" href="#contact-section">Contact</a>
+
+					<a class="nav-link" target="_blank" href="images/EJ_Willard_resume.pdf">Resume</a>
+
+				</nav>
+
 				<div class="page-border">
 
 					<section class="landing-section">
-						<h1> <span class="name">EJ Willard</span>
+						<h1 class="name">EJ Willard
 						</h1>
 						<p class="tag-line"> Web Developer</p>
 					</section>
@@ -37,7 +49,7 @@
 					<section id="aboutme-section">
 
 
-						<img class="head-shot" src="images/ejbwsquare.png" alt="EJ Willard | Web Developer"/>
+						<img id="head-shot" src="images/ejbwsquare.png" alt="EJ Willard | Web Developer"/>
 								<h3 class="section-title">Hey, I'm EJ!</h3>
 						<p class="aboutme-blurb">
 							I'm a creative web-developer based in Sydney looking for a front-end role.</p><br />
@@ -164,9 +176,9 @@
 					</section><!--end of portfolio-section div-->
 
 					<section id="contact-section">
-						<p>
+						<h4 class="contact-head">
 							Contact me!
-						</p>
+						</h4>
 
 						<a class="contact-links" target="_blank" href="mailto:ellijayne.m.willard@gmail.com">ellijayne.m.willard@gmail.com</a>
 
