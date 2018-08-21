@@ -54,7 +54,7 @@ $font-image: url('../images/copper_foil.png');
 
 body {
   color: $font-color;
-  background: rgba(162, 169, 175, 0.6); //rgb(253, 245, 230);
+  background: $teal-t; //rgba(162, 169, 175, 0.6); //rgb(253, 245, 230);
   background-image: url('../images/cherryb.png');
   background-position: center;
   background-repeat: no-repeat;
@@ -90,19 +90,19 @@ font-size: 1.5rem;
 
 //////////////"Landing"/////////
 .outer-container {
- max-height: 100vh;
- max-width: 100vw;
+ max-height: 80vh;
+ max-width: 80vw;
  background-color: transparent;
- border: 20px solid #FFF;
+ border: 10px solid black;
  display: flex;
  justify-content: center;
- align-items: center;
+ align-items: center
 }
 
 .page-container {
   margin: 0 auto;
-  // border: 3px solid;
-  background: $pink-t;
+  border: 10px $pink-t solid;
+  // background: $pink-t;
   // width: 90%;
   text-align: center;
   // background: $font-image;
@@ -118,18 +118,17 @@ font-size: 1.5rem;
  width: calc(100vw - 10%);
  // background-color: #FFF;
  // text-align: center;
+ webkit-overflow-scrolling: touch;
  overflow-y: auto;
- -webkit-overflow-scrolling: touch;
-
 }
 
 .page-border {
   margin: 0 auto;
-  width: 90%;
+  width: 100%;
   // max-height: 90%;
   padding-bottom: 20%;
-  margin-top: 5%;
-  margin-bottom: 5%;
+  // margin-top: 2%;
+  // margin-bottom: 2%;
   background: rgba(255, 255, 255, 0.8);
 
 }
