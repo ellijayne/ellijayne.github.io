@@ -54,8 +54,8 @@ $font-image: url('../images/copper_foil.png');
 
 body {
   color: $font-color;
-  background: $teal-t; //rgba(162, 169, 175, 0.6); //rgb(253, 245, 230);
-  background-image: url('../images/cherryb.png');
+  background: $teal-t; //#E5E5E5;  //rgba(162, 169, 175, 0.6); //rgb(253, 245, 230);
+  background-image: url('../images/background-portfolio.jpg');
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -88,20 +88,21 @@ font-size: 1.5rem;
 }
 
 
-//////////////"Landing"/////////
-.outer-container {
- max-height: 80vh;
- max-width: 80vw;
- background-color: transparent;
- border: 10px solid black;
- display: flex;
- justify-content: center;
- align-items: center
-}
+// //////////////"Landing"/////////
+
+// .outer-container {
+//  max-height: 99vh;
+//  max-width: 96vw;
+//  background-color: transparent;
+//  // border: 10px double black;
+//  display: flex;
+//  justify-content: center;
+//  align-items: center
+// }
 
 .page-container {
   margin: 0 auto;
-  border: 10px $pink-t solid;
+  border: 20px $pink-t double;
   // background: $pink-t;
   // width: 90%;
   text-align: center;
@@ -129,7 +130,7 @@ font-size: 1.5rem;
   padding-bottom: 20%;
   // margin-top: 2%;
   // margin-bottom: 2%;
-  background: rgba(255, 255, 255, 0.8);
+  background: rgb(255, 255, 255);
 
 }
 
@@ -273,9 +274,7 @@ font-size: 1.5rem;
 @media only screen and (min-width:900px) {
   .landing-section{
     font-size: 9.5vw;
-    .name {
-      margin-top: 12%;
-    }
+
     .tag-line {
       margin-top: 0;
       margin-bottom: -18px;
@@ -293,7 +292,8 @@ font-size: 1.5rem;
 
 @media only screen and (min-width: 1090px) {
   .landing-section {
-    font-size: 6vw;
+    font-size: 9vw;
+    padding-top: 2%;
     .name {
       margin-top: 1%;
 
@@ -316,5 +316,11 @@ font-size: 1.5rem;
       padding: 25px 7px;
     }
   }
+  .landing-section {
+    min-height: 80vh;
+  }
+  //move outer boxes shape so its less tall
 }
+
 // max - width for smaller check in console for size.
+// 1080 950 between these two sizes need to change top pading on name
