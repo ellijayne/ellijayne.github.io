@@ -52,23 +52,22 @@ body {
 
 ////////////NAV/////////////
 nav {
-  position: fixed;
-  justify-content: space-around;
+  //
+  justify-content: space-between;
   text-align: center;
   font-size: 1.5rem;
   background-color: #fff;
-  // display: flex;
+  display: flex;
+  min-width: 100%;
+  // width: calc(100vw - 8em);
 
 
   .nav-link {
-      text-align: center;
-      padding: 1rem;
-    // position: relative;
-
-    // padding: 15px 40px 0px 0px;
+    text-align: center;
+    padding: 1rem;
     text-decoration: none;
     font-family: $light-font;
-    color: $navy;
+    color: $teal;
     display: inline-block;
 
 
@@ -101,11 +100,11 @@ nav {
 }
 
 .landing-section {
-display: inline-block;
-font-size: 13vw;
-text-align: centre;
-font-family: $bold-font;
-min-height: 80vh;
+  display: inline-block;
+  font-size: 13vw;
+  text-align: centre;
+  font-family: $bold-font;
+  min-height: 80vh;
 
 
   .name {
@@ -143,17 +142,17 @@ min-height: 80vh;
 }
 
 .section-title {
-text-align: justify;
-color: $pink;
-font-size: 3vw;
-font-family: $para2-font;
+  text-align: justify;
+  color: $pink;
+  font-size: 3vw;
+  font-family: $para2-font;
 }
 
 /////MY WORK///////
 
 #portfolio-section {
-width: 60%;
-margin: 0 auto;
+  width: 60%;
+  margin: 0 auto;
 // padding-bottom: 10%;
 
   .work-section-title {
@@ -163,8 +162,10 @@ margin: 0 auto;
   }
 
   .screenshots {
-    width: 90%;
-    // padding: 10px 0px;
+    width: 98%;
+    padding: 10px 10px;
+    border: solid 2px $teal;
+    margin-top: 5%;
   }
 
   .project-head {
@@ -191,7 +192,7 @@ margin: 0 auto;
     @extend .project-blurb;
     list-style: none;
     text-align: justify;
-    font-weight: bold;
+    font-weight: bolder;
   }
 }
 
@@ -237,54 +238,109 @@ margin: 0 auto;
 }
 
 
-
-
 /////MEDIA QUERIES /////
 
 @media (max-width: 450px) {
 
   nav {
-    font-size: 1.2rem;
+    font-size: 1.5rem;
     text-align: center;
-    justify-content:space-around;
+    justify-content:space-between;
     width: 60%;
-    background-color: none;
 
     .nav-link {
-
         text-align: center;
-
-
-
     }
+  }
+
+  .page-container {
+    max-height: 75vh;
   }
 
   .landing-section {
       margin: auto 0;
-      height: 100vh;
+      height: 80vh;
 
     .name {
-      padding-top: 10%;
+      padding-top: 35%;
       font-size: 20vw;
       text-align: center;
-
-
     }
 
     .tag-line {
-      padding-top: 2% !important;
+      padding-top: 3%;
       font-size: 12vw;
     }
   }
 
+  #aboutme-section {
+    min-width: 80%;
+    padding-bottom: 2vh;
+
+    #head-shot {
+      width: 35vw;
+    }
 
 
+  }
 
+  .break-img {
+    width: 18vw;
+    margin: 0 auto;
+    transform: rotate(-25deg);
+  }
+
+  .break-img-big {
+    width: 24vw;
+    margin: 0 auto;
+    transform: rotate(-25deg);
+  }
+
+  #portfolio-section {
+    min-width: 80%;
+    padding-top: 2vh;
+
+    .work-section-title {
+      font-size: 2.5rem;
+    }
+    .screenshots {
+      min-width: 90%;
+    }
+    .project-blurb {
+      line-height: 1.5em;
+    }
+    .tech-used-head {
+      padding-top: 0;
+      .tech-used {
+        letter-spacing: 1.5em;
+      }
+    }
+  }
+
+
+  #contact-section {
+    min-height: 100vh;
+    margin-top: 5vh;
+    padding-bottom: 5vh;
+
+    .contact-head {
+      font-size: 2.5rem;
+      padding-bottom: 5px;
+    }
+
+    .emoji {
+      font-size: 3rem;
+    }
+
+    .contact-links {
+      font-size: 1.6rem;
+    }
+  }
 }
 ///////////////////////////////
 
 
-@media (max-width: 747px) {
+@media (min-width: 747px) {
 
   nav {
     font-size: 1.2rem;
@@ -300,22 +356,17 @@ margin: 0 auto;
         display: inline-block;
         text-align: center;
 
-
-
-
     }
   }
 
   .landing-section {
       margin: auto 0;
-      height: 100vh;
+      // height: 100vh;
 
     .name {
       padding-top: 10%;
       font-size: 20vw;
       text-align: center;
-
-
     }
 
     .tag-line {
