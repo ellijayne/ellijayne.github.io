@@ -263,7 +263,15 @@ nav {
 
 /////MEDIA QUERIES /////
 
-@media screen and (max-width: 750px) {
+@media (max-width: 820px) {
+  body {
+
+  }
+}
+
+/////////////////////////////////
+
+@media (max-width: 750px) {
 
   body {
       padding-top: 160px;
@@ -366,14 +374,25 @@ nav {
   }
 }
 ///////////////////////////////
-@media (max-width: 820px) {
-  body {
 
-  }
-}
 @media (max-width: 450px) {
   body {
     padding-top: 162px;
+  }
+  .break-img-big {
+    width: 40vw;
+  }
+
+  .break-img {
+    width: 24vw;
+  }
+
+  .section-title {
+    font-size: 6vw;
+  }
+
+  .work-section-title {
+    font-size: 8.5vw !important;
   }
 }
 
