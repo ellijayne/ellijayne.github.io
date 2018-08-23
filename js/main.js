@@ -7,8 +7,8 @@ $('a[href^="#"]').on('click',function (e) {
 
     let target = this.hash,
     $target = $(target);
-    let newTop = $('.page-container').scrollTop() + $target.position().top-120;
-   $('.page-container').stop().animate({
+    let newTop = $('html body').scrollTop() + $target.position().top-160;
+   $('html, body').stop().animate({
      'scrollTop': newTop
    }, 1100, 'linear', function () {
 

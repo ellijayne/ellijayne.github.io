@@ -41,7 +41,7 @@ $font-image: url('../images/copper_foil.png');
 ///////////////STYLING///////////////////
 
 body {
-
+  padding-top: 95px;
   color: $navy;
   background-image: url('../images/background-portfolio.jpg');
   background-position: center;
@@ -53,10 +53,12 @@ body {
 ////////////NAV/////////////
 nav {
   //
+  position: fixed;
+  top: 0;
   justify-content: space-between;
   text-align: center;
   font-size: 3rem;
-  background-color: #fff;
+  background-color: rgba(255, 255, 255, 0.9);
   display: flex;
   min-width: 100%;
   // width: calc(100vw - 8em);
@@ -73,6 +75,8 @@ nav {
 
     &:hover {
       color: $yellow;
+      transition: all .4s ease;
+      -webkit-transition: all .4s ease;
 
     }
   }
@@ -82,45 +86,47 @@ nav {
 .break-img {
   width: 18vw;
   margin: 0 auto;
-  transform: rotate(-25deg);
+  z-index: -1;
 }
 
 .break-img-big {
   width: 24vw;
   margin: 0 auto;
-  transform: rotate(-25deg);
+  z-index: -1;
 }
 ////////CONATINER//////
-.page-container {
+#page-container {
+  margin-top: navHeight;
   margin: 0 auto;
   text-align: center;
-  display:block;
-  margin-top: 4%;
+  // display:block;
   margin-bottom: 5%;
   border: 20px $pink-t double;
   text-align: center;
-  height: calc(100vh - 8.3em);
-  width: calc(100vw - 8em);
+  height: calc(100vh - navHeight);
+  width: calc(100vw - 12em);
   overflow: auto;
 }
 
 ///////LANDING//////////
 .page-border {
   margin: 0 auto;
-  background-color: #fff;
-  width: 100%;
+  background-color: rgba(255, 255, 255, 1);
 
 }
 
 .landing-section {
+
+  width: 100%;
   display: inline-block;
-  font-size: 13vw;
+  font-size: 9vw;
   text-align: centre;
   font-family: $bold-font;
   min-height: 80vh;
 
 
   .name {
+    padding-top: 13%;
     background: $font-image;
     background-size: 100%;
     background-repeat: no-repeat;
@@ -223,6 +229,8 @@ nav {
 
   a:hover {
     color: $yellow;
+    transition: all .4s ease;
+    -webkit-transition: all .4s ease;
   }
 }
 
@@ -246,6 +254,8 @@ nav {
 
   a:hover {
     color: $yellow;
+    transition: all .4s ease;
+    -webkit-transition: all .4s ease;
   }
 
 }
@@ -255,10 +265,14 @@ nav {
 
 @media screen and (max-width: 750px) {
 
+  body {
+      padding-top: 160px;
+  }
+
   nav {
     font-size: 2.5rem;
     text-align: center;
-  display: block;
+    display: block;
     justify-content:space-between;
     width: 60%;
 
@@ -268,8 +282,9 @@ nav {
     }
   }
 
-  .page-container {
-    max-height: 75vh;
+  #page-container {
+    min-width: 91%;
+    // max-height: 75vh;
   }
 
   .landing-section {
@@ -302,13 +317,11 @@ nav {
   .break-img {
     width: 18vw;
     margin: 0 auto;
-    transform: rotate(-25deg);
   }
 
   .break-img-big {
     width: 24vw;
     margin: 0 auto;
-    transform: rotate(-25deg);
   }
 
   #portfolio-section {
@@ -353,7 +366,16 @@ nav {
   }
 }
 ///////////////////////////////
+@media (max-width: 820px) {
+  body {
 
+  }
+}
+@media (max-width: 450px) {
+  body {
+    padding-top: 230px;
+  }
+}
 
 // @media (min-width: 747px) {
 //
