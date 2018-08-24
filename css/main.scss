@@ -281,18 +281,21 @@ nav {
 @media (max-width: 380px) {
 
   nav {
-    font-size: 1.59rem !important;
+    font-size: 1.9rem !important;
   }
+
+
   .break-img-big {
     width: 36vw !important;
   }
+
 
   .tag-line {
     padding-top: 1% !important;
   }
 }
 
-@media (max-width: 450px) {
+@media (max-width: 500px) {
   body {
     padding-top: 162px;
   }
@@ -303,10 +306,11 @@ nav {
 
   #page-container {
     max-height: 75vh;
+    min-width: 85vw !important;
   }
 
   .break-img-big {
-    width: 40vw;
+    width: 45vw !important;
   }
 
   .break-img {
@@ -334,7 +338,7 @@ nav {
   }
 
   #page-container {
-    width: 91%;
+    width: 85% !important;
   }
 
   .landing-section {
@@ -370,7 +374,7 @@ nav {
   }
 
   .break-img-big {
-    width: 24vw;
+    width: 35vw !important;
   }
 
   #portfolio-section {
@@ -408,10 +412,10 @@ nav {
 
 @media (max-width: 868px) {
   body {
-    padding-top: 160px;
+    padding-top: 160px !important;
   }
   #page-container {
-    width: 91%;
+    width: 85% !important;
   }
 
   .landing-section {
@@ -420,13 +424,17 @@ nav {
 
     .name {
       padding-top: 12%;
-      font-size: 17vw;
+      font-size: 16vw;
     }
 
     .tag-line {
       padding-top: 2%;
       font-size: 10vw;
     }
+  }
+
+  .break-img-big {
+    width: 35vw !important;
   }
 
   #aboutme-section {
@@ -479,12 +487,12 @@ nav {
     padding: 0.5%;
   }
   #page-container {
-    width: 68vw;
+    width: 80%;
   }
 
 
   .landing-section {
-    font-size: 7.5vw;
+    font-size: 8vw !important;
 
     .name {
       padding-top: 10%;
@@ -496,7 +504,8 @@ nav {
   }
 
   .break-img-big {
-    width: 19vw;
+    width: 28vw;
+    margin-top: -3%;
   }
 
   #contact-section {
