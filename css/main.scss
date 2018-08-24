@@ -296,9 +296,6 @@ nav {
 }
 
 @media (max-width: 500px) {
-  body {
-    padding-top: 162px;
-  }
 
   nav {
     font-size: 1.9rem !important;
@@ -326,7 +323,7 @@ nav {
   }
 }
 
-@media (max-width: 750px) {
+@media (max-width: 768px) {
 
   body {
       padding-top: 160px;
@@ -412,7 +409,7 @@ nav {
 
 @media (max-width: 868px) {
   body {
-    padding-top: 160px !important;
+    padding-top: 120px !important;
   }
   #page-container {
     width: 85% !important;
