@@ -7,7 +7,7 @@ $('a[href^="#"]').on('click',function (e) {
 
     let target = this.hash,
     $target = $(target);
-    if ($(window).width() > 450) {
+    if ($(window).width() > 500) {
       // console.log('window is OVER 450px');
       let newTop = $('html body').scrollTop() + $target.position().top-160;
       $('html, body').stop().animate({
@@ -16,6 +16,7 @@ $('a[href^="#"]').on('click',function (e) {
       });
     } else {
       // console.log('window is UNDER 450px');
+      console.log($target.position() );
       let newTop = $('#page-container').scrollTop() + $target.position().top-160;
       $('#page-container').stop().animate({
         'scrollTop': newTop
