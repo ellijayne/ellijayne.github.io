@@ -243,6 +243,10 @@ nav {
     font-size: 1.5em;
 }
 
+#resume-bottom {
+  padding-bottom: 2vh;
+}
+
 .contact-links {
     text-decoration: none;
     font-family: $para2-font;
@@ -255,6 +259,11 @@ nav {
     color: $yellow;
     transition: all .4s ease;
     -webkit-transition: all .4s ease;
+  }
+
+  .break-img-big-bottom {
+    margin-top: 0;
+    max-width: 15vw;
   }
 
 }
