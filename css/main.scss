@@ -56,9 +56,10 @@ nav {
   //
   position: fixed;
   top: 0;
+  padding: 1%;
   justify-content: space-between;
   text-align: center;
-  font-size: 3rem;
+  font-size: 2rem;
   background-color: rgba(255, 255, 255, 0.9);
   min-width: 100%;
 
@@ -66,7 +67,7 @@ nav {
 
   .nav-link {
     text-align: center;
-    padding: 1rem;
+    padding: 1.5rem 1rem;
     text-decoration: none;
     font-family: $light-font;
     color: $teal;
@@ -329,11 +330,6 @@ nav {
       padding-top: 160px;
   }
 
-  nav {
-    font-size: 2.5rem;
-    max-width: 100vw;
-  }
-
   #page-container {
     width: 85% !important;
   }
@@ -435,7 +431,7 @@ nav {
   }
 
   #aboutme-section {
-    min-width: 63%;
+    min-width: 90%;
     padding-bottom: 11vh;
 
     #head-shot {
@@ -444,11 +440,15 @@ nav {
   }
 
   #portfolio-section {
-    min-width: 65%;
+    min-width: 90%;
     padding-top: 2vh;
 
     .work-section-title {
       font-size: 2.5rem;
+    }
+
+    .screenshots {
+      width: 90% !important;
     }
 
     .project-blurb {
@@ -494,9 +494,7 @@ nav {
   body {
     padding-top: 120px;
   }
-  nav {
-    padding: 0.5%;
-  }
+
   #page-container {
     width: 80%;
   }
