@@ -307,7 +307,7 @@ nav {
   }
 
   .break-img-big {
-    width: 45vw !important;
+    max-width: 50vw !important;
   }
 
   .break-img {
@@ -475,6 +475,20 @@ nav {
   }
 }
 
+@media (max-width: 1450px) {
+
+  .landing-section {
+    .name {
+      padding-top: 60px !important;
+    }
+    .tag-line {
+      padding-top: 10px !important;
+      }
+    }
+    .break-img-big {
+      width: 45vh !important;
+    }
+}
 @media (max-width: 1665px) {
 
   body {
