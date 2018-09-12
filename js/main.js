@@ -1,7 +1,4 @@
-console.log('Hello, is it me you\'re looking for?
-\'Cause I wonder where you are,
-And I wonder what you do.
-Is your team in need of a Junior, do you need someone new!?');
+console.log('are you there?');
 
 
 //smooth scroll function
