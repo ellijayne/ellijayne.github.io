@@ -39,13 +39,10 @@
     .clipped-bg {
       background: url("../images/u-inky-patterns-42.png");
       background-size: 25%;
-      height: 38vh;
+      margin-top: -29vh;
+      height: 40vh;
       width: 100%;
-      position: relative;
-      -webkit-clip-path: polygon(0 99%, 100% 26%, 100% 100%, 0 100%);
-      clip-path: polygon(0 99%, 100% 26%, 100% 100%, 0 100%);
-
-      
-
+      -webkit-clip-path: polygon(0 82%, 0 54%, 100% 57%, 0 100%);
+      clip-path: polygon(0 82%, 0 54%, 100% 57%, 0 100%);
     }
   }

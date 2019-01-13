@@ -30,7 +30,7 @@ body {
 
 .chevron {
   text-align: center;
-  a{
+  a {
     color: #000;
     
 
@@ -39,6 +39,17 @@ body {
       transition: all .4s ease;
     }
   }
+}
+
+.clipped-bg-2 {
+  background: url("../images/u-inky-patterns-42.png");
+  background-size: 25%;
+  height: 40vh;
+  min-width: 100%;
+  // margin-top: -82px;
+  position: relative;
+  -webkit-clip-path: polygon(0 100%, 0 34%, 100% 74%, 0 100%);
+  clip-path: polygon(0 100%, 0 34%, 100% 74%, 0 100%);
 }
 
 .break-img {

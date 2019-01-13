@@ -51,11 +51,11 @@
   .landing-section .clipped-bg {
     background: url("../images/u-inky-patterns-42.png");
     background-size: 25%;
-    height: 38vh;
+    margin-top: -29vh;
+    height: 40vh;
     width: 100%;
-    position: relative;
-    -webkit-clip-path: polygon(0 99%, 100% 26%, 100% 100%, 0 100%);
-    clip-path: polygon(0 99%, 100% 26%, 100% 100%, 0 100%); }
+    -webkit-clip-path: polygon(0 82%, 0 54%, 100% 57%, 0 100%);
+    clip-path: polygon(0 82%, 0 54%, 100% 57%, 0 100%); }
 
 @font-face {
   font-family: Claxton-Bold;
@@ -285,6 +285,15 @@ body {
     .chevron a:hover {
       color: #92C7B6;
       transition: all .4s ease; }
+
+.clipped-bg-2 {
+  background: url("../images/u-inky-patterns-42.png");
+  background-size: 25%;
+  height: 40vh;
+  min-width: 100%;
+  position: relative;
+  -webkit-clip-path: polygon(0 100%, 0 34%, 100% 74%, 0 100%);
+  clip-path: polygon(0 100%, 0 34%, 100% 74%, 0 100%); }
 
 .break-img {
   width: 10vw;
