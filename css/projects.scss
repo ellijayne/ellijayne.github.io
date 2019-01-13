@@ -2,9 +2,9 @@
 .section-title {
   text-align: justify;
   color: #000;
-  font-size: 4.5rem;
+  font-size: 3rem;
   font-weight: 200;
-  font-family: $light-font;
+  font-family: $para2-font;
 }
 #portfolio-section {
   padding-top: 5%;
@@ -31,6 +31,7 @@
       -webkit-background-clip: text;
       display: block;
       font-family: $para2-font;
+      font-weight: 200;
       font-size: 1.7em;
       padding-top: 1em;
     }

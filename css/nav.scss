@@ -7,7 +7,7 @@ nav {
     padding: 1%;
     justify-content: space-between;
     text-align: right;
-    font-size: 2.2em;
+    font-size: 1.5em;
     background-color: rgba(255, 255, 255, 0.9);
     width: 100%;
     z-index: 10;
@@ -17,7 +17,8 @@ nav {
       text-align: right;
       padding: 1rem 1rem 0 1rem;
       text-decoration: none;
-      font-family: $light-font;
+      font-family: $para2-font;
+      // $light-font;
       color: #000;
       position: relative;
      
