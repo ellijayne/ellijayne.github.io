@@ -19,7 +19,7 @@
 
 body {
   padding-top: 95px;
-  color: $navy;
+  color: $primary-font;
   // background-image: url('../images/background-portfolio.jpg');
   background-position: center;
   background-repeat: no-repeat;
@@ -28,27 +28,38 @@ body {
   font-size: 16px;
 }
 
+.chevron {
+  text-align: center;
+  a{
+    color: #000;
+    
+
+    &:hover {
+      color: $teal;
+      transition: all .4s ease;
+    }
+  }
+}
 
 .break-img {
-  width: 18vw;
+  width: 10vw;
+  animation: nameMoveIn 1s ease-in;
 }
 
 .break-img-big {
-  width: 24vw;
-    animation: nameMoveIn 1s ease-in;
+  max-width: 10vw;
+  animation: nameMoveIn 1s ease-in;
 }
 ////////CONATINER//////
 #page-container {
-  margin-top: navHeight;
-  margin: 0 auto;
-  text-align: center;
-  // display:block;
-  margin-bottom: 5%;
-  border: 20px $pink-t double;
-  text-align: center;
-  height: calc(100vh - navHeight);
-  width: calc(100vw - 12em);
-  overflow: auto;
+  // margin-top: navHeight;
+  // margin: 0 auto;
+  // text-align: center;
+  // margin-bottom: 5%;
+  // text-align: center;
+  // height: calc(100vh - navHeight);
+  // // width: calc(100vw - 12em);
+  // overflow: auto;
 }
 
 
@@ -96,10 +107,7 @@ body {
     font-size: 1.9rem !important;
   }
 
-  #page-container {
-    max-height: 75vh;
-    min-width: 85vw !important;
-  }
+
 
   .break-img-big {
     max-width: 50vw !important;
@@ -124,9 +132,7 @@ body {
       padding-top: 160px;
   }
 
-  #page-container {
-    width: 85% !important;
-  }
+
 
   .landing-section {
       height: 80vh;
@@ -201,9 +207,7 @@ body {
   body {
     padding-top: 120px !important;
   }
-  #page-container {
-    width: 85% !important;
-  }
+ 
 
   .landing-section {
       height: 80vh;
@@ -273,10 +277,10 @@ body {
 
   .landing-section {
     .name {
-      padding-top: 60px !important;
+      padding-top: 50px !important;
     }
     .tag-line {
-      padding-top: 10px !important;
+      padding-top: 14.5px !important;
       }
     }
     .break-img-big {
@@ -289,9 +293,6 @@ body {
     padding-top: 120px;
   }
 
-  #page-container {
-    width: 80%;
-  }
 
 
   .landing-section {
@@ -330,9 +331,7 @@ body {
 }
 
 @media (min-width: 1666px) {
-  #page-container {
-    width: 68vw;
-  }
+
   nav {
     padding: 0.5%;
   }

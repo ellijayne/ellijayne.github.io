@@ -31,17 +31,29 @@
   font-family: "soak-light", sans-serif;
   min-height: 80vh; }
   .landing-section .name, .landing-section .tag-line {
+    font-size: 2.5em;
     padding-top: 13%;
-    background: url("../images/copper_foil.png");
+    background: url("../images/u-cloudink-bg.jpg");
     background-size: 100%;
     background-repeat: no-repeat;
+    background-position-y: 49%;
     -webkit-text-fill-color: transparent;
     -webkit-background-clip: text;
     display: block;
     text-align: center;
     animation: nameMoveIn 1.5s ease-in; }
   .landing-section .tag-line {
-    padding-top: 2%; }
+    padding-top: 2%;
+    font-size: 1.7em;
+    background-position-y: 40%; }
+  .landing-section .clipped-bg {
+    background: url("../images/u-inky-patterns-42.png");
+    background-size: 25%;
+    height: 38vh;
+    width: 100%;
+    position: relative;
+    -webkit-clip-path: polygon(0 99%, 100% 26%, 100% 100%, 0 100%);
+    clip-path: polygon(0 99%, 100% 26%, 100% 100%, 0 100%); }
 
 @font-face {
   font-family: Claxton-Bold;
@@ -61,13 +73,13 @@
 nav {
   position: fixed;
   top: 0;
-  right: 10px;
   padding: 1%;
   justify-content: space-between;
   text-align: right;
   font-size: 2.2em;
   background-color: rgba(255, 255, 255, 0.9);
-  min-width: 100%; }
+  width: 100%;
+  z-index: 10; }
   nav .nav-link {
     text-align: right;
     padding: 1rem 1rem 0 1rem;
@@ -100,21 +112,36 @@ nav {
 #aboutme-section {
   width: 60%;
   margin: 0 auto; }
+  #aboutme-section .greeting {
+    max-width: 10vw;
+    transform: rotate(-20deg);
+    margin-top: 40px;
+    margin-left: 10px; }
   #aboutme-section #head-shot {
+    position: relative;
     border-radius: 100%;
-    width: 30%; }
+    width: 30%;
+    margin: auto;
+    margin-bottom: 10px;
+    display: block;
+    border: solid 2.5px black; }
   #aboutme-section .aboutme-blurb {
-    text-align: justify;
-    font-family: "Raleway", sans-serif;
-    line-height: 2em; }
+    text-align: justify; }
+    #aboutme-section .aboutme-blurb p {
+      font-family: "Raleway", sans-serif;
+      line-height: 2em; }
+      #aboutme-section .aboutme-blurb p:last-child {
+        margin-bottom: 5%; }
 
 .section-title, #portfolio-section .work-section-title {
   text-align: justify;
-  color: #EAAAA0;
-  font-size: 3vw;
-  font-family: "Roboto Condensed", sans-serif; }
+  color: #000;
+  font-size: 4.5rem;
+  font-weight: 200;
+  font-family: "soak-light", sans-serif; }
 
 #portfolio-section {
+  padding-top: 5%;
   width: 60%;
   margin: 0 auto; }
   #portfolio-section .work-section-title {
@@ -125,7 +152,12 @@ nav {
     border: solid 2px #92C7B6;
     margin-top: 5%; }
   #portfolio-section .project-head, #portfolio-section .tech-used-head {
-    color: #EAAAA0;
+    background: url("../images/u-inky-patterns-bg-1.jpg");
+    background-size: 100%;
+    background-repeat: no-repeat;
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    display: block;
     font-family: "Roboto Condensed", sans-serif;
     font-size: 1.7em;
     padding-top: 1em; }
@@ -139,7 +171,15 @@ nav {
   #portfolio-section .tech-used {
     list-style: none;
     text-align: justify;
-    font-weight: bolder; }
+    font-weight: bolder;
+    margin-bottom: 10px; }
+    #portfolio-section .tech-used li {
+      display: inline; }
+  #portfolio-section .hr-separator {
+    margin: 0 auto;
+    width: 70%; }
+    #portfolio-section .hr-separator hr {
+      border: 1px solid #000; }
 
 .project-link-container {
   text-align: center;
@@ -151,7 +191,7 @@ nav {
     color: #92C7B6;
     font-size: 1.2em; }
   .project-link-container a:hover {
-    color: #FFE55E;
+    color: #128ec3;
     transition: all .4s ease;
     -webkit-transition: all .4s ease; }
 
@@ -170,7 +210,7 @@ nav {
     font-size: 1.2em;
     display: block; }
   #contact-section a:hover {
-    color: #FFE55E;
+    color: #128ec3;
     transition: all .4s ease;
     -webkit-transition: all .4s ease; }
   #contact-section .break-img-big-bottom {
@@ -183,30 +223,28 @@ nav {
 
 body {
   padding-top: 95px;
-  color: #003566;
+  color: #333333;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: fixed;
   font-size: 16px; }
 
-.break-img {
-  width: 18vw; }
+.chevron {
+  text-align: center; }
+  .chevron a {
+    color: #000; }
+    .chevron a:hover {
+      color: #92C7B6;
+      transition: all .4s ease; }
 
-.break-img-big {
-  width: 24vw;
+.break-img {
+  width: 10vw;
   animation: nameMoveIn 1s ease-in; }
 
-#page-container {
-  margin-top: navHeight;
-  margin: 0 auto;
-  text-align: center;
-  margin-bottom: 5%;
-  border: 20px rgba(234, 170, 160, 0.8) double;
-  text-align: center;
-  height: calc(100vh - navHeight);
-  width: calc(100vw - 12em);
-  overflow: auto; }
+.break-img-big {
+  max-width: 10vw;
+  animation: nameMoveIn 1s ease-in; }
 
 @keyframes nameMoveIn {
   0% {
@@ -230,10 +268,6 @@ body {
   nav {
     font-size: 1.9rem !important; }
 
-  #page-container {
-    max-height: 75vh;
-    min-width: 85vw !important; }
-
   .break-img-big {
     max-width: 50vw !important; }
 
@@ -248,9 +282,6 @@ body {
 @media (max-width: 768px) {
   body {
     padding-top: 160px; }
-
-  #page-container {
-    width: 85% !important; }
 
   .landing-section {
     height: 80vh;
@@ -298,9 +329,6 @@ body {
   body {
     padding-top: 120px !important; }
 
-  #page-container {
-    width: 85% !important; }
-
   .landing-section {
     height: 80vh;
     padding-bottom: 6vh; }
@@ -341,18 +369,15 @@ body {
     font-size: 1.6rem; } }
 @media (max-width: 1450px) {
   .landing-section .name, .landing-section .tag-line {
-    padding-top: 60px !important; }
+    padding-top: 50px !important; }
   .landing-section .tag-line {
-    padding-top: 10px !important; }
+    padding-top: 14.5px !important; }
 
   .break-img-big {
     width: 45vh !important; } }
 @media (max-width: 1665px) {
   body {
     padding-top: 120px; }
-
-  #page-container {
-    width: 80%; }
 
   .landing-section {
     font-size: 8vw !important; }
@@ -373,9 +398,6 @@ body {
   #contact-section .contact-links {
     font-size: 1.6rem; } }
 @media (min-width: 1666px) {
-  #page-container {
-    width: 68vw; }
-
   nav {
     padding: 0.5%; }
 

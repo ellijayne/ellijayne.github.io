@@ -1,14 +1,19 @@
 /////MY WORK///////
-
+.section-title {
+  text-align: justify;
+  color: #000;
+  font-size: 4.5rem;
+  font-weight: 200;
+  font-family: $light-font;
+}
 #portfolio-section {
+  padding-top: 5%;
     width: 60%;
     margin: 0 auto;
-  // padding-bottom: 10%;
   
     .work-section-title {
         @extend .section-title;
         text-align: center;
-        // padding-bottom: 10px;
     }
   
     .screenshots {
@@ -19,7 +24,12 @@
     }
   
     .project-head {
-      color: $pink;
+      background: $font-image-secondary;
+      background-size: 100%;
+      background-repeat: no-repeat;
+      -webkit-text-fill-color: transparent;
+      -webkit-background-clip: text;
+      display: block;
       font-family: $para2-font;
       font-size: 1.7em;
       padding-top: 1em;
@@ -43,6 +53,20 @@
       list-style: none;
       text-align: justify;
       font-weight: bolder;
+      margin-bottom: 10px;
+
+      li {
+        display: inline;
+      }
+    }
+
+    .hr-separator {
+      margin: 0 auto;
+      width: 70%;
+
+      hr {
+        border: 1px solid #000;
+      }
     }
   }
   
@@ -59,7 +83,7 @@
     }
   
     a:hover {
-      color: $yellow;
+      color: $blue;
       transition: all .4s ease;
       -webkit-transition: all .4s ease;
     }

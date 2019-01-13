@@ -3,22 +3,35 @@
     width: 60%;
     margin: 0 auto;
     // padding-bottom: 10%;
-  
-    #head-shot {
-      border-radius: 100%;
-      width: 30%;
-    }
-  
-    .aboutme-blurb {
-      text-align: justify;
-      font-family: $para-font;
-      line-height: 2em;
-    }
+
+  .greeting {
+    max-width: 10vw;
+    transform: rotate(-20deg);
+    // margin-bottom: 5px;
+    margin-top: 40px;
+    margin-left: 10px;
   }
   
-  .section-title {
+  #head-shot {
+    position: relative;
+    border-radius: 100%;
+    width: 30%;
+    margin: auto;
+    margin-bottom: 10px;
+    display: block;
+    border: solid 2.5px black;
+  }
+  
+  .aboutme-blurb {
+    // width: 60%;
     text-align: justify;
-    color: $pink;
-    font-size: 3vw;
-    font-family: $para2-font;
-  }
+    p {
+        font-family: $para-font;
+    line-height: 2em;
+      
+      &:last-child {
+        margin-bottom: 5%;
+      }
+    }
+  } 
+}
