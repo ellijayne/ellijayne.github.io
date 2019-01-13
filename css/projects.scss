@@ -40,6 +40,64 @@
       font-family: $para-font;
       line-height: 2em;
       text-align: justify;
+
+      &--secondary {
+        display: none;
+
+        &.active {
+          display: block;
+          line-height: 2em;
+          margin: 0 0 18px 0;
+        }
+      }
+
+      button {
+        cursor: pointer;
+        border: none;
+        background-color: transparent;
+        -webkit-appearance: none;
+        font-size: 16px;
+        font-weight: 600;
+        color: $teal;
+        line-height: 1rem;
+        display: block;
+        padding: 10px 0;
+        padding-right: 1.3rem;
+        margin-bottom: 0;
+        margin-right: 5px;
+        transition: 0.3s all;
+        outline: none;
+
+        &:after {
+          content: "";
+          font-family: "Font Awesome 5 Free";
+          content: "\f077";
+          position: absolute;
+          width: 20px;
+          height: 0.85rem;
+          margin-top: 3px;
+          margin-left: 7px;
+          transition: 0.5s all;
+          transform: rotate(180deg);
+        }
+        &:hover {
+          color: $blue;
+          transition: 0.4s all;
+        }
+      }
+
+     
+        button.active {
+          color: #b1d3c8;
+          outline: none;
+          border: none;
+    
+          &:after {
+            transition: 0.5s all;
+            transform: rotate(360deg);
+          }
+         }
+        
     }
   
     .tech-used-head {
