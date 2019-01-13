@@ -1,0 +1,66 @@
+/////MY WORK///////
+
+#portfolio-section {
+    width: 60%;
+    margin: 0 auto;
+  // padding-bottom: 10%;
+  
+    .work-section-title {
+        @extend .section-title;
+        text-align: center;
+        // padding-bottom: 10px;
+    }
+  
+    .screenshots {
+      width: 100%;
+      padding: 10px 10px;
+      border: solid 2px $teal;
+      margin-top: 5%;
+    }
+  
+    .project-head {
+      color: $pink;
+      font-family: $para2-font;
+      font-size: 1.7em;
+      padding-top: 1em;
+    }
+  
+    .project-blurb {
+      margin: 0 auto;
+      font-family: $para-font;
+      line-height: 2em;
+      text-align: justify;
+    }
+  
+    .tech-used-head {
+      @extend .project-head;
+      text-align: justify;
+    }
+  
+  
+    .tech-used {
+      @extend .project-blurb;
+      list-style: none;
+      text-align: justify;
+      font-weight: bolder;
+    }
+  }
+  
+  .project-link-container {
+    text-align: center;
+    margin-top: 1%;
+    margin-bottom: 2%;
+  
+    .project-links {
+      text-decoration: none;
+      font-family: $para2-font;
+      color: $teal;
+      font-size: 1.2em;
+    }
+  
+    a:hover {
+      color: $yellow;
+      transition: all .4s ease;
+      -webkit-transition: all .4s ease;
+    }
+  }

@@ -1,0 +1,46 @@
+/////////////////IMPORTING/////////////////
+@font-face {
+    font-family: Claxton-Bold;
+    src: url('fonts/Claxton-Typeface/Claxton-Bold.otf');
+  }
+  
+  @font-face {
+    font-family: Claxton-Light;
+    src: url('fonts/Claxton-Typeface/Claxton-Light.otf');
+  }
+  
+  @font-face {
+    font-family: Moonshot;
+    src: url('fonts/Moonshot/Moonshot-Oblique.otf');
+  }
+  
+  @font-face {
+    font-family: soak-bold;
+    src: url('fonts/soak-up-the-sun/suts-bold.otf');
+  }
+  
+  @font-face {
+    font-family: soak-light;
+    src: url('fonts/soak-up-the-sun/suts.otf');
+  }
+  
+  @import url('https://fonts.googleapis.com/css?family=Roboto');
+  
+  @import url('https://fonts.googleapis.com/css?family=Raleway');
+  
+  @import url('https://fonts.googleapis.com/css?family=Roboto+Condensed');
+
+///////////////VARIABLES//////////////
+$bold-font: 'soak-bold', sans-serif;
+$light-font: 'soak-light', sans-serif;
+$para-font: 'Raleway', sans-serif;
+$para2-font: 'Roboto Condensed', sans-serif;
+$navy: #003566;
+$navy-t: rgba(0, 53, 107, 0.8);
+$pink: #EAAAA0;
+$pink-t: rgba(234, 170, 160, 0.8);
+$teal: #92C7B6;
+$teal-t: rgba(146, 199, 182, 0.8);
+$yellow: #FFE55E;
+$yellow-t: rgba(255, 229, 94, 0.8);
+$font-image: url('../images/copper_foil.png');

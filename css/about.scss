@@ -1,0 +1,24 @@
+/////////ABOUT ME///////
+#aboutme-section {
+    width: 60%;
+    margin: 0 auto;
+    // padding-bottom: 10%;
+  
+    #head-shot {
+      border-radius: 100%;
+      width: 30%;
+    }
+  
+    .aboutme-blurb {
+      text-align: justify;
+      font-family: $para-font;
+      line-height: 2em;
+    }
+  }
+  
+  .section-title {
+    text-align: justify;
+    color: $pink;
+    font-size: 3vw;
+    font-family: $para2-font;
+  }

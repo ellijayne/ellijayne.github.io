@@ -1,0 +1,34 @@
+///////////////CONTACT LINKS///////////////
+#contact-section {
+    padding-top: 1em;
+  
+  .contact-head {
+      color: $pink;
+      font-family: $para2-font;
+      font-size: 1.5em;
+  }
+  
+  #resume-bottom {
+    padding-bottom: 2vh;
+  }
+  
+  .contact-links {
+      text-decoration: none;
+      font-family: $para2-font;
+      color: $teal;
+      font-size: 1.2em;
+      display: block;
+    }
+  
+    a:hover {
+      color: $yellow;
+      transition: all .4s ease;
+      -webkit-transition: all .4s ease;
+    }
+  
+    .break-img-big-bottom {
+      margin-top: 0;
+      max-width: 15vw;
+    }
+  
+  }

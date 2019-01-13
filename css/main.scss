@@ -1,34 +1,10 @@
-/////////////////IMPORTING/////////////////
-@font-face {
-  font-family: Claxton-Bold;
-  src: url('fonts/Claxton-Typeface/Claxton-Bold.otf');
-}
 
-@font-face {
-  font-family: Claxton-Light;
-  src: url('fonts/Claxton-Typeface/Claxton-Light.otf')
-}
-
-@import url('https://fonts.googleapis.com/css?family=Roboto');
-
-@import url('https://fonts.googleapis.com/css?family=Raleway');
-
-@import url('https://fonts.googleapis.com/css?family=Roboto+Condensed');
-
-///////////////VARIABLES//////////////
-$bold-font: 'Claxton-Bold', sans-serif;
-$light-font: 'Claxton-Light', sans-serif;
-$para-font: 'Raleway', sans-serif;
-$para2-font: 'Roboto Condensed', sans-serif;
-$navy: #003566;
-$navy-t: rgba(0, 53, 107, 0.8);
-$pink: #EAAAA0;
-$pink-t: rgba(234, 170, 160, 0.8);
-$teal: #92C7B6;
-$teal-t: rgba(146, 199, 182, 0.8);
-$yellow: #FFE55E;
-$yellow-t: rgba(255, 229, 94, 0.8);
-$font-image: url('../images/copper_foil.png');
+@import 'landing';
+@import 'variables';
+@import 'nav';
+@import 'about';
+@import 'projects';
+@import 'contact';
 
 ////////////////RESET//////////////////////
 
@@ -39,48 +15,16 @@ $font-image: url('../images/copper_foil.png');
 }
 
 
-///////////////STYLING///////////////////
+///////////////MAIN STYLING///////////////////
 
 body {
   padding-top: 95px;
   color: $navy;
-  background-image: url('../images/background-portfolio.jpg');
+  // background-image: url('../images/background-portfolio.jpg');
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: fixed;
-}
-
-////////////NAV/////////////
-nav {
-  //
-  position: fixed;
-  top: 0;
-  padding: 1%;
-  justify-content: space-between;
-  text-align: center;
-  font-size: 2rem;
-  background-color: rgba(255, 255, 255, 0.9);
-  min-width: 100%;
-
-
-
-  .nav-link {
-    text-align: center;
-    padding: 1.5rem 1rem;
-    text-decoration: none;
-    font-family: $light-font;
-    color: $teal;
-
-
-
-    &:hover {
-      color: $yellow;
-      transition: all .4s ease;
-      -webkit-transition: all .4s ease;
-
-    }
-  }
 }
 
 
@@ -106,167 +50,7 @@ nav {
   overflow: auto;
 }
 
-///////LANDING//////////
-.page-border {
-  margin: 0 auto;
-  background-color: rgba(255, 255, 255, 1);
 
-}
-
-.landing-section {
-
-  width: 100%;
-  display: inline-block;
-  font-size: 9vw;
-  text-align: centre;
-  font-family: $bold-font;
-  min-height: 80vh;
-
-
-  .name {
-    padding-top: 13%;
-    background: $font-image;
-    background-size: 100%;
-    background-repeat: no-repeat;
-    -webkit-text-fill-color: transparent;
-    -webkit-background-clip: text;
-    display: block;
-    text-align: center;
-    animation: nameMoveIn 1.5s ease-in;
-  }
-  .tag-line {
-    padding-top: 2%;
-    @extend .name;
-  }
-}
-
-
-/////////ABOUT ME///////
-#aboutme-section {
-  width: 60%;
-  margin: 0 auto;
-  // padding-bottom: 10%;
-
-  #head-shot {
-    border-radius: 100%;
-    width: 30%;
-  }
-
-  .aboutme-blurb {
-    text-align: justify;
-    font-family: $para-font;
-    line-height: 2em;
-  }
-}
-
-.section-title {
-  text-align: justify;
-  color: $pink;
-  font-size: 3vw;
-  font-family: $para2-font;
-}
-
-/////MY WORK///////
-
-#portfolio-section {
-  width: 60%;
-  margin: 0 auto;
-// padding-bottom: 10%;
-
-  .work-section-title {
-      @extend .section-title;
-      text-align: center;
-      // padding-bottom: 10px;
-  }
-
-  .screenshots {
-    width: 100%;
-    padding: 10px 10px;
-    border: solid 2px $teal;
-    margin-top: 5%;
-  }
-
-  .project-head {
-    color: $pink;
-    font-family: $para2-font;
-    font-size: 1.7em;
-    padding-top: 1em;
-  }
-
-  .project-blurb {
-    margin: 0 auto;
-    font-family: $para-font;
-    line-height: 2em;
-    text-align: justify;
-  }
-
-  .tech-used-head {
-    @extend .project-head;
-    text-align: justify;
-  }
-
-
-  .tech-used {
-    @extend .project-blurb;
-    list-style: none;
-    text-align: justify;
-    font-weight: bolder;
-  }
-}
-
-.project-link-container {
-  text-align: center;
-  margin-top: 1%;
-  margin-bottom: 2%;
-
-  .project-links {
-    text-decoration: none;
-    font-family: $para2-font;
-    color: $teal;
-    font-size: 1.2em;
-  }
-
-  a:hover {
-    color: $yellow;
-    transition: all .4s ease;
-    -webkit-transition: all .4s ease;
-  }
-}
-
-///////////////CONTACT LINKS///////////////
-#contact-section {
-  padding-top: 1em;
-
-.contact-head {
-    color: $pink;
-    font-family: $para2-font;
-    font-size: 1.5em;
-}
-
-#resume-bottom {
-  padding-bottom: 2vh;
-}
-
-.contact-links {
-    text-decoration: none;
-    font-family: $para2-font;
-    color: $teal;
-    font-size: 1.2em;
-    display: block;
-  }
-
-  a:hover {
-    color: $yellow;
-    transition: all .4s ease;
-    -webkit-transition: all .4s ease;
-  }
-
-  .break-img-big-bottom {
-    margin-top: 0;
-    max-width: 15vw;
-  }
-
-}
 
 ////ANIMATIONS//////
 @keyframes nameMoveIn {
