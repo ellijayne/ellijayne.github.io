@@ -21,17 +21,19 @@
 @font-face {
   font-family: soak-light;
   src: url("fonts/soak-up-the-sun/suts.otf"); }
-.page-border {
-  margin: 0 auto;
-  background-color: white; }
-
 .landing-section {
   width: 100%;
+  height: 100vh;
+  margin-top: -0.5em;
+  padding-top: 50px;
+  padding-bottom: 50px;
   display: inline-block;
   font-size: 9vw;
   text-align: centre;
   font-family: "soak-light", sans-serif;
-  min-height: 80vh; }
+  background: #fff;
+  -webkit-clip-path: polygon(0 0, 100% 0, 100% 50%, 0 93%);
+  clip-path: polygon(0 0, 100% 0, 100% 50%, 0 93%); }
   .landing-section .name, .landing-section .tag-line {
     font-size: 2.5em;
     padding-top: 13%;
@@ -48,14 +50,6 @@
     padding-top: 2%;
     font-size: 1.7em;
     background-position-y: 40%; }
-  .landing-section .clipped-bg {
-    background: url("../images/u-inky-patterns-42.png");
-    background-size: 25%;
-    margin-top: -29vh;
-    height: 40vh;
-    width: 100%;
-    -webkit-clip-path: polygon(0 82%, 0 54%, 100% 57%, 0 100%);
-    clip-path: polygon(0 82%, 0 54%, 100% 57%, 0 100%); }
 
 @font-face {
   font-family: Claxton-Bold;
@@ -112,19 +106,27 @@ nav {
       -webkit-transition: all .4s ease; }
 
 #aboutme-section {
-  width: 60%;
-  margin: 0 auto; }
+  background: #fff;
+  -webkit-clip-path: polygon(0 0, 100% 0, 100% 93%, 0 78%);
+  clip-path: polygon(0 0, 100% 0, 100% 93%, 0 78%);
+  padding-top: 10px;
+  margin-top: -3em;
+  padding-bottom: 153px; }
+  #aboutme-section .aboutme--inner {
+    width: 60%;
+    margin: 0 auto; }
   #aboutme-section .greeting {
     max-width: 10vw;
     transform: rotate(-20deg);
     margin-top: 40px;
-    margin-left: 10px; }
+    margin-left: 4em; }
   #aboutme-section #head-shot {
     position: relative;
     border-radius: 100%;
     width: 30%;
     margin: auto;
     margin-bottom: 10px;
+    margin-top: -50px;
     display: block;
     border: solid 2.5px black; }
   #aboutme-section .aboutme-blurb {
@@ -132,8 +134,6 @@ nav {
     #aboutme-section .aboutme-blurb p {
       font-family: "Raleway", sans-serif;
       line-height: 2em; }
-      #aboutme-section .aboutme-blurb p:last-child {
-        margin-bottom: 5%; }
   #aboutme-section .chevron {
     animation: chevBounce 1s ease-in infinite; }
 
@@ -145,9 +145,14 @@ nav {
   font-family: "Permanent Marker", cursive; }
 
 #portfolio-section {
-  padding-top: 5%;
-  width: 60%;
-  margin: 0 auto; }
+  margin-top: -3.1em;
+  background-color: white;
+  -webkit-clip-path: polygon(0 1%, 100% 0, 100% 92%, 0 100%);
+  clip-path: polygon(0 1%, 100% 0, 100% 92%, 0 100%); }
+  #portfolio-section .portfolio-section--inner {
+    padding-top: 5%;
+    width: 60%;
+    margin: 0 auto; }
   #portfolio-section .work-section-title {
     text-align: center; }
   #portfolio-section .screenshots {
@@ -233,6 +238,8 @@ nav {
   text-align: center;
   margin-top: 1%;
   margin-bottom: 2%; }
+  .project-link-container--last {
+    margin-bottom: 25%; }
   .project-link-container .project-links {
     text-decoration: none;
     font-family: "Permanent Marker", cursive;
@@ -244,26 +251,42 @@ nav {
     -webkit-transition: all .4s ease; }
 
 #contact-section {
-  padding-top: 1em; }
+  padding-top: 1em;
+  background: #fff;
+  margin-top: -2.2em; }
+  #contact-section .contact-section--inner {
+    width: 60%;
+    margin: 0 auto;
+    text-align: center; }
   #contact-section .contact-head {
-    color: #EAAAA0;
+    background: url("../images/u-inky-patterns-bg-1.jpg");
+    background-size: 100%;
+    background-repeat: no-repeat;
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    display: block;
     font-family: "Permanent Marker", cursive;
-    font-size: 1.5em; }
+    font-weight: 200;
+    font-size: 1.7em;
+    padding-top: 1em; }
   #contact-section #resume-bottom {
     padding-bottom: 2vh; }
+  #contact-section .contact-links--inline a {
+    display: inline-block;
+    padding-right: 1em; }
+    #contact-section .contact-links--inline a:last-child {
+      padding-right: 0; }
   #contact-section .contact-links {
     text-decoration: none;
     font-family: "Permanent Marker", cursive;
     color: #92C7B6;
-    font-size: 1.2em;
     display: block; }
+    #contact-section .contact-links i {
+      font-size: 1.7em; }
   #contact-section a:hover {
     color: #128ec3;
     transition: all .4s ease;
     -webkit-transition: all .4s ease; }
-  #contact-section .break-img-big-bottom {
-    margin-top: 0;
-    max-width: 15vw; }
 
 * {
   margin: 0;
@@ -272,6 +295,7 @@ nav {
 body {
   padding-top: 95px;
   color: #333333;
+  background: url("../images/u-inky-patterns-bg-1.jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -285,15 +309,6 @@ body {
     .chevron a:hover {
       color: #92C7B6;
       transition: all .4s ease; }
-
-.clipped-bg-2 {
-  background: url("../images/u-inky-patterns-42.png");
-  background-size: 25%;
-  height: 40vh;
-  min-width: 100%;
-  position: relative;
-  -webkit-clip-path: polygon(0 100%, 0 34%, 100% 74%, 0 100%);
-  clip-path: polygon(0 100%, 0 34%, 100% 74%, 0 100%); }
 
 .break-img {
   width: 10vw;

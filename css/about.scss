@@ -1,15 +1,26 @@
 /////////ABOUT ME///////
 #aboutme-section {
+  background: #fff;
+  // -webkit-clip-path: polygon(0 0, 100% 0, 100% 93%, 0 56%);
+  // clip-path: polygon(0 0, 100% 0, 100% 93%, 0 56%);
+  -webkit-clip-path: polygon(0 0, 100% 0, 100% 93%, 0 78%);
+  clip-path: polygon(0 0, 100% 0, 100% 93%, 0 78%);
+  padding-top: 10px;
+  margin-top: -3em;
+  padding-bottom: 153px;
+  
+  .aboutme--inner {
     width: 60%;
     margin: 0 auto;
-    // padding-bottom: 10%;
+   
+  }
 
   .greeting {
     max-width: 10vw;
     transform: rotate(-20deg);
     // margin-bottom: 5px;
     margin-top: 40px;
-    margin-left: 10px;
+    margin-left: 4em;
   }
   
   #head-shot {
@@ -18,20 +29,17 @@
     width: 30%;
     margin: auto;
     margin-bottom: 10px;
+    margin-top: -50px;
     display: block;
     border: solid 2.5px black;
   }
   
   .aboutme-blurb {
-    // width: 60%;
     text-align: justify;
+
     p {
-        font-family: $para-font;
-    line-height: 2em;
-      
-      &:last-child {
-        margin-bottom: 5%;
-      }
+      font-family: $para-font;
+      line-height: 2em;
     }
   } 
 

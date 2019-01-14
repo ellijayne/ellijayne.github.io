@@ -1,4 +1,5 @@
 /////MY WORK///////
+
 .section-title {
   text-align: justify;
   color: #000;
@@ -6,10 +7,18 @@
   font-weight: 200;
   font-family: $para2-font;
 }
+
 #portfolio-section {
-  padding-top: 5%;
-    width: 60%;
-    margin: 0 auto;
+  margin-top: -3.1em;
+  background-color: white;
+  -webkit-clip-path: polygon(0 1%, 100% 0, 100% 92%, 0 100%);
+  clip-path: polygon(0 1%, 100% 0, 100% 92%, 0 100%);
+
+    .portfolio-section--inner {
+      padding-top: 5%;
+      width: 60%;
+      margin: 0 auto;
+    }
   
     .work-section-title {
         @extend .section-title;
@@ -125,6 +134,7 @@
 
       hr {
         border: 1px solid #000;
+       
       }
     }
   }
@@ -133,6 +143,10 @@
     text-align: center;
     margin-top: 1%;
     margin-bottom: 2%;
+
+    &--last {
+      margin-bottom: 25%;
+    }
   
     .project-links {
       text-decoration: none;

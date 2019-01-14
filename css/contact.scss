@@ -1,34 +1,58 @@
 ///////////////CONTACT LINKS///////////////
 #contact-section {
     padding-top: 1em;
+    background: #fff;
+    margin-top: -2.2em;
+
+  .contact-section--inner {
+    width: 60%;
+    margin: 0 auto;
+    text-align: center
+  }
   
   .contact-head {
-      color: $pink;
-      font-family: $para2-font;
-      font-size: 1.5em;
+    background: $font-image-secondary;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    display: block;
+    font-family: $para2-font;
+    font-weight: 200;
+    font-size: 1.7em;
+    padding-top: 1em;
+    
   }
   
   #resume-bottom {
     padding-bottom: 2vh;
+  }
+
+  .contact-links--inline {
+    a {
+      display: inline-block;
+      padding-right: 1em;
+
+      &:last-child {
+        padding-right: 0;
+      }
+    }
   }
   
   .contact-links {
       text-decoration: none;
       font-family: $para2-font;
       color: $teal;
-      font-size: 1.2em;
       display: block;
+      i {
+        font-size: 1.7em;
+      }
     }
   
     a:hover {
       color: $blue;
       transition: all .4s ease;
       -webkit-transition: all .4s ease;
-    }
-  
-    .break-img-big-bottom {
-      margin-top: 0;
-      max-width: 15vw;
     }
   
   }

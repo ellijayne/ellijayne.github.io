@@ -20,7 +20,7 @@
 body {
   padding-top: 95px;
   color: $primary-font;
-  // background-image: url('../images/background-portfolio.jpg');
+  background: url('../images/u-inky-patterns-bg-1.jpg');
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -41,16 +41,6 @@ body {
   }
 }
 
-.clipped-bg-2 {
-  background: url("../images/u-inky-patterns-42.png");
-  background-size: 25%;
-  height: 40vh;
-  min-width: 100%;
-  // margin-top: -82px;
-  position: relative;
-  -webkit-clip-path: polygon(0 100%, 0 34%, 100% 74%, 0 100%);
-  clip-path: polygon(0 100%, 0 34%, 100% 74%, 0 100%);
-}
 
 .break-img {
   width: 10vw;
