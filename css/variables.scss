@@ -50,3 +50,43 @@ $yellow-t: rgba(255, 229, 94, 0.8);
 $font-image: url('../images/u-cloudink-bg.jpg');
 $font-image-secondary: url('../images/u-inky-patterns-bg-1.jpg');
 $font-image-secondary: url('../images/u-inky-patterns-bg-1.jpg');
+
+///////ANIMATIONS////////
+@keyframes nameMoveIn {
+  0% {
+    opacity: 0;
+    transform: translateY(100px);
+  }
+
+  80% {
+    transform: translateY(-10px)
+  }
+
+  100% {
+    opacity: 1;
+    transform: translate(0);
+  }
+}
+
+@keyframes chevBounce {
+  0%, 100% {
+    transform: translateY(0);
+  }
+
+  15%, 95% {
+    transform: translateY(2px);
+  }
+
+  30%, 80% {
+    transform: translateY(4px);
+  }
+
+  40%, 60% {
+    transform: translateY(6px);
+  }
+
+  50% {
+    transform: translateY(8px);
+  }
+
+}

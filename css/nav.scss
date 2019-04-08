@@ -1,53 +1,81 @@
 ////////////NAV/////////////
-nav {
-    //
-    position: fixed;
-    top: 0;
-    // right: 10px;
-    padding: 1%;
-    justify-content: space-between;
+//MOBILE FIRST
+
+.nav {
+  position: fixed;
+  top: 0;
+  background-color: rgba(255, 255, 255, 0.9);
+  width: 100vw;
+  z-index: 10;
+  
+
+  &__links {
     text-align: right;
-    font-size: 1.5em;
-    background-color: rgba(255, 255, 255, 0.9);
-    width: 100%;
-    z-index: 10;
-  
-  
-    .nav-link {
-      text-align: right;
-      padding: 1rem 1rem 0 1rem;
-      text-decoration: none;
-      font-family: $para2-font;
-      // $light-font;
-      color: #000;
-      position: relative;
-     
+    padding: 1rem 1rem 0 1rem;
+    font-family: $para2-font;
+    position: relative;
+    margin-right: 1.5rem;
+    display: none;
 
-      &:before {
-        content: "";
-        position: absolute;
-        width: 100%;
-        height: 2px;
-        bottom: 0;
-        left: 0;
-        background-color: #000;
-        visibility: hidden;
-        -webkit-transform: scaleX(0);
-        transform: scaleX(0);
-        -webkit-transition: all 0.3s ease-in-out 0s;
-        transition: all 0.4s ease-in-out 0s;
-      }
-      &:hover:before {
-        visibility: visible;
-        -webkit-transform: scaleX(1);
-        transform: scaleX(1);
+    li {
+      margin-bottom: 0.5rem;
+      list-style: none;
+      font-size: 1.2em;
+
+      a {
+        text-decoration: none;
+        color: #000;
       }
 
-      &:hover {
-        color: $teal;
-        transition: all .4s ease;
-        -webkit-transition: all .4s ease;
-      }
     }
+    
   }
+
+  &__icon {
+    width: 2rem;
+    display: none;
+  }
+  
+  
+  .active {
+    display: block;
+  } 
+}
+
+//MEDIA QUERIES - MEDIUM
+
+.nav {
+  // justify-content: space-between;
+  // text-align: right;
+
+
+ // &:before {
+    //   content: "";
+    //   position: absolute;
+    //   width: 100%;
+    //   height: 2px;
+    //   bottom: 0;
+    //   left: 0;
+    //   background-color: #000;
+    //   visibility: hidden;
+    //   -webkit-transform: scaleX(0);
+    //   transform: scaleX(0);
+    //   -webkit-transition: all 0.3s ease-in-out 0s;
+    //   transition: all 0.4s ease-in-out 0s;
+    // }
+
+    // &:hover:before {
+    //   visibility: visible;
+    //   -webkit-transform: scaleX(1);
+    //   transform: scaleX(1);
+    // }
+
+    // &:hover {
+    //   color: $teal;
+    //   transition: all .4s ease;
+    //   -webkit-transition: all .4s ease;
+    // }
+  }
+
+//MEDIA QUERIES - WIDE
   

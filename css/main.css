@@ -21,6 +21,26 @@
 @font-face {
   font-family: soak-light;
   src: url("fonts/soak-up-the-sun/suts.otf"); }
+@keyframes nameMoveIn {
+  0% {
+    opacity: 0;
+    transform: translateY(100px); }
+  80% {
+    transform: translateY(-10px); }
+  100% {
+    opacity: 1;
+    transform: translate(0); } }
+@keyframes chevBounce {
+  0%, 100% {
+    transform: translateY(0); }
+  15%, 95% {
+    transform: translateY(2px); }
+  30%, 80% {
+    transform: translateY(4px); }
+  40%, 60% {
+    transform: translateY(6px); }
+  50% {
+    transform: translateY(8px); } }
 .landing-section {
   width: 100%;
   height: 100vh;
@@ -66,44 +86,51 @@
 @font-face {
   font-family: soak-light;
   src: url("fonts/soak-up-the-sun/suts.otf"); }
-nav {
+@keyframes nameMoveIn {
+  0% {
+    opacity: 0;
+    transform: translateY(100px); }
+  80% {
+    transform: translateY(-10px); }
+  100% {
+    opacity: 1;
+    transform: translate(0); } }
+@keyframes chevBounce {
+  0%, 100% {
+    transform: translateY(0); }
+  15%, 95% {
+    transform: translateY(2px); }
+  30%, 80% {
+    transform: translateY(4px); }
+  40%, 60% {
+    transform: translateY(6px); }
+  50% {
+    transform: translateY(8px); } }
+.nav {
   position: fixed;
   top: 0;
-  padding: 1%;
-  justify-content: space-between;
-  text-align: right;
-  font-size: 1.5em;
   background-color: rgba(255, 255, 255, 0.9);
-  width: 100%;
+  width: 100vw;
   z-index: 10; }
-  nav .nav-link {
+  .nav__links {
     text-align: right;
     padding: 1rem 1rem 0 1rem;
-    text-decoration: none;
     font-family: "Permanent Marker", cursive;
-    color: #000;
-    position: relative; }
-    nav .nav-link:before {
-      content: "";
-      position: absolute;
-      width: 100%;
-      height: 2px;
-      bottom: 0;
-      left: 0;
-      background-color: #000;
-      visibility: hidden;
-      -webkit-transform: scaleX(0);
-      transform: scaleX(0);
-      -webkit-transition: all 0.3s ease-in-out 0s;
-      transition: all 0.4s ease-in-out 0s; }
-    nav .nav-link:hover:before {
-      visibility: visible;
-      -webkit-transform: scaleX(1);
-      transform: scaleX(1); }
-    nav .nav-link:hover {
-      color: #92C7B6;
-      transition: all .4s ease;
-      -webkit-transition: all .4s ease; }
+    position: relative;
+    margin-right: 1.5rem;
+    display: none; }
+    .nav__links li {
+      margin-bottom: 0.5rem;
+      list-style: none;
+      font-size: 1.2em; }
+      .nav__links li a {
+        text-decoration: none;
+        color: #000; }
+  .nav__icon {
+    width: 2rem;
+    display: none; }
+  .nav .active {
+    display: block; }
 
 #aboutme-section {
   background: #fff;
@@ -134,8 +161,6 @@ nav {
     #aboutme-section .aboutme-blurb p {
       font-family: "Raleway", sans-serif;
       line-height: 2em; }
-  #aboutme-section .chevron {
-    animation: chevBounce 1s ease-in infinite; }
 
 .section-title, #portfolio-section .work-section-title {
   text-align: justify;
@@ -303,59 +328,23 @@ body {
   font-size: 16px; }
 
 .chevron {
-  text-align: center; }
+  text-align: center;
+  animation: chevBounce 1s ease-in infinite; }
   .chevron a {
     color: #000; }
     .chevron a:hover {
       color: #92C7B6;
       transition: all .4s ease; }
 
-.break-img {
-  width: 10vw;
-  animation: nameMoveIn 1s ease-in; }
-
-.break-img-big {
-  max-width: 10vw;
-  animation: nameMoveIn 1s ease-in; }
-
-@keyframes nameMoveIn {
-  0% {
-    opacity: 0;
-    transform: translateY(100px); }
-  80% {
-    transform: translateY(-10px); }
-  100% {
-    opacity: 1;
-    transform: translate(0); } }
-@keyframes chevBounce {
-  0%, 100% {
-    transform: translateY(0); }
-  15%, 95% {
-    transform: translateY(2px); }
-  30%, 80% {
-    transform: translateY(4px); }
-  40%, 60% {
-    transform: translateY(6px); }
-  50% {
-    transform: translateY(8px); } }
-@media (max-width: 380px) {
+@media (max-width: 415px) {
   nav {
     font-size: 1.9rem !important; }
-
-  .break-img-big {
-    width: 36vw !important; }
 
   .tag-line {
     padding-top: 1% !important; } }
 @media (max-width: 500px) {
   nav {
     font-size: 1.9rem !important; }
-
-  .break-img-big {
-    max-width: 50vw !important; }
-
-  .break-img {
-    width: 24vw; }
 
   .section-title, #portfolio-section .work-section-title {
     font-size: 6vw; }
@@ -382,15 +371,6 @@ body {
     #aboutme-section #head-shot {
       width: 32vw; }
 
-  .port-break {
-    display: none; }
-
-  .break-img {
-    width: 18vw; }
-
-  .break-img-big {
-    width: 35vw !important; }
-
   #portfolio-section {
     min-width: 65%;
     padding-top: 2vh; }
@@ -404,8 +384,6 @@ body {
   #contact-section .contact-head {
     font-size: 2.5rem;
     padding-bottom: 5px; }
-  #contact-section .emoji {
-    font-size: 3rem; }
   #contact-section .contact-links {
     font-size: 1.6rem; } }
 @media (max-width: 868px) {
@@ -421,9 +399,6 @@ body {
     .landing-section .tag-line {
       padding-top: 2%;
       font-size: 10vw; }
-
-  .break-img-big {
-    width: 35vw !important; }
 
   #aboutme-section {
     min-width: 90%;
@@ -446,18 +421,13 @@ body {
   #contact-section .contact-head {
     font-size: 2.5rem;
     padding-bottom: 5px; }
-  #contact-section .emoji {
-    font-size: 3rem; }
   #contact-section .contact-links {
     font-size: 1.6rem; } }
 @media (max-width: 1450px) {
   .landing-section .name, .landing-section .tag-line {
     padding-top: 50px !important; }
   .landing-section .tag-line {
-    padding-top: 14.5px !important; }
-
-  .break-img-big {
-    width: 45vh !important; } }
+    padding-top: 14.5px !important; } }
 @media (max-width: 1665px) {
   body {
     padding-top: 120px; }
@@ -469,15 +439,9 @@ body {
     .landing-section .tag-line {
       padding-top: 0; }
 
-  .break-img-big {
-    width: 28vw;
-    margin-top: -3%; }
-
   #contact-section .contact-head {
     font-size: 2.5rem;
     padding-bottom: 5px; }
-  #contact-section .emoji {
-    font-size: 3rem; }
   #contact-section .contact-links {
     font-size: 1.6rem; } }
 @media (min-width: 1666px) {
@@ -491,14 +455,9 @@ body {
     .landing-section .tag-line {
       padding-top: 0; }
 
-  .break-img-big {
-    width: 19vw; }
-
   #contact-section .contact-head {
     font-size: 2.5rem;
     padding-bottom: 5px; }
-  #contact-section .emoji {
-    font-size: 3rem; }
   #contact-section .contact-links {
     font-size: 1.6rem; } }
 

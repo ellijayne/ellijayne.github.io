@@ -1,260 +1,288 @@
 <!DOCTYPE html>
 <html>
-<head>
-	<title>EJ Willard | Developer</title>
-	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-	<link rel="stylesheet" href="css/main.min.css">
-	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
-<link rel="shortcut icon" href="images/donut.ico" type="image/x-icon">
+	<head>
+		<title>EJ Willard | Developer</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+		<link rel="stylesheet" href="css/main.css">
+		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
+	<link rel="shortcut icon" href="images/donut.ico" type="image/x-icon">
 
-</head>
-
-
-<body>
-
-	<nav>
-
-		<a id="home-btn" class="nav-link" href="#landing-section">Home</a>
-
-		<!-- <p id="aboutme-btn" class="nav-link" >
-			About Me</p> -->
-		<a id="aboutme-btn" class="nav-link" href="#aboutme-section">About Me</a>
+	</head>
 
 
-		<a id="portfolio-btn" class="nav-link" href="#portfolio-section">Portfolio</a>
+	<body>
 
-		<a id="contact-btn" class="nav-link" href="#contact-section">Contact</a>
+		<nav class="nav">
+			<div class="nav__icon"><svg aria-hidden="true" data-prefix="fas" data-icon="bars" class="svg-inline--fa fa-bars fa-w-14" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path fill="currentColor" d="M16 132h416c8.837 0 16-7.163 16-16V76c0-8.837-7.163-16-16-16H16C7.163 60 0 67.163 0 76v40c0 8.837 7.163 16 16 16zm0 160h416c8.837 0 16-7.163 16-16v-40c0-8.837-7.163-16-16-16H16c-8.837 0-16 7.163-16 16v40c0 8.837 7.163 16 16 16zm0 160h416c8.837 0 16-7.163 16-16v-40c0-8.837-7.163-16-16-16H16c-8.837 0-16 7.163-16 16v40c0 8.837 7.163 16 16 16z"></path></svg></div>
+			<ul class="nav__links">
+				<li>
+						<a id="home-btn" href="#landing-section">Home</a>
+				</li>
 
-		<a id="resume-btn" class="nav-link" href="images/EJ_Willard_Resume.pdf" target="_blank">Resume</a>
+				<li>
+						<a id="aboutme-btn" href="#aboutme-section">About Me</a>
+				</li>
 
-	</nav>
+				<li>
+						<a id="portfolio-btn" href="#portfolio-section">Portfolio</a>
+				</li>
+
+				<li>
+						<a id="contact-btn" href="#contact-section">Contact</a>
+				</li>
+
+				<li>
+						<a id="resume-btn" href="images/EJ_Willard_Resume.pdf" target="_blank">Resume</a>
+				</li>
+			</ul>
+
+		</nav>
 
 
-			<div id="page-container">
+		<!-- <div id="page-container"> -->
+
+			
+			<section class="landing-section" id="landing-section">
+				<div class="landing--content">
+					<h1 class="name">EJ Willard</h1>
+					<p class="tag-line">Web Developer</p>
+					<div class="chevron">
+							<a href="#aboutme-section"><svg aria-hidden="true" width="3vw" data-prefix="fas" data-icon="chevron-down" class="svg-inline--fa fa-chevron-down fa-w-14" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path fill="currentColor" d="M207.029 381.476L12.686 187.132c-9.373-9.373-9.373-24.569 0-33.941l22.667-22.667c9.357-9.357 24.522-9.375 33.901-.04L224 284.505l154.745-154.021c9.379-9.335 24.544-9.317 33.901.04l22.667 22.667c9.373 9.373 9.373 24.569 0 33.941L240.971 381.476c-9.373 9.372-24.569 9.372-33.942 0z"></path></svg></a>
+						</div>
+					</div>
+			</section>
 
 
-				<div class="page-border">
-
-					<section class="landing-section" id="landing-section">
-						<h1 class="name">EJ Willard
-						</h1>
-						<p class="tag-line"> Web Developer</p>
-
-						<img class="break-img-big" src="images/eucclip.png" />
-
-					</section>
-
-
-					<section id="aboutme-section">
-
+			<section id="aboutme-section">
+				<div class="aboutme--inner">
+					<div class="head-shot">
+							<img class="greeting" src="images/u-hello-2.png" />
 						<img id="head-shot" src="images/ejcolorsquare.png" alt="EJ Willard | Web Developer"/>
-								<h3 class="section-title">Hey, I'm EJ!</h3>
-						<p class="aboutme-blurb">
-							I'm a creative graduate web-developer based in Sydney looking for a front-end role.</p><br />
+					</div>
+			
+					<div class="aboutme-blurb">
+					
+						<p>Hey! I'm EJ. I'm a creative junior web-developer based in Sydney.</p><br />
 
-							<p class="aboutme-blurb">	I first became intertested in web-development after attending a one-day workshop at General Assembly on HTML & CSS basics. From the minute I saw the magic a little HTML5 and CSS3 could create in the browser I was hooked!</p><br />
-							<p class="aboutme-blurb"> In June I was able to muster the courage to quit law and enrol at General Assembly in the Web-Development Immserive Course. I have been thrilled to be learning code every day since then. </p><br />
+						<p>I first became intertested in web-development after attending a one-day workshop at General Assembly on HTML & CSS basics. From the minute I saw the magic a little HTML5 and CSS3 could create in the browser I was hooked!</p><br />
 
-							<p class="aboutme-blurb">When I am not coding you will find me listening to records, reading true crime, listening to true crime podcasts or watching true crime documentaries (that's a lot of true crime - I know - but I swear it's a healthy interest and I'm a very normal person).
-						</p>
+						<p>In June I was able to muster the courage to quit law and enrol at General Assembly in the Web-Development Immserive Course. I have been thrilled to be learning code every day since then.</p><br />
 
-					</section>
+						<p>When I am not coding you will find me listening to records, reading true crime, listening to true crime podcasts or watching true crime documentaries (that's a lot of true crime - I know - but I swear it's a healthy interest and I'm a very normal person).</p>
+						
+					</div>
 
-					<img class="break-img port-break" src="images/eucclip.png" />
+					<div class="chevron">
+						<a href="#portfolio-section"><svg aria-hidden="true" width="3vw" data-prefix="fas" data-icon="chevron-down" class="svg-inline--fa fa-chevron-down fa-w-14" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path fill="currentColor" d="M207.029 381.476L12.686 187.132c-9.373-9.373-9.373-24.569 0-33.941l22.667-22.667c9.357-9.357 24.522-9.375 33.901-.04L224 284.505l154.745-154.021c9.379-9.335 24.544-9.317 33.901.04l22.667 22.667c9.373 9.373 9.373 24.569 0 33.941L240.971 381.476c-9.373 9.372-24.569 9.372-33.942 0z"></path></svg></a>
+					</div>
+				</div>
+			</section>
 
-					<section id="portfolio-section">
-						<h3 class="work-section-title">My Work</h3>
+			<section id="portfolio-section">
+					<div class="portfolio-section--inner">
+					<h2 class="work-section-title">My Work</h2>
 
-						<div class="portfolio-item">
-							<div class="outer-photo-container">
-								<div class="photo-container">
-
-									<img class="screenshots" src="images/kanamanabu.png" alt="kana-o-manabu-screenshot" />
-								</div>
+					<div class="portfolio-item js-portfolio-item">
+						<div class="outer-photo-container">
+							<div class="photo-container">
+								<a target="_blank" rel="noopener" href="https://kana-manabu.herokuapp.com/"><img class="screenshots" src="images/kanamanabu.png" alt="kana-o-manabu-screenshot" /></a>
 							</div>
+						</div>
 
-							<h3 class="project-head">Kana-o-Manabu! (Learn the Hiragana Alphabet)</h3>
+						<h3 class="project-head">Kana-o-Manabu! (Learn the Hiragana Alphabet)</h3>
+						<div class="project-blurb">
+							<p class="project-blurb--main">
+								Kana-o-Manabu means 'Learn Kana' in Japanese. This web app was designed to help people learn the 46 basic kana characters of the Hiragana alphabet. <button class="accordion__title-button">Read more</button>
+							</p>
+							<div class="project-blurb--secondary">
+								<p>
+									It all started when I decided to teach myself Japanese! There were a lot of images of the Hiragana characters online but no straight forward apps for me to use, so I thought 'one day when I am a Web Developer I will build a simple app to help people learn Hiragana' and I did just that for my final project!
+								</p>
+								
+								<p>
+									The app uses mnemonics and short quizzes to help people memorise the characters. Users can type their responses in Hiragana as I have utilised a Hiragana IME JavaScript plug-in to convert their answers from English to Hiragana.
+								</p>
+
+								<p>
+									I am very excited to continue working on this app and adding additional features as learning Japanese is a passion of mine!
+								</p>
+							</div>
+						</div>
+
+						<h4 class="tech-used-head">Tech Stack</h4>
+
+							<ul class="tech-used">
+								<li>HTML || </li>
+								<li>SassCSS || </li>
+								<li>jQuery || </li>
+								<li>WanaKana.js || </li>
+								<li>Ruby on Rails || </li>
+								<li>PostgreSQL || </li>
+								<li>Cloud Deployment to Heroku</li>
+							</ul>
 
 							<div class="project-link-container">
 								<a class="project-links" target="_blank" rel="noopener" href="https://github.com/ellijayne/japanese_kana_app">GitHub</a> |
 								<a class="project-links" target="_blank" rel="noopener" href="https://kana-manabu.herokuapp.com/">Live Site</a>
 							</div> <!--end of project link container-->
-
-							<p class="project-blurb">
-								Kana-o-Manabu means 'Learn Kana' in Japanese. This web app was designed to help people learn the 46 basic kana characters of the Hiragana alphabet.
-								<br />
-								It all started when I decided to teach myself Japanese! There were a lot of images of the Hiragana characters online but no straight forward apps for me to use, so I thought 'one day when I am a Web Developer I will build a simple app to help people learn Hiragana' and I did just that for my final project!
-								<br />
-								The app uses mnemonics and short quizzes to help people memorise the characters. Users can type their responses in Hiragana as I have utilised a Hiragana IME JavaScript plug-in to convert their answers from English to Hiragana.
-								<br />
-								I am very excited to continue working on this app and adding additional features as learning Japanese is a passion of mine!
- 							</p><br />
-
-							<h4 class="tech-used-head">Tech Stack</h4>
-
-								<ul class="tech-used">
-									<li>HTML</li>
-									<li>SassCSS</li>
-									<li>jQuery</li>
-									<li>WanaKana.js</li>
-									<li>Ruby on Rails</li>
-									<li>PostgreSQL</li>
-									<li>Cloud Deployment to Heroku</li>
-								</ul>
-
-						</div><!--end of portfolio-item-->
-
-						<div class="portfolio-item">
-							<div class="outer-photo-container">
-								<div class="photo-container">
-
-									<img class="screenshots" src="images/audiomain.png" alt="audiophiles-screenshot" />
-								</div>
+							<div class="hr-separator">
+								<hr align="center">
 							</div>
 
-							<h3 class="project-head">Audiophiles Vinyl Database</h3>
+					</div><!--end of portfolio-item-->
+
+					<div class="portfolio-item js-portfolio-item">
+						<div class="outer-photo-container">
+							<div class="photo-container">
+								<a target="_blank" rel="noopener" href="https://audiophiles.herokuapp.com/"><img class="screenshots" src="images/audiomain.png" alt="audiophiles-screenshot" /></a>
+							</div>
+						</div>
+
+						<h3 class="project-head">Audiophiles Vinyl Database</h3>
+
+						<div class="project-blurb">
+							<p class="project-blurb--main">
+								Audiophiles is the place YOUR music lives! Designed so you can keep track of your favourite records and musicians. Create an account and add vinyls to your collection! <button class="accordion__title-button">Read more</button>
+							</p>
+
+							<p class="project-blurb--secondary">
+								Audiophiles was built in 5 days and is the second project I completed during my bootcamp at General Assembly. I have a pretty extensive collection and wanted to develop an app to keep track of them all.
+							</p> 
+					
+						</div>
+
+						<h4 class="tech-used-head">Tech Stack</h4>
+							<ul class="tech-used">
+								<li>HTML || </li>
+								<li>CSS || </li>
+								<li>Bootstrap || </li>
+								<li>Ruby on Rails || </li>
+								<li>PostgreSQL || </li>
+								<li>Vivus.js</li>
+							</ul>
 
 							<div class="project-link-container">
-								<a class="project-links" target="_blank" rel="noopener" href="https://github.com/ellijayne/vinyls">GitHub</a> |
+								<a class="project-links" target="_blank" rel="noopener" href="https://github.com/ellijayne/vinyls">Git</a> |
 								<a class="project-links" target="_blank" rel="noopener" href="https://audiophiles.herokuapp.com/">Live Site</a>
 							</div> <!--end of project link container-->
-
-							<p class="project-blurb">
-								Audiophiles was the second project I completed during my bootcamp at General Assembly.
-							<br />
-								Audiophiles is the place YOUR music lives! Designed so you can keep track of your favourite records and musicians. Create an account and add vinyls to your collection! </p><br />
-
-
-							<h4 class="tech-used-head">Tech Stack</h4>
-
-								<ul class="tech-used">
-									<li>HTML</li>
-									<li>CSS</li>
-									<li>Bootstrap</li>
-									<li>Ruby on Rails</li>
-									<li>PostgreSQL</li>
-									<li>Vivus.js</li>
-								</ul>
-
-						</div><!--end of portfolio-item-->
-
-						<div class="portfolio-item">
-
-							<div class="outer-photo-container">
-								<div class="photo-container">
-									<br />
-									<br />
-									<br />
-									<br />
-
-								<img class="screenshots" src="images/todomain.png" alt="dating app screenshot"/>
-								</div>
+							<div class="hr-separator">
+								<hr align="center">
 							</div>
 
-							<h3 class="project-head">//TODO: Meet You - Dating App for Web Developers.</h3>
+					</div><!--end of portfolio-item-->
+
+					<div class="portfolio-item js-portfolio-item">
+
+						<div class="outer-photo-container">
+							<div class="photo-container">
+								<a class="project-links" target="_blank" rel="noopener" href="https://todo-meetyou.herokuapp.com/"><img class="screenshots" src="images/todomain.png" alt="dating app screenshot"/></a>
+							</div>
+						</div>
+
+						<h3 class="project-head">//TODO: Meet You - Dating App for Web Developers.</h3>
+				
+						<div class="project-blurb">
+							<p class="project-blurb--main">
+								On //TODO: Meet You is a dating app for web developers that we built in 5 days as part of a group project at general Assembly. Developers can create an account and profile after they pass a basic code test. Once developers have an account they are able to browse other members, 'like' them and chat with them. &hearts;
+							</p>
+						</div>
+
+						<h4 class="tech-used-head">Tech Stack</h4>
+							<ul class="tech-used">
+								<li>HTML & SassCSS || </li>
+								<li>Ruby on Rails || </li>
+								<li>jQuery || </li>
+								<li>Vanilla JavaScript || </li>
+								<li>AJAX || </li>
+								<li>PostgreSQL || </li>
+								<li>Heroku || </li>
+								<li>Slick (for image carousel) || </li>
+								<li>Cloundinary & Attachinary (for multiple image upload) || </li>
+								<li>APIs & Gems: Google Maps API/Geocoder Gem, Open Trivia API & Zodiac Gem</li>
+							</ul>
+
 							<div class="project-link-container">
 								<a class="project-links" target="_blank" rel="noopener" href="https://github.com/shelleyyz/dating-web">GitHub</a> |
 								<a class="project-links" target="_blank" rel="noopener" href="https://todo-meetyou.herokuapp.com/">Live Site</a>
 							</div>
-
-							<p class="project-blurb">
-								//TODO: Meet You is a dating app for web developers that I worked on as part of a group project during my bootcamp at General Assembly.  <br />
-
-								Developers can create an account and profile after they pass a basic code test. Once developers have an account they are able to browse other members, 'like' them and chat with them. &hearts;
-							</p>
-
-							<h4 class="tech-used-head">Tech Stack</h4>
-								<ul class="tech-used">
-									<li>HTML & SassCSS</li>
-									<li>Ruby on Rails</li>
-									<li>jQuery</li>
-									<li>Vanilla JavaScript</li>
-									<li>AJAX</li>
-									<li>PostgreSQL</li>
-									<li>Heroku</li>
-									<li>Slick (for image carousel)</li>
-									<li>Cloundinary & Attachinary (for multiple image upload)</li>
-									<li>APIs & Gems: Google Maps API/Geocoder Gem, Open Trivia API & Zodiac Gem</li>
-
-								</ul>
-
-						</div><!--end of portfolio-item-->
-
-
-						<div class="portfolio-item">
-
-
-
-							<div class="outer-photo-container">
-								<div class="photo-container">
-									<br />
-									<br />
-									<br />
-									<br />
-
-									<video controls autoplay class="screenshots" >
-    							<source src="images/tttgameplay.mov" type="video/mp4">
-									</video>
-
-									<!-- <img class="screenshots" src="images/tttmain.png" alt="tic-tac-toe screenshot"/> -->
-								</div>
+							<div class="hr-separator">
+								<hr align="center">
 							</div>
 
-							<h3 class="project-head">Tic-Tac-Toe</h3>
-
-
-								<div class="project-link-container">
-									<a class="project-links" target="_blank" rel="noopener" href="https://github.com/ellijayne/project0">GitHub</a> |
-									<a class="project-links" target="_blank" rel="noopener" href="https://ellijayne.github.io/project0/">Live Demo</a>
+					</div><!--end of portfolio-item-->
+					
+					<div class="portfolio-item js-portfolio-item">
+						<div class="outer-photo-container">
+							<a target="_blank" rel="noopener" href="https://ellijayne.github.io/project0/">
+								<div class="photo-container">
+										<video controls autoplay class="screenshots" >
+										<source src="images/tttgameplay.mov" type="video/mp4">
+									</video>
 								</div>
+							</a>
+						</div>
 
-							<p class="project-blurb">
-								This project is a simple tic-tac-toe game you can play in your browser. There are one-player and two-player modes.<br />
-								This was my very first attempt at coding any kind of project. It was developed during my first couple of weeks of bootcamp at General Assembly.
+						<h3 class="project-head">Tic-Tac-Toe</h3>
+
+						<div class="project-blurb">
+							<p class="project-blurb--main">
+								This project is a simple tic-tac-toe game you can play in your browser. There are one-player and two-player modes. <button class="accordion__title-button">Read more</button>
 							</p>
+							
+							<p class="project-blurb--secondary">
+								This was my very first attempt at coding any kind of project. It was developed in 4 days during week 3 of bootcamp at General Assembly.
+							</p>
+						</div>
 
-							<h4 class="tech-used-head">Tech Stack</h4>
+						<h4 class="tech-used-head">Tech Stack</h4>
+							<ul class="tech-used">
+								<li>HTML || </li>
+								<li>CSS || </li>
+								<li>jQuery || </li>
+								<li>JavaScript</li>
+							</ul>
 
-								<ul class="tech-used">
-									<li>HTML</li>
-									<li>CSS</li>
-									<li>jQuery</li>
-									<li>JavaScript</li>
-								</ul>
+							<div class="project-link-container project-link-container--last">
+								<a class="project-links" target="_blank" rel="noopener" href="https://github.com/ellijayne/project0">GitHub</a> |
+								<a class="project-links" target="_blank" rel="noopener" href="https://ellijayne.github.io/project0/">Live Demo</a>
+							</div>
+							<div class="hr-separator">
+								<hr align="center">
+							</div>
 
-						</div><!--end of portfolio-item-->
+					</div><!--end of portfolio-item-->
+				</div>
+			</section><!--end of portfolio-section div-->
+			<br />
+			<br />
 
+			<section id="contact-section">
+				<div class="contact-section--inner">
+					<h4 class="contact-head">Get in touch</h4>
 
-					</section><!--end of portfolio-section div-->
-					<br />
-					<br />
+					<div class="contact-links--inline">
+					
+						<a class="contact-links" target="_blank" href="https://github.com/ellijayne"><i class="fab fa-github"></i></a>
 
-					<section id="contact-section">
-						<h4 class="contact-head">
-							Get in touch
-						</h4>
+						<a class="contact-links" target="_blank" href="https://codepen.io/ellijayne/"><i class="fab fa-codepen"></i></a>
 
-						<p class="emoji">✉️</p>
-						<a class="contact-links" target="_blank" href="mailto:ellijayne.m.willard@gmail.com">ellijayne.m.willard@gmail.com</a>
+						<a class="contact-links" target="_blank" href="https://www.linkedin.com/in/ej-willard/"><i class="fab fa-linkedin"></i></a>
 
-						<a class="contact-links" target="_blank" href="https://github.com/ellijayne">Github</a>
+						<a class="contact-links" target="_blank" href="https://twitter.com/elli_jayne"><i class="fab fa-twitter-square"></i></a>
+					</div>
 
-						<a class="contact-links" target="_blank" href="https://www.linkedin.com/in/ej-willard/">LinkedIn</a>
+					<a class="contact-links" target="_blank" href="mailto:ellijayne.m.willard@gmail.com">ellijayne.m.willard@gmail.com</a>
 
-						<a class="contact-links" target="_blank" href="https://twitter.com/elli_jayne">Twitter</a>
-
-						<a id="resume-bottom" class="contact-links" href="images/EJ_Willard_Resume.pdf" target="_blank">Resume</a>
-
-						<img class="break-img-big-bottom" src="images/eucclip.png" />
-
-					</section><!--end of contact-section-->
-
-				</div><!--end of page border-->
-			</div> <!--end of page container div-->
+					<a id="resume-bottom" class="contact-links" href="images/EJ_Willard_Resume.pdf" target="_blank">Resume</a>
+					
+				</div>
+			</section><!--end of contact-section-->
+		<!--</div> end of page container div-->
 
 
 	<!--SCRIPT TAGS -->
-	<script src="js/jquery.js"></script>
-	<script src="js/main.js"></script>
-</body>
+		<script src="js/jquery.js"></script>
+		<script type="text/javascript" src="slick/slick.min.js"></script>
+		<script src="js/main.js"></script>
+	</body>
 </html>
