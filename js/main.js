@@ -3,9 +3,6 @@ $(document).ready(function() {
 
   console.log('are you there?');
 
-  var isiDevice = /ipad|iphone|ipod|android|blackberry|webos|windows phone/i.test(navigator.userAgent.toLowerCase());
-
-  if (isiDevice) {
     $('a[href^="#"]').bind('touchstart', function() {
       console.log('touch event')
       let target = this.hash,
@@ -20,7 +17,6 @@ $(document).ready(function() {
           return;
     })
 
-  }
 
  
 
