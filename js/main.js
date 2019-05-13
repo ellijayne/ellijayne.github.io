@@ -3,19 +3,11 @@ $(document).ready(function() {
 
   console.log('are you there?');
 
-  // $('a[href^="#"]').bind('touchstart', function(e) {
-  //   e.cancelable;
-
-  //   console.log('touched')
-  // })
-
-  
- 
-
-
   //smooth scroll function
   $('a[href^="#"]').on('click touchstart', function (e) {
       e.preventDefault();
+      e.stopPropagation();
+      e.cancelable;
 
       let target = this.hash,
       $target = $(target);
@@ -26,6 +18,7 @@ $(document).ready(function() {
           'scrollTop': newTop
         }, 1100, 'linear', function () {
         });
+        return;
       //} 
 
       // else {
