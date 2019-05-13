@@ -9,7 +9,7 @@ $(document).ready(function() {
 
 
   //smooth scroll function
-  $('a[href^="#"]').on('click', function (e) {
+  $('a[href^="#"]').on('click touchstart', function (e) {
       e.preventDefault();
 
       let target = this.hash,
