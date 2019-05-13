@@ -3,14 +3,15 @@ $(document).ready(function() {
 
   console.log('are you there?');
 
-    $('a[href^="#"]').bind('touchstart', function() {
+    $('a[href^="#"]').bind('touchstart', function(e) {
       console.log('touch event')
+      
       let target = this.hash,
         $target = $(target);
         //if ($(window).width() > 500) {
          
-          let newTop = $('html body').scrollTop() + $target.position().top-120;
-          $('html, body').stop().animate({
+          let newTop = $('body').scrollTop() + $target.position().top-120;
+          $('body').stop().animate({
             'scrollTop': newTop
           }, 1100, 'linear', function () {
           });
