@@ -14,7 +14,7 @@ $(document).ready(function() {
             'scrollTop': newTop
           }, 1100, 'linear', function () {
           });
-          return;
+          return false;
     })
 
 
@@ -35,7 +35,7 @@ $(document).ready(function() {
           'scrollTop': newTop
         }, 1100, 'linear', function () {
         });
-        return;
+        return false;
       //} 
 
       // else {
