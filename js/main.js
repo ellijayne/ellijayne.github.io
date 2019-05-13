@@ -3,11 +3,32 @@ $(document).ready(function() {
 
   console.log('are you there?');
 
+  var isiDevice = /ipad|iphone|ipod|android|blackberry|webos|windows phone/i.test(navigator.userAgent.toLowerCase());
+
+  if (isiDevice) {
+    $('a[href^="#"]').bind('touchstart', function() {
+      console.log('touch event')
+      let target = this.hash,
+        $target = $(target);
+        //if ($(window).width() > 500) {
+         
+          let newTop = $('html body').scrollTop() + $target.position().top-120;
+          $('html, body').stop().animate({
+            'scrollTop': newTop
+          }, 1100, 'linear', function () {
+          });
+          return;
+    })
+
+  }
+
+ 
+
   //smooth scroll function
-  $('a[href^="#"]').on('click touchstart', function (e) {
+  $('a[href^="#"]').on('click', function (e) {
+    console.log('click event')
       e.preventDefault();
       e.stopPropagation();
-      e.cancelable;
 
       let target = this.hash,
       $target = $(target);
