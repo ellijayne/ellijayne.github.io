@@ -1,0 +1,94 @@
+////////////NAV/////////////
+//MOBILE FIRST
+
+.nav {
+  position: fixed;
+  top: 0;
+  background-color: rgba(255, 255, 255, 0.9);
+  width: 100vw;
+  z-index: 21;
+  
+
+  &__links {
+    text-align: right;
+    padding: 1rem 1rem 0 1rem;
+    font-family: $para2-font;
+    position: relative;
+    margin-right: 1.5rem;
+    // display: none;
+
+    li {
+      margin-bottom: 0.5rem;
+      list-style: none;
+      display: inline-block;
+      font-size: 25px;
+      padding-right: 10px;
+
+      a {
+        text-decoration: none;
+        color: $primary-font;
+        transition: .3s;
+
+        &:hover, 
+        :focus {
+          color: teal;
+          transition: .3s;
+          font-size: 28px;
+        }
+      }
+
+    }
+    
+  }
+
+  &__icon {
+    width: 2rem;
+    display: none;
+    svg {
+      max-height: 34px;
+    }
+  }
+  
+  
+  .active {
+    display: inline-block;
+  } 
+}
+
+//MEDIA QUERIES - MEDIUM
+
+.nav {
+  // justify-content: space-between;
+  // text-align: right;
+
+
+ // &:before {
+    //   content: "";
+    //   position: absolute;
+    //   width: 100%;
+    //   height: 2px;
+    //   bottom: 0;
+    //   left: 0;
+    //   background-color: #000;
+    //   visibility: hidden;
+    //   -webkit-transform: scaleX(0);
+    //   transform: scaleX(0);
+    //   -webkit-transition: all 0.3s ease-in-out 0s;
+    //   transition: all 0.4s ease-in-out 0s;
+    // }
+
+    // &:hover:before {
+    //   visibility: visible;
+    //   -webkit-transform: scaleX(1);
+    //   transform: scaleX(1);
+    // }
+
+    // &:hover {
+    //   color: $teal;
+    //   transition: all .4s ease;
+    //   -webkit-transition: all .4s ease;
+    // }
+  }
+
+//MEDIA QUERIES - WIDE
+  

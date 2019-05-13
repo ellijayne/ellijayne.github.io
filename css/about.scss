@@ -1,0 +1,70 @@
+/////////ABOUT ME///////
+#aboutme-section {
+  background: #fff;
+  // -webkit-clip-path: polygon(0 0, 100% 0, 100% 93%, 0 56%);
+  // clip-path: polygon(0 0, 100% 0, 100% 93%, 0 56%);
+  // -webkit-clip-path: polygon(0 0, 100% 0, 100% 93%, 0 78%);
+  // clip-path: polygon(0 0, 100% 0, 100% 93%, 0 78%);
+
+  clip-path: polygon(0 0, 100% 0, 100% 94%, 0 86%);
+  -webkit-clip-path: polygon(0 0, 100% 0, 100% 94%, 0 86%);
+  padding-top: 10px;
+  // margin-top: -3em;
+  padding-bottom: 153px;
+  
+  .aboutme--inner {
+    width: 75%;
+    margin: 0 auto;
+   
+  }
+
+  .greeting {
+    max-width: 21vw;
+    transform: rotate(-20deg);
+    // margin-bottom: 5px;
+    margin-top: 12px;
+    margin-bottom: 18px;
+  }
+  
+  #head-shot {
+    position: relative;
+    border-radius: 100%;
+    width: 50%;
+    margin: auto;
+    margin-bottom: 10px;
+    margin-top: -50px;
+    display: block;
+    border: solid 2.5px $primary-font;
+  }
+  
+  .aboutme-blurb {
+    text-align: justify;
+    padding-bottom: 15px;
+
+    p {
+      font-family: $para-font;
+      line-height: 2em;
+    }
+  } 
+}
+
+@media (min-width: 960px) {
+
+  #aboutme-section {
+
+    .aboutme--inner {
+      width: 60%;
+    }
+
+    .greeting {
+      max-width: 17vw;
+      margin-top: 35px;
+      margin-left: 4em;
+    }
+
+    #head-shot {
+      width: 30%;
+    }
+  }
+
+}

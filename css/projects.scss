@@ -1,0 +1,172 @@
+/////MY WORK///////
+
+.section-title {
+  text-align: justify;
+  font-size: 3rem;
+  font-weight: 200;
+  font-family: $para2-font;
+}
+
+#portfolio-section {
+  margin-top: -3.1em;
+  background-color: white;
+  position: relative;
+
+    .portfolio-section--inner {
+      padding-top: 5%;
+      width: 90%;
+      margin: 0 auto;
+    }
+  
+    .work-section-title {
+        @extend .section-title;
+        text-align: center;
+    }
+  
+    .screenshots {
+      width: 100%;
+      margin-top: 5%;
+    }
+  
+    .project-head {
+      background: $font-image-secondary;
+      background-size: 100%;
+      background-repeat: no-repeat;
+      -webkit-text-fill-color: transparent;
+      -webkit-background-clip: text;
+      display: block;
+      font-family: $para2-font;
+      font-weight: 200;
+      font-size: 1.7em;
+      padding-top: 1em;
+    }
+  
+    .project-blurb {
+      margin: 0 auto;
+      font-family: $para-font;
+      line-height: 2em;
+      text-align: justify;
+
+      &--secondary {
+        display: none;
+
+        &.active {
+          display: block;
+          line-height: 2em;
+          margin: 0 0 18px 0;
+        }
+      }
+
+      button {
+        cursor: pointer;
+        border: none;
+        background-color: transparent;
+        -webkit-appearance: none;
+        font-size: 16px;
+        font-weight: 600;
+        color: $teal;
+        line-height: 1rem;
+        display: block;
+        padding: 10px 0;
+        padding-right: 1.3rem;
+        margin-bottom: 0;
+        margin-right: 5px;
+        transition: 0.3s all;
+        outline: none;
+
+        &:after {
+          content: "";
+          font-family: "Font Awesome 5 Free";
+          content: "\f077";
+          position: absolute;
+          width: 20px;
+          height: 0.85rem;
+          margin-top: 3px;
+          margin-left: 7px;
+          transition: 0.5s all;
+          transform: rotate(180deg);
+        }
+        &:hover {
+          color: teal;
+          transition: 0.4s all;
+        }
+      }
+
+     
+        button.active {
+          color: #b1d3c8;
+          outline: none;
+          border: none;
+    
+          &:after {
+            transition: 0.5s all;
+            transform: rotate(360deg);
+          }
+         }
+        
+    }
+  
+    .tech-used-head {
+      @extend .project-head;
+      text-align: justify;
+    }
+  
+  
+    .tech-used {
+      @extend .project-blurb;
+      list-style: none;
+      text-align: justify;
+      font-weight: bolder;
+      margin-bottom: 10px;
+
+      li {
+        display: inline;
+      }
+    }
+
+    .hr-separator {
+      margin: 0 auto;
+      width: 70%;
+
+      hr {
+        border: 1px solid #000;
+       
+      }
+    }
+  }
+  
+  .project-link-container {
+    text-align: center;
+    margin-top: 1%;
+    margin-bottom: 2%;
+
+    &--last {
+      margin-bottom: 110px;
+    }
+  
+    .project-links {
+      text-decoration: none;
+      font-family: $para2-font;
+      color: $teal;
+      font-size: 1.2em;
+    }
+  
+    a:hover {
+      color: teal;
+      transition: all .4s ease;
+      -webkit-transition: all .4s ease;
+    }
+  }
+
+
+  @media (min-width: 960px) {
+    #portfolio-section {
+      .portfolio-section--inner {
+        width: 60%;
+      }
+      .screenshots {
+        padding: 10px 10px;
+        border: solid 2px $teal;
+      }
+    }
+  }

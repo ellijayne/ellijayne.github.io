@@ -1,34 +1,10 @@
-/////////////////IMPORTING/////////////////
-@font-face {
-  font-family: Claxton-Bold;
-  src: url('fonts/Claxton-Typeface/Claxton-Bold.otf');
-}
 
-@font-face {
-  font-family: Claxton-Light;
-  src: url('fonts/Claxton-Typeface/Claxton-Light.otf')
-}
-
-@import url('https://fonts.googleapis.com/css?family=Roboto');
-
-@import url('https://fonts.googleapis.com/css?family=Raleway');
-
-@import url('https://fonts.googleapis.com/css?family=Roboto+Condensed');
-
-///////////////VARIABLES//////////////
-$bold-font: 'Claxton-Bold', sans-serif;
-$light-font: 'Claxton-Light', sans-serif;
-$para-font: 'Raleway', sans-serif;
-$para2-font: 'Roboto Condensed', sans-serif;
-$navy: #003566;
-$navy-t: rgba(0, 53, 107, 0.8);
-$pink: #EAAAA0;
-$pink-t: rgba(234, 170, 160, 0.8);
-$teal: #92C7B6;
-$teal-t: rgba(146, 199, 182, 0.8);
-$yellow: #FFE55E;
-$yellow-t: rgba(255, 229, 94, 0.8);
-$font-image: url('../images/copper_foil.png');
+@import 'landing';
+@import 'variables';
+@import 'nav';
+@import 'about';
+@import 'projects';
+@import 'contact';
 
 ////////////////RESET//////////////////////
 
@@ -36,552 +12,317 @@ $font-image: url('../images/copper_foil.png');
   // box-sizing: border-box;
   margin: 0;
   padding: 0;
+  
 }
 
 
-///////////////STYLING///////////////////
+///////////////MAIN STYLING///////////////////
 
 body {
-  padding-top: 95px;
-  color: $navy;
-  background-image: url('../images/background-portfolio.jpg');
+  // padding-top: 95px;
+  color: $primary-font;
+  background: url('../images/u-inky-patterns-bg-1.jpg');
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: fixed;
-}
-
-////////////NAV/////////////
-nav {
-  //
-  position: fixed;
-  top: 0;
-  padding: 1%;
-  justify-content: space-between;
-  text-align: center;
-  font-size: 2rem;
-  background-color: rgba(255, 255, 255, 0.9);
-  min-width: 100%;
-
-
-
-  .nav-link {
-    text-align: center;
-    padding: 1.5rem 1rem;
-    text-decoration: none;
-    font-family: $light-font;
-    color: $teal;
-
-
-
-    &:hover {
-      color: $yellow;
-      transition: all .4s ease;
-      -webkit-transition: all .4s ease;
-
-    }
-  }
+  font-size: 16px;
 }
 
 
-.break-img {
-  width: 18vw;
-}
 
-.break-img-big {
-  width: 24vw;
-    animation: nameMoveIn 1s ease-in;
-}
-////////CONATINER//////
-#page-container {
-  margin-top: navHeight;
-  margin: 0 auto;
-  text-align: center;
-  // display:block;
-  margin-bottom: 5%;
-  border: 20px $pink-t double;
-  text-align: center;
-  height: calc(100vh - navHeight);
-  width: calc(100vw - 12em);
-  overflow: auto;
-}
-
-///////LANDING//////////
-.page-border {
-  margin: 0 auto;
-  background-color: rgba(255, 255, 255, 1);
-
-}
-
-.landing-section {
-
+.clipped {
+  background: url('../images/u-inky-patterns-bg-1.jpg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  // background: yellow;
   width: 100%;
-  display: inline-block;
-  font-size: 9vw;
-  text-align: centre;
-  font-family: $bold-font;
-  min-height: 80vh;
+  height: 100%;
+  position: absolute;
+  bottom: 0;
+  // margin-bottom: -1px;
+  
 
-
-  .name {
-    padding-top: 13%;
-    background: $font-image;
-    background-size: 100%;
-    background-repeat: no-repeat;
-    -webkit-text-fill-color: transparent;
-    -webkit-background-clip: text;
-    display: block;
-    text-align: center;
-    animation: nameMoveIn 1.5s ease-in;
-  }
-  .tag-line {
-    padding-top: 2%;
-    @extend .name;
-  }
-}
-
-
-/////////ABOUT ME///////
-#aboutme-section {
-  width: 60%;
-  margin: 0 auto;
-  // padding-bottom: 10%;
-
-  #head-shot {
-    border-radius: 100%;
-    width: 30%;
+  &--right {
+    -webkit-clip-path: polygon(100% 94%, 0 100%, 100% 100%);
+clip-path: polygon(100% 85%, 0 100%, 100% 100%);
+    
   }
 
-  .aboutme-blurb {
-    text-align: justify;
-    font-family: $para-font;
-    line-height: 2em;
+  &--left {
+    -webkit-clip-path: polygon(100% 94%, 0 100%, 100% 100%);
+  clip-path: polygon(100% 85%, 0 100%, 100% 100%);
+  height: 29%;
   }
-}
-
-.section-title {
-  text-align: justify;
-  color: $pink;
-  font-size: 3vw;
-  font-family: $para2-font;
-}
-
-/////MY WORK///////
-
-#portfolio-section {
-  width: 60%;
-  margin: 0 auto;
-// padding-bottom: 10%;
-
-  .work-section-title {
-      @extend .section-title;
-      text-align: center;
-      // padding-bottom: 10px;
-  }
-
-  .screenshots {
-    width: 100%;
-    padding: 10px 10px;
-    border: solid 2px $teal;
-    margin-top: 5%;
-  }
-
-  .project-head {
-    color: $pink;
-    font-family: $para2-font;
-    font-size: 1.7em;
-    padding-top: 1em;
-  }
-
-  .project-blurb {
-    margin: 0 auto;
-    font-family: $para-font;
-    line-height: 2em;
-    text-align: justify;
-  }
-
-  .tech-used-head {
-    @extend .project-head;
-    text-align: justify;
-  }
-
-
-  .tech-used {
-    @extend .project-blurb;
-    list-style: none;
-    text-align: justify;
-    font-weight: bolder;
-  }
-}
-
-.project-link-container {
-  text-align: center;
-  margin-top: 1%;
-  margin-bottom: 2%;
-
-  .project-links {
-    text-decoration: none;
-    font-family: $para2-font;
-    color: $teal;
-    font-size: 1.2em;
-  }
-
-  a:hover {
-    color: $yellow;
-    transition: all .4s ease;
-    -webkit-transition: all .4s ease;
-  }
-}
-
-///////////////CONTACT LINKS///////////////
-#contact-section {
-  padding-top: 1em;
-
-.contact-head {
-    color: $pink;
-    font-family: $para2-font;
-    font-size: 1.5em;
-}
-
-#resume-bottom {
-  padding-bottom: 2vh;
-}
-
-.contact-links {
-    text-decoration: none;
-    font-family: $para2-font;
-    color: $teal;
-    font-size: 1.2em;
-    display: block;
-  }
-
-  a:hover {
-    color: $yellow;
-    transition: all .4s ease;
-    -webkit-transition: all .4s ease;
-  }
-
-  .break-img-big-bottom {
-    margin-top: 0;
-    max-width: 15vw;
-  }
-
-}
-
-////ANIMATIONS//////
-@keyframes nameMoveIn {
-  0% {
-    opacity: 0;
-    transform: translateY(100px);
-  }
-
-  80% {
-    transform: translateY(-10px)
-  }
-
-  100% {
-    opacity: 1;
-    transform: translate(0);
-  }
+  
 }
 
 
 /////MEDIA QUERIES /////
+//iPhone//
 
-@media (max-width: 380px) {
-
-  nav {
-    font-size: 1.9rem !important;
-  }
-
-
-  .break-img-big {
-    width: 36vw !important;
-  }
-
-
-  .tag-line {
-    padding-top: 1% !important;
-  }
+@media (min-width: 1000px) {
+  
 }
 
-@media (max-width: 500px) {
+// @media (max-width: 415px) {
 
-  nav {
-    font-size: 1.9rem !important;
-  }
-
-  #page-container {
-    max-height: 75vh;
-    min-width: 85vw !important;
-  }
-
-  .break-img-big {
-    max-width: 50vw !important;
-  }
-
-  .break-img {
-    width: 24vw;
-  }
-
-  .section-title {
-    font-size: 6vw;
-  }
-
-  .work-section-title {
-    font-size: 8.5vw !important;
-  }
-}
-
-@media (max-width: 768px) {
-
-  body {
-      padding-top: 160px;
-  }
-
-  #page-container {
-    width: 85% !important;
-  }
-
-  .landing-section {
-      height: 80vh;
-      padding-bottom: 6vh;
-
-    .name {
-      padding-top: 17%;
-      font-size: 19vw;
-    }
-
-    .tag-line {
-      padding-top: 3%;
-      font-size: 12vw;
-    }
-  }
-
-  #aboutme-section {
-    min-width: 65%;
-    padding-bottom: 11vh;
-
-    #head-shot {
-      width: 32vw;
-    }
-  }
-
-  .port-break {
-    display: none;
-  }
-
-  .break-img {
-    width: 18vw;
-  }
-
-  .break-img-big {
-    width: 35vw !important;
-  }
-
-  #portfolio-section {
-    min-width: 65%;
-    padding-top: 2vh;
-
-    .work-section-title {
-      font-size: 2.5rem;
-    }
-
-    .project-blurb {
-      line-height: 1.5em;
-    }
-    .tech-used-head {
-      padding-top: 10%;
-    }
-  }
-
-  #contact-section {
-
-    .contact-head {
-      font-size: 2.5rem;
-      padding-bottom: 5px;
-    }
-
-    .emoji {
-      font-size: 3rem;
-    }
-
-    .contact-links {
-      font-size: 1.6rem;
-    }
-  }
-}
-
-@media (max-width: 868px) {
-  body {
-    padding-top: 120px !important;
-  }
-  #page-container {
-    width: 85% !important;
-  }
-
-  .landing-section {
-      height: 80vh;
-      padding-bottom: 6vh;
-
-    .name {
-      padding-top: 12%;
-      font-size: 16vw;
-    }
-
-    .tag-line {
-      padding-top: 2%;
-      font-size: 10vw;
-    }
-  }
-
-  .break-img-big {
-    width: 35vw !important;
-  }
-
-  #aboutme-section {
-    min-width: 90%;
-    padding-bottom: 11vh;
-
-    #head-shot {
-      width: 28vw;
-    }
-  }
-
-  #portfolio-section {
-    min-width: 90%;
-    padding-top: 2vh;
-
-    .work-section-title {
-      font-size: 2.5rem;
-    }
-
-    .screenshots {
-      width: 90% !important;
-    }
-
-    .project-blurb {
-      line-height: 1.5em;
-    }
-    .tech-used-head {
-      padding-top: 10%;
-    }
-  }
-  #contact-section {
-
-    .contact-head {
-      font-size: 2.5rem;
-      padding-bottom: 5px;
-    }
-
-    .emoji {
-      font-size: 3rem;
-    }
-
-    .contact-links {
-      font-size: 1.6rem;
-    }
-  }
-}
-
-@media (max-width: 1450px) {
-
-  .landing-section {
-    .name {
-      padding-top: 60px !important;
-    }
-    .tag-line {
-      padding-top: 10px !important;
-      }
-    }
-    .break-img-big {
-      width: 45vh !important;
-    }
-}
-@media (max-width: 1665px) {
-
-  body {
-    padding-top: 120px;
-  }
-
-  #page-container {
-    width: 80%;
-  }
+//   nav {
+//     font-size: 1.9rem !important;
+//   }
 
 
-  .landing-section {
-    font-size: 8vw !important;
 
-    .name {
-      padding-top: 10%;
-    }
-    .tag-line {
-      padding-top: 0;
 
-    }
-  }
 
-  .break-img-big {
-    width: 28vw;
-    margin-top: -3%;
-  }
+//   .tag-line {
+//     padding-top: 1% !important;
+//   }
+// }
 
-  #contact-section {
+// @media (max-width: 500px) {
 
-    .contact-head {
-      font-size: 2.5rem;
-      padding-bottom: 5px;
-    }
+//   nav {
+//     font-size: 1.9rem !important;
+//   }
 
-    .emoji {
-      font-size: 3rem;
-    }
 
-    .contact-links {
-      font-size: 1.6rem;
-    }
-  }
 
-}
 
-@media (min-width: 1666px) {
-  #page-container {
-    width: 68vw;
-  }
-  nav {
-    padding: 0.5%;
-  }
+//   .section-title {
+//     font-size: 6vw;
+//   }
 
-  .landing-section {
-    font-size: 7.5vw;
+//   .work-section-title {
+//     font-size: 8.5vw !important;
+//   }
+// }
 
-    .name {
-      padding-top: 10%;
-    }
-    .tag-line {
-      padding-top: 0;
+// @media (max-width: 768px) {
 
-    }
-  }
+//   body {
+//       // padding-top: 160px;
+//   }
 
-  .break-img-big {
-    width: 19vw;
-  }
 
-  #contact-section {
 
-    .contact-head {
-      font-size: 2.5rem;
-      padding-bottom: 5px;
-    }
+//   // .landing-section {
+//   //     height: 80vh;
+//   //     padding-bottom: 6vh;
 
-    .emoji {
-      font-size: 3rem;
-    }
+//   //   .name {
+//   //     padding-top: 17%;
+//   //     // font-size: 19vw;
+//   //   }
 
-    .contact-links {
-      font-size: 1.6rem;
-    }
-  }
+//   //   .tag-line {
+//   //     padding-top: 3%;
+//   //     // font-size: 12vw;
+//   //   }
+//   // }
 
-}
+//   // #aboutme-section {
+//   //   min-width: 65%;
+//   //   padding-bottom: 11vh;
+
+//   //   #head-shot {
+//   //     width: 32vw;
+//   //   }
+//   // }
+
+
+
+
+
+//   // #portfolio-section {
+//   //   min-width: 65%;
+//   //   padding-top: 2vh;
+
+//   //   .work-section-title {
+//   //     font-size: 2.5rem;
+//   //   }
+
+//   //   .project-blurb {
+//   //     line-height: 1.5em;
+//   //   }
+//   //   .tech-used-head {
+//   //     padding-top: 10%;
+//   //   }
+//   // }
+
+//   // #contact-section {
+
+//   //   .contact-head {
+//   //     font-size: 2.5rem;
+//   //     padding-bottom: 5px;
+//   //   }
+
+//     // .emoji {
+//     //   font-size: 3rem;
+//     // }
+
+// //     .contact-links {
+// //       font-size: 1.6rem;
+// //     }
+// //   }
+// // }
+
+// @media (max-width: 868px) {
+//   body {
+//     // padding-top: 120px !important;
+//   }
+ 
+
+//   // .landing-section {
+//   //     height: 80vh;
+//   //     padding-bottom: 6vh;
+
+//   //   .name {
+//   //     padding-top: 12%;
+//   //     // font-size: 16vw;
+//   //   }
+
+//   //   .tag-line {
+//   //     padding-top: 2%;
+//   //     // font-size: 10vw;
+//   //   }
+//   // }
+
+
+
+//   // #aboutme-section {
+//   //   min-width: 90%;
+//   //   padding-bottom: 11vh;
+
+//   //   #head-shot {
+//   //     width: 28vw;
+//   //   }
+//   // }
+
+//   // #portfolio-section {
+//   //   min-width: 90%;
+//   //   padding-top: 2vh;
+
+//   //   .work-section-title {
+//   //     font-size: 2.5rem;
+//   //   }
+
+//   //   .screenshots {
+//   //     width: 90% !important;
+//   //   }
+
+//   //   .project-blurb {
+//   //     line-height: 1.5em;
+//   //   }
+//   //   .tech-used-head {
+//   //     padding-top: 10%;
+//   //   }
+//   // }
+//   // #contact-section {
+
+//   //   .contact-head {
+//   //     font-size: 2.5rem;
+//   //     padding-bottom: 5px;
+//   //   }
+
+//     // .emoji {
+//     //   font-size: 3rem;
+//     // }
+
+// //     .contact-links {
+// //       font-size: 1.6rem;
+// //     }
+// //   }
+// // }
+
+// @media (max-width: 1450px) {
+
+//   // .landing-section {
+//   //   .name {
+//   //     padding-top: 50px !important;
+//   //   }
+//   //   .tag-line {
+//   //     padding-top: 14.5px !important;
+//   //     }
+//   //   }
+  
+// }
+// @media (max-width: 1665px) {
+
+//   body {
+//     // padding-top: 120px;
+//   }
+
+
+
+//   // .landing-section {
+//   //   // font-size: 8vw !important;
+
+//   //   .name {
+//   //     padding-top: 10%;
+//   //   }
+//   //   .tag-line {
+//   //     padding-top: 0;
+
+//   //   }
+//   // }
+
+
+
+// //   #contact-section {
+
+// //     .contact-head {
+// //       font-size: 2.5rem;
+// //       padding-bottom: 5px;
+// //     }
+
+// //     // .emoji {
+// //     //   font-size: 3rem;
+// //     // }
+
+// //     .contact-links {
+// //       font-size: 1.6rem;
+// //     }
+// //   }
+
+// // }
+
+// @media (min-width: 1666px) {
+
+//   nav {
+//     padding: 0.5%;
+//   }
+
+//   // .landing-section {
+//   //   // font-size: 7.5vw;
+
+//   //   .name {
+//   //     padding-top: 10%;
+//   //   }
+//   //   .tag-line {
+//   //     padding-top: 0;
+
+//   //   }
+//   // }
+
+
+
+//   #contact-section {
+
+//     .contact-head {
+//       font-size: 2.5rem;
+//       padding-bottom: 5px;
+//     }
+
+//     // .emoji {
+//     //   font-size: 3rem;
+//     // }
+
+//     .contact-links {
+//       font-size: 1.6rem;
+//     }
+//   }
+
+// }

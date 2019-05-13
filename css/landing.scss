@@ -1,0 +1,100 @@
+@import 'variables';
+
+///////LANDING//////////
+  
+.landing {
+    // background: red;
+    text-align: center;
+    font-family: $light-font;
+    position: relative;
+    padding-bottom: 93px;
+    background: #fff;
+    // -webkit-clip-path: polygon(0 0, 100% 0, 100% 50%, 0 93%);
+    // clip-path: polygon(0 0, 100% 0, 100% 50%, 0 93%);
+
+  
+  &__name {
+    font-size: 125px;
+    background: $font-image-secondary;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position-y: 80%;
+
+    -webkit-text-fill-color: transparent;
+      -webkit-background-clip: text;
+      display: block;
+      text-align: center;
+      animation: nameMoveIn 1.5s ease-in;
+  }
+
+  &__tag-line {
+    padding-top: 2%;
+    font-size: 90px;
+    background-position-y: 40%;
+    // @extend .name;
+  }
+
+  &__chevron {
+    position: absolute;
+    left: 50%;
+    bottom: 55px;
+    z-index:20;
+    text-align: center;
+    animation: chevBounce 1s ease-in infinite;
+    
+    a {
+      color: $primary-font;
+      transition: .3s ease;
+      
+    
+      &:hover {
+        color: teal;
+        transition: all .3s ease;
+      }
+
+      svg {
+        width: 25px;
+      }
+    }
+  }
+}
+
+//iphone
+@media (max-width: 415px) {
+  .landing {
+
+    &__name {
+      padding-top: 160px;
+    }
+  }
+}
+
+@media (min-width: 960px) {
+  .landing {
+    &__name {
+      font-size: 200px;
+      padding-top: 13%;
+      background: $font-image;
+      background-size: 100%;
+      background-repeat: no-repeat;
+      background-position-y: 49%;
+      -webkit-text-fill-color: transparent;
+      -webkit-background-clip: text;
+      display: block;
+      text-align: center;
+      animation: nameMoveIn 1.5s ease-in;
+    }
+
+    &__tag-line {
+      font-size: 180px;
+    }
+
+    &__chevron {
+      a {
+        svg {
+          width: 37px;
+        }
+      }
+    }
+  }
+}
