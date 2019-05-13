@@ -1,33 +1,18 @@
 @import 'variables';
 
 ///////LANDING//////////
-// .page-border {
-//     margin: 0 auto;
-//     background-color: rgba(255, 255, 255, 1);
   
-//   }
-  
-  .landing-section {
-    width: 100%;
-    height: 100vh;
-    margin-top: -0.5em;
-    padding-top: 50px;
-    padding-bottom: 50px;
-    display: inline-block;
-    font-size: 9vw;
+  .landing {
+    background: red;
     text-align: centre;
     font-family: $light-font;
-    // min-height: 80vh;
-    background: #fff;
+    // background: #fff;
     -webkit-clip-path: polygon(0 0, 100% 0, 100% 50%, 0 93%);
     clip-path: polygon(0 0, 100% 0, 100% 50%, 0 93%);
-    
-    .landing--content {
-      
-    }
+
   
-    .name {
-      font-size: 2.5em;
+    &__name {
+      font-size: 45px;
       padding-top: 13%;
       background: $font-image;
       background-size: 100%;
@@ -39,14 +24,15 @@
       text-align: center;
       animation: nameMoveIn 1.5s ease-in;
     }
-    .tag-line {
+
+    &__tag-line {
       padding-top: 2%;
       font-size: 1.7em;
       background-position-y: 40%;
       @extend .name;
     }
 
-    .chevron {
-      // margin-bottom: 15%;
-    }
+    // .chevron {
+    //   // margin-bottom: 15%;
+    // }
   }

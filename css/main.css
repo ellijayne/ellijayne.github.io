@@ -41,21 +41,14 @@
     transform: translateY(6px); }
   50% {
     transform: translateY(8px); } }
-.landing-section {
-  width: 100%;
-  height: 100vh;
-  margin-top: -0.5em;
-  padding-top: 50px;
-  padding-bottom: 50px;
-  display: inline-block;
-  font-size: 9vw;
+.landing {
+  background: red;
   text-align: centre;
   font-family: "soak-light", sans-serif;
-  background: #fff;
   -webkit-clip-path: polygon(0 0, 100% 0, 100% 50%, 0 93%);
   clip-path: polygon(0 0, 100% 0, 100% 50%, 0 93%); }
-  .landing-section .name, .landing-section .tag-line {
-    font-size: 2.5em;
+  .landing__name {
+    font-size: 45px;
     padding-top: 13%;
     background: url("../images/u-cloudink-bg.jpg");
     background-size: 100%;
@@ -66,7 +59,7 @@
     display: block;
     text-align: center;
     animation: nameMoveIn 1.5s ease-in; }
-  .landing-section .tag-line {
+  .landing__tag-line {
     padding-top: 2%;
     font-size: 1.7em;
     background-position-y: 40%; }
@@ -117,20 +110,29 @@
     padding: 1rem 1rem 0 1rem;
     font-family: "Permanent Marker", cursive;
     position: relative;
-    margin-right: 1.5rem;
-    display: none; }
+    margin-right: 1.5rem; }
     .nav__links li {
       margin-bottom: 0.5rem;
       list-style: none;
-      font-size: 1.2em; }
+      display: inline-block;
+      font-size: 25px;
+      padding-right: 10px; }
       .nav__links li a {
         text-decoration: none;
-        color: #000; }
+        color: #000;
+        transition: .3s; }
+        .nav__links li a:hover,
+        .nav__links li a :focus {
+          color: teal;
+          transition: .3s;
+          font-size: 28px; }
   .nav__icon {
     width: 2rem;
     display: none; }
+    .nav__icon svg {
+      max-height: 34px; }
   .nav .active {
-    display: block; }
+    display: inline-block; }
 
 #aboutme-section {
   background: #fff;
@@ -318,7 +320,6 @@
   padding: 0; }
 
 body {
-  padding-top: 95px;
   color: #333333;
   background: url("../images/u-inky-patterns-bg-1.jpg");
   background-position: center;
@@ -352,13 +353,10 @@ body {
   .work-section-title {
     font-size: 8.5vw !important; } }
 @media (max-width: 768px) {
-  body {
-    padding-top: 160px; }
-
   .landing-section {
     height: 80vh;
     padding-bottom: 6vh; }
-    .landing-section .name, .landing-section .tag-line {
+    .landing-section .name, .landing-section .landing__tag-line {
       padding-top: 17%;
       font-size: 19vw; }
     .landing-section .tag-line {
@@ -387,13 +385,10 @@ body {
   #contact-section .contact-links {
     font-size: 1.6rem; } }
 @media (max-width: 868px) {
-  body {
-    padding-top: 120px !important; }
-
   .landing-section {
     height: 80vh;
     padding-bottom: 6vh; }
-    .landing-section .name, .landing-section .tag-line {
+    .landing-section .name, .landing-section .landing__tag-line {
       padding-top: 12%;
       font-size: 16vw; }
     .landing-section .tag-line {
@@ -424,17 +419,14 @@ body {
   #contact-section .contact-links {
     font-size: 1.6rem; } }
 @media (max-width: 1450px) {
-  .landing-section .name, .landing-section .tag-line {
+  .landing-section .name, .landing-section .landing__tag-line {
     padding-top: 50px !important; }
   .landing-section .tag-line {
     padding-top: 14.5px !important; } }
 @media (max-width: 1665px) {
-  body {
-    padding-top: 120px; }
-
   .landing-section {
     font-size: 8vw !important; }
-    .landing-section .name, .landing-section .tag-line {
+    .landing-section .name, .landing-section .landing__tag-line {
       padding-top: 10%; }
     .landing-section .tag-line {
       padding-top: 0; }
@@ -450,7 +442,7 @@ body {
 
   .landing-section {
     font-size: 7.5vw; }
-    .landing-section .name, .landing-section .tag-line {
+    .landing-section .name, .landing-section .landing__tag-line {
       padding-top: 10%; }
     .landing-section .tag-line {
       padding-top: 0; }

@@ -63,37 +63,37 @@ $(document).ready(function() {
   });
 
   //BURGER NAV 
-  var $windowWidth = $(window).innerWidth(),
-  $desktopLinks = $('.nav__links'),
-  $navIcon = $('.nav__icon');
+  // var $windowWidth = $(window).innerWidth(),
+  // $desktopLinks = $('.nav__links'),
+  // $navIcon = $('.nav__icon');
 
-      $(window).on('resize', function(){
+  //     $(window).on('resize', function(){
        
-        if ($windowWidth >= 600) {
-            $desktopLinks.addClass('active');
-            $navIcon.removeClass('active');
-        }
+  //       if ($windowWidth >= 600) {
+  //           $desktopLinks.addClass('active');
+  //           $navIcon.removeClass('active');
+  //       }
 
-        if ($windowWidth < 599) {
-          $navIcon.addClass('active');
-          $desktopLinks.removeClass('active');
-        }
+  //       if ($windowWidth < 599) {
+  //         $navIcon.addClass('active');
+  //         $desktopLinks.removeClass('active');
+  //       }
        
     
-        console.log(windowWidth);
-  });
+  //       console.log(windowWidth);
+  // });
   
 
 
   //slick-slider
 
-  $('.portfolio-section').slick({
-    dots: true,
-    infinite: true,
-    speed: 500,
-    fade: true,
-    cssEase: 'linear'
-  });
+  // $('.portfolio-section').slick({
+  //   dots: true,
+  //   infinite: true,
+  //   speed: 500,
+  //   fade: true,
+  //   cssEase: 'linear'
+  // });
 
 }); //document.ready
 

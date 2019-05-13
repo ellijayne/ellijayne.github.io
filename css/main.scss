@@ -12,13 +12,14 @@
   // box-sizing: border-box;
   margin: 0;
   padding: 0;
+  
 }
 
 
 ///////////////MAIN STYLING///////////////////
 
 body {
-  padding-top: 95px;
+  // padding-top: 95px;
   color: $primary-font;
   background: url('../images/u-inky-patterns-bg-1.jpg');
   background-position: center;
@@ -83,7 +84,7 @@ body {
 @media (max-width: 768px) {
 
   body {
-      padding-top: 160px;
+      // padding-top: 160px;
   }
 
 
@@ -151,7 +152,7 @@ body {
 
 @media (max-width: 868px) {
   body {
-    padding-top: 120px !important;
+    // padding-top: 120px !important;
   }
  
 
@@ -232,7 +233,7 @@ body {
 @media (max-width: 1665px) {
 
   body {
-    padding-top: 120px;
+    // padding-top: 120px;
   }
 
 

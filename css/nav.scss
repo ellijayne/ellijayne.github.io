@@ -15,16 +15,26 @@
     font-family: $para2-font;
     position: relative;
     margin-right: 1.5rem;
-    display: none;
+    // display: none;
 
     li {
       margin-bottom: 0.5rem;
       list-style: none;
-      font-size: 1.2em;
+      display: inline-block;
+      font-size: 25px;
+      padding-right: 10px;
 
       a {
         text-decoration: none;
         color: #000;
+        transition: .3s;
+
+        &:hover, 
+        :focus {
+          color: teal;
+          transition: .3s;
+          font-size: 28px;
+        }
       }
 
     }
@@ -34,11 +44,14 @@
   &__icon {
     width: 2rem;
     display: none;
+    svg {
+      max-height: 34px;
+    }
   }
   
   
   .active {
-    display: block;
+    display: inline-block;
   } 
 }
 
