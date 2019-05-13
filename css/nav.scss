@@ -6,7 +6,7 @@
   top: 0;
   background-color: rgba(255, 255, 255, 0.9);
   width: 100vw;
-  z-index: 10;
+  z-index: 21;
   
 
   &__links {
@@ -26,7 +26,7 @@
 
       a {
         text-decoration: none;
-        color: #000;
+        color: $primary-font;
         transition: .3s;
 
         &:hover, 

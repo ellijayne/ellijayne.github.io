@@ -42,13 +42,48 @@
   50% {
     transform: translateY(8px); } }
 .landing {
-  background: red;
-  text-align: centre;
+  text-align: center;
   font-family: "soak-light", sans-serif;
-  -webkit-clip-path: polygon(0 0, 100% 0, 100% 50%, 0 93%);
-  clip-path: polygon(0 0, 100% 0, 100% 50%, 0 93%); }
+  position: relative;
+  padding-bottom: 93px;
+  background: #fff; }
   .landing__name {
-    font-size: 45px;
+    font-size: 125px;
+    background: url("../images/u-inky-patterns-bg-2.jpg");
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position-y: 80%;
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    display: block;
+    text-align: center;
+    animation: nameMoveIn 1.5s ease-in; }
+  .landing__tag-line {
+    padding-top: 2%;
+    font-size: 90px;
+    background-position-y: 40%; }
+  .landing__chevron {
+    position: absolute;
+    left: 50%;
+    bottom: 55px;
+    z-index: 20;
+    text-align: center;
+    animation: chevBounce 1s ease-in infinite; }
+    .landing__chevron a {
+      color: #333333;
+      transition: .3s ease; }
+      .landing__chevron a:hover {
+        color: teal;
+        transition: all .3s ease; }
+      .landing__chevron a svg {
+        width: 25px; }
+
+@media (max-width: 415px) {
+  .landing__name {
+    padding-top: 160px; } }
+@media (min-width: 960px) {
+  .landing__name {
+    font-size: 200px;
     padding-top: 13%;
     background: url("../images/u-cloudink-bg.jpg");
     background-size: 100%;
@@ -60,10 +95,9 @@
     text-align: center;
     animation: nameMoveIn 1.5s ease-in; }
   .landing__tag-line {
-    padding-top: 2%;
-    font-size: 1.7em;
-    background-position-y: 40%; }
-
+    font-size: 180px; }
+  .landing__chevron a svg {
+    width: 37px; } }
 @font-face {
   font-family: Claxton-Bold;
   src: url("fonts/Claxton-Typeface/Claxton-Bold.otf"); }
@@ -104,7 +138,7 @@
   top: 0;
   background-color: rgba(255, 255, 255, 0.9);
   width: 100vw;
-  z-index: 10; }
+  z-index: 21; }
   .nav__links {
     text-align: right;
     padding: 1rem 1rem 0 1rem;
@@ -119,7 +153,7 @@
       padding-right: 10px; }
       .nav__links li a {
         text-decoration: none;
-        color: #000;
+        color: #333333;
         transition: .3s; }
         .nav__links li a:hover,
         .nav__links li a :focus {
@@ -136,37 +170,45 @@
 
 #aboutme-section {
   background: #fff;
-  -webkit-clip-path: polygon(0 0, 100% 0, 100% 93%, 0 78%);
-  clip-path: polygon(0 0, 100% 0, 100% 93%, 0 78%);
+  clip-path: polygon(0 0, 100% 0, 100% 94%, 0 86%);
+  -webkit-clip-path: polygon(0 0, 100% 0, 100% 94%, 0 86%);
   padding-top: 10px;
-  margin-top: -3em;
   padding-bottom: 153px; }
   #aboutme-section .aboutme--inner {
-    width: 60%;
+    width: 75%;
     margin: 0 auto; }
   #aboutme-section .greeting {
-    max-width: 10vw;
+    max-width: 21vw;
     transform: rotate(-20deg);
-    margin-top: 40px;
-    margin-left: 4em; }
+    margin-top: 12px;
+    margin-bottom: 18px; }
   #aboutme-section #head-shot {
     position: relative;
     border-radius: 100%;
-    width: 30%;
+    width: 50%;
     margin: auto;
     margin-bottom: 10px;
     margin-top: -50px;
     display: block;
-    border: solid 2.5px black; }
+    border: solid 2.5px #333333; }
   #aboutme-section .aboutme-blurb {
-    text-align: justify; }
+    text-align: justify;
+    padding-bottom: 15px; }
     #aboutme-section .aboutme-blurb p {
       font-family: "Raleway", sans-serif;
       line-height: 2em; }
 
+@media (min-width: 960px) {
+  #aboutme-section .aboutme--inner {
+    width: 60%; }
+  #aboutme-section .greeting {
+    max-width: 17vw;
+    margin-top: 35px;
+    margin-left: 4em; }
+  #aboutme-section #head-shot {
+    width: 30%; } }
 .section-title, #portfolio-section .work-section-title {
   text-align: justify;
-  color: #000;
   font-size: 3rem;
   font-weight: 200;
   font-family: "Permanent Marker", cursive; }
@@ -174,21 +216,18 @@
 #portfolio-section {
   margin-top: -3.1em;
   background-color: white;
-  -webkit-clip-path: polygon(0 1%, 100% 0, 100% 92%, 0 100%);
-  clip-path: polygon(0 1%, 100% 0, 100% 92%, 0 100%); }
+  position: relative; }
   #portfolio-section .portfolio-section--inner {
     padding-top: 5%;
-    width: 60%;
+    width: 90%;
     margin: 0 auto; }
   #portfolio-section .work-section-title {
     text-align: center; }
   #portfolio-section .screenshots {
     width: 100%;
-    padding: 10px 10px;
-    border: solid 2px #92C7B6;
     margin-top: 5%; }
   #portfolio-section .project-head, #portfolio-section .tech-used-head {
-    background: url("../images/u-inky-patterns-bg-1.jpg");
+    background: url("../images/u-inky-patterns-bg-2.jpg");
     background-size: 100%;
     background-repeat: no-repeat;
     -webkit-text-fill-color: transparent;
@@ -237,7 +276,7 @@
         transition: 0.5s all;
         transform: rotate(180deg); }
       #portfolio-section .project-blurb button:hover, #portfolio-section .tech-used button:hover {
-        color: #128ec3;
+        color: teal;
         transition: 0.4s all; }
     #portfolio-section .project-blurb button.active, #portfolio-section .tech-used button.active {
       color: #b1d3c8;
@@ -266,17 +305,23 @@
   margin-top: 1%;
   margin-bottom: 2%; }
   .project-link-container--last {
-    margin-bottom: 25%; }
+    margin-bottom: 110px; }
   .project-link-container .project-links {
     text-decoration: none;
     font-family: "Permanent Marker", cursive;
     color: #92C7B6;
     font-size: 1.2em; }
   .project-link-container a:hover {
-    color: #128ec3;
+    color: teal;
     transition: all .4s ease;
     -webkit-transition: all .4s ease; }
 
+@media (min-width: 960px) {
+  #portfolio-section .portfolio-section--inner {
+    width: 60%; }
+  #portfolio-section .screenshots {
+    padding: 10px 10px;
+    border: solid 2px #92C7B6; } }
 #contact-section {
   padding-top: 1em;
   background: #fff;
@@ -286,7 +331,7 @@
     margin: 0 auto;
     text-align: center; }
   #contact-section .contact-head {
-    background: url("../images/u-inky-patterns-bg-1.jpg");
+    background: url("../images/u-inky-patterns-bg-2.jpg");
     background-size: 100%;
     background-repeat: no-repeat;
     -webkit-text-fill-color: transparent;
@@ -294,7 +339,7 @@
     display: block;
     font-family: "Permanent Marker", cursive;
     font-weight: 200;
-    font-size: 1.7em;
+    font-size: 3em;
     padding-top: 1em; }
   #contact-section #resume-bottom {
     padding-bottom: 2vh; }
@@ -307,11 +352,12 @@
     text-decoration: none;
     font-family: "Permanent Marker", cursive;
     color: #92C7B6;
-    display: block; }
+    display: block;
+    font-size: 1.2em; }
     #contact-section .contact-links i {
-      font-size: 1.7em; }
+      font-size: 3em; }
   #contact-section a:hover {
-    color: #128ec3;
+    color: teal;
     transition: all .4s ease;
     -webkit-transition: all .4s ease; }
 
@@ -328,129 +374,22 @@ body {
   background-attachment: fixed;
   font-size: 16px; }
 
-.chevron {
-  text-align: center;
-  animation: chevBounce 1s ease-in infinite; }
-  .chevron a {
-    color: #000; }
-    .chevron a:hover {
-      color: #92C7B6;
-      transition: all .4s ease; }
-
-@media (max-width: 415px) {
-  nav {
-    font-size: 1.9rem !important; }
-
-  .tag-line {
-    padding-top: 1% !important; } }
-@media (max-width: 500px) {
-  nav {
-    font-size: 1.9rem !important; }
-
-  .section-title, #portfolio-section .work-section-title {
-    font-size: 6vw; }
-
-  .work-section-title {
-    font-size: 8.5vw !important; } }
-@media (max-width: 768px) {
-  .landing-section {
-    height: 80vh;
-    padding-bottom: 6vh; }
-    .landing-section .name, .landing-section .landing__tag-line {
-      padding-top: 17%;
-      font-size: 19vw; }
-    .landing-section .tag-line {
-      padding-top: 3%;
-      font-size: 12vw; }
-
-  #aboutme-section {
-    min-width: 65%;
-    padding-bottom: 11vh; }
-    #aboutme-section #head-shot {
-      width: 32vw; }
-
-  #portfolio-section {
-    min-width: 65%;
-    padding-top: 2vh; }
-    #portfolio-section .work-section-title {
-      font-size: 2.5rem; }
-    #portfolio-section .project-blurb, #portfolio-section .tech-used {
-      line-height: 1.5em; }
-    #portfolio-section .tech-used-head {
-      padding-top: 10%; }
-
-  #contact-section .contact-head {
-    font-size: 2.5rem;
-    padding-bottom: 5px; }
-  #contact-section .contact-links {
-    font-size: 1.6rem; } }
-@media (max-width: 868px) {
-  .landing-section {
-    height: 80vh;
-    padding-bottom: 6vh; }
-    .landing-section .name, .landing-section .landing__tag-line {
-      padding-top: 12%;
-      font-size: 16vw; }
-    .landing-section .tag-line {
-      padding-top: 2%;
-      font-size: 10vw; }
-
-  #aboutme-section {
-    min-width: 90%;
-    padding-bottom: 11vh; }
-    #aboutme-section #head-shot {
-      width: 28vw; }
-
-  #portfolio-section {
-    min-width: 90%;
-    padding-top: 2vh; }
-    #portfolio-section .work-section-title {
-      font-size: 2.5rem; }
-    #portfolio-section .screenshots {
-      width: 90% !important; }
-    #portfolio-section .project-blurb, #portfolio-section .tech-used {
-      line-height: 1.5em; }
-    #portfolio-section .tech-used-head {
-      padding-top: 10%; }
-
-  #contact-section .contact-head {
-    font-size: 2.5rem;
-    padding-bottom: 5px; }
-  #contact-section .contact-links {
-    font-size: 1.6rem; } }
-@media (max-width: 1450px) {
-  .landing-section .name, .landing-section .landing__tag-line {
-    padding-top: 50px !important; }
-  .landing-section .tag-line {
-    padding-top: 14.5px !important; } }
-@media (max-width: 1665px) {
-  .landing-section {
-    font-size: 8vw !important; }
-    .landing-section .name, .landing-section .landing__tag-line {
-      padding-top: 10%; }
-    .landing-section .tag-line {
-      padding-top: 0; }
-
-  #contact-section .contact-head {
-    font-size: 2.5rem;
-    padding-bottom: 5px; }
-  #contact-section .contact-links {
-    font-size: 1.6rem; } }
-@media (min-width: 1666px) {
-  nav {
-    padding: 0.5%; }
-
-  .landing-section {
-    font-size: 7.5vw; }
-    .landing-section .name, .landing-section .landing__tag-line {
-      padding-top: 10%; }
-    .landing-section .tag-line {
-      padding-top: 0; }
-
-  #contact-section .contact-head {
-    font-size: 2.5rem;
-    padding-bottom: 5px; }
-  #contact-section .contact-links {
-    font-size: 1.6rem; } }
+.clipped {
+  background: url("../images/u-inky-patterns-bg-1.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  bottom: 0; }
+  .clipped--right {
+    -webkit-clip-path: polygon(100% 94%, 0 100%, 100% 100%);
+    clip-path: polygon(100% 85%, 0 100%, 100% 100%); }
+  .clipped--left {
+    -webkit-clip-path: polygon(100% 94%, 0 100%, 100% 100%);
+    clip-path: polygon(100% 85%, 0 100%, 100% 100%);
+    height: 29%; }
 
 /*# sourceMappingURL=main.css.map */

@@ -2,7 +2,6 @@
 
 .section-title {
   text-align: justify;
-  color: #000;
   font-size: 3rem;
   font-weight: 200;
   font-family: $para2-font;
@@ -11,12 +10,11 @@
 #portfolio-section {
   margin-top: -3.1em;
   background-color: white;
-  -webkit-clip-path: polygon(0 1%, 100% 0, 100% 92%, 0 100%);
-  clip-path: polygon(0 1%, 100% 0, 100% 92%, 0 100%);
+  position: relative;
 
     .portfolio-section--inner {
       padding-top: 5%;
-      width: 60%;
+      width: 90%;
       margin: 0 auto;
     }
   
@@ -27,8 +25,6 @@
   
     .screenshots {
       width: 100%;
-      padding: 10px 10px;
-      border: solid 2px $teal;
       margin-top: 5%;
     }
   
@@ -91,7 +87,7 @@
           transform: rotate(180deg);
         }
         &:hover {
-          color: $blue;
+          color: teal;
           transition: 0.4s all;
         }
       }
@@ -145,7 +141,7 @@
     margin-bottom: 2%;
 
     &--last {
-      margin-bottom: 25%;
+      margin-bottom: 110px;
     }
   
     .project-links {
@@ -156,8 +152,21 @@
     }
   
     a:hover {
-      color: $blue;
+      color: teal;
       transition: all .4s ease;
       -webkit-transition: all .4s ease;
+    }
+  }
+
+
+  @media (min-width: 960px) {
+    #portfolio-section {
+      .portfolio-section--inner {
+        width: 60%;
+      }
+      .screenshots {
+        padding: 10px 10px;
+        border: solid 2px $teal;
+      }
     }
   }

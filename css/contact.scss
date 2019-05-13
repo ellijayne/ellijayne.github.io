@@ -19,7 +19,7 @@
     display: block;
     font-family: $para2-font;
     font-weight: 200;
-    font-size: 1.7em;
+    font-size: 3em;
     padding-top: 1em;
     
   }
@@ -44,13 +44,14 @@
       font-family: $para2-font;
       color: $teal;
       display: block;
+      font-size: 1.2em;
       i {
-        font-size: 1.7em;
+        font-size: 3em;
       }
     }
   
     a:hover {
-      color: $blue;
+      color: teal;
       transition: all .4s ease;
       -webkit-transition: all .4s ease;
     }

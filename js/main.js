@@ -9,14 +9,14 @@ $(document).ready(function() {
 
 
   //smooth scroll function
-  $('a[href^="#"]').on('click',function (e) {
+  $('a[href^="#"]').on('click', function (e) {
       e.preventDefault();
 
       let target = this.hash,
       $target = $(target);
       if ($(window).width() > 500) {
         console.log('window is OVER 450px');
-        let newTop = $('html body').scrollTop() + $target.position().top-120;
+        let newTop = $('html body').scrollTop() + $target.position().top-100;
         $('html, body').stop().animate({
           'scrollTop': newTop
         }, 1100, 'linear', function () {
@@ -61,6 +61,10 @@ $(document).ready(function() {
       return false;
     });
   });
+
+  if (window.innerWidth < 960) {
+    $('.chevron').css('display', 'none');
+  }
 
   //BURGER NAV 
   // var $windowWidth = $(window).innerWidth(),
