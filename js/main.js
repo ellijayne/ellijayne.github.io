@@ -2,23 +2,22 @@ $(document).ready(function() {
 
 
   console.log('are you there?');
-  console.log('blah')
+
 
   
+ 
+
 
   //smooth scroll function
   $('a[href^="#"]').on('click', function (e) {
-    
       e.preventDefault();
-    
-      
 
       let target = this.hash,
       $target = $(target);
       if ($(window).width() > 500) {
         console.log('window is OVER 450px');
-        let newTop = $('body').scrollTop() + $target.position().top-100;
-        $('body').stop().animate({
+        let newTop = $('html body').scrollTop() + $target.position().top-100;
+        $('html, body').stop().animate({
           'scrollTop': newTop
         }, 1100, 'linear', function () {
         });
