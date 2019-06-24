@@ -73,6 +73,18 @@
   }
 }
 
+// tablet
+@media (min-width: 501px) {
+  .landing {
+    &__content {
+      padding-top: 85px;
+    }
+    &__name {
+      padding-top: 22px;
+    }
+  }
+}
+
 @media (min-width: 960px) {
   .landing {
     &__name {
