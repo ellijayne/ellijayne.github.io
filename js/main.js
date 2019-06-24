@@ -60,7 +60,7 @@ $(document).ready(function() {
     $accordionToggle.click(function() {
 
       var $portfolioItem = $(this).closest('.js-portfolio-item'),
-          $portfolioText = $portfolioItem.find('.project-blurb--secondary');
+          $portfolioText = $portfolioItem.find('.portfolio__project-blurb--secondary');
           console.log($accordionToggle);
 
       if($portfolioItem.hasClass('active')) {

@@ -216,26 +216,24 @@
     margin-left: 4em; }
   .aboutme__img {
     width: 30%; } }
-.section-title, #portfolio-section .work-section-title {
-  text-align: justify;
-  font-size: 3rem;
-  font-weight: 200;
-  font-family: "Permanent Marker", cursive; }
-
-#portfolio-section {
+.portfolio {
   margin-top: -3.1em;
   background-color: white;
   position: relative; }
-  #portfolio-section .portfolio-section--inner {
+  .portfolio__content {
     padding-top: 5%;
     width: 90%;
     margin: 0 auto; }
-  #portfolio-section .work-section-title {
+  .portfolio__header {
+    text-align: justify;
+    font-size: 3rem;
+    font-weight: 200;
+    font-family: "Permanent Marker", cursive;
     text-align: center; }
-  #portfolio-section .screenshots {
+  .portfolio__screenshots {
     width: 100%;
     margin-top: 5%; }
-  #portfolio-section .project-head, #portfolio-section .tech-used-head {
+  .portfolio__project-head, .portfolio__tech {
     background: url("../images/u-inky-patterns-bg-2.jpg");
     background-size: 100%;
     background-repeat: no-repeat;
@@ -246,18 +244,18 @@
     font-weight: 200;
     font-size: 1.7em;
     padding-top: 1em; }
-  #portfolio-section .project-blurb, #portfolio-section .tech-used {
+  .portfolio__project-blurb, .portfolio__tech-list {
     margin: 0 auto;
     font-family: "Raleway", sans-serif;
     line-height: 2em;
     text-align: justify; }
-    #portfolio-section .project-blurb--secondary {
+    .portfolio__project-blurb--secondary {
       display: none; }
-      #portfolio-section .project-blurb--secondary.active {
+      .portfolio__project-blurb--secondary.active {
         display: block;
         line-height: 2em;
         margin: 0 0 18px 0; }
-    #portfolio-section .project-blurb button, #portfolio-section .tech-used button {
+    .portfolio__project-blurb button, .portfolio__tech-list button {
       cursor: pointer;
       border: none;
       background-color: transparent;
@@ -273,7 +271,7 @@
       margin-right: 5px;
       transition: 0.3s all;
       outline: none; }
-      #portfolio-section .project-blurb button:after, #portfolio-section .tech-used button:after {
+      .portfolio__project-blurb button:after, .portfolio__tech-list button:after {
         content: "";
         font-family: "Font Awesome 5 Free";
         content: "\f077";
@@ -284,51 +282,50 @@
         margin-left: 7px;
         transition: 0.5s all;
         transform: rotate(180deg); }
-      #portfolio-section .project-blurb button:hover, #portfolio-section .tech-used button:hover {
+      .portfolio__project-blurb button:hover, .portfolio__tech-list button:hover {
         color: teal;
         transition: 0.4s all; }
-    #portfolio-section .project-blurb button.active, #portfolio-section .tech-used button.active {
+    .portfolio__project-blurb button.active, .portfolio__tech-list button.active {
       color: #b1d3c8;
       outline: none;
       border: none; }
-      #portfolio-section .project-blurb button.active:after, #portfolio-section .tech-used button.active:after {
+      .portfolio__project-blurb button.active:after, .portfolio__tech-list button.active:after {
         transition: 0.5s all;
         transform: rotate(360deg); }
-  #portfolio-section .tech-used-head {
+  .portfolio__tech {
     text-align: justify; }
-  #portfolio-section .tech-used {
+  .portfolio__tech-list {
     list-style: none;
     text-align: justify;
     font-weight: bolder;
     margin-bottom: 10px; }
-    #portfolio-section .tech-used li {
+    .portfolio__tech-list li {
       display: inline; }
-  #portfolio-section .hr-separator {
+  .portfolio .hr-separator {
     margin: 0 auto;
     width: 70%; }
-    #portfolio-section .hr-separator hr {
+    .portfolio .hr-separator hr {
       border: 1px solid #000; }
-
-.project-link-container {
-  text-align: center;
-  margin-top: 1%;
-  margin-bottom: 2%; }
-  .project-link-container--last {
-    margin-bottom: 110px; }
-  .project-link-container .project-links {
+  .portfolio__links-wrapper {
+    text-align: center;
+    margin-top: 1%;
+    margin-bottom: 2%; }
+    .portfolio__links-wrapper--last {
+      margin-bottom: 110px; }
+  .portfolio__links {
     text-decoration: none;
     font-family: "Permanent Marker", cursive;
     color: #92C7B6;
     font-size: 1.2em; }
-  .project-link-container a:hover {
-    color: teal;
-    transition: all .4s ease;
-    -webkit-transition: all .4s ease; }
+    .portfolio__links:hover {
+      color: teal;
+      transition: all .4s ease;
+      -webkit-transition: all .4s ease; }
 
 @media (min-width: 960px) {
-  #portfolio-section .portfolio-section--inner {
+  .portfolio__content {
     width: 60%; }
-  #portfolio-section .screenshots {
+  .portfolio__screenshots {
     padding: 10px 10px;
     border: solid 2px #92C7B6; } }
 .contact {

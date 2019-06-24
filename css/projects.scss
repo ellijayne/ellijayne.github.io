@@ -1,34 +1,30 @@
 /////MY WORK///////
 
-.section-title {
-  text-align: justify;
-  font-size: 3rem;
-  font-weight: 200;
-  font-family: $para2-font;
-}
-
-#portfolio-section {
+.portfolio {
   margin-top: -3.1em;
   background-color: white;
   position: relative;
 
-    .portfolio-section--inner {
+    &__content {
       padding-top: 5%;
       width: 90%;
       margin: 0 auto;
     }
   
-    .work-section-title {
-        @extend .section-title;
-        text-align: center;
+    &__header {
+      text-align: justify;
+      font-size: 3rem;
+      font-weight: 200;
+      font-family: $para2-font;
+      text-align: center;
     }
   
-    .screenshots {
+    &__screenshots {
       width: 100%;
       margin-top: 5%;
     }
   
-    .project-head {
+    &__project-head {
       background: $font-image-secondary;
       background-size: 100%;
       background-repeat: no-repeat;
@@ -41,7 +37,7 @@
       padding-top: 1em;
     }
   
-    .project-blurb {
+    &__project-blurb {
       margin: 0 auto;
       font-family: $para-font;
       line-height: 2em;
@@ -106,14 +102,14 @@
         
     }
   
-    .tech-used-head {
-      @extend .project-head;
+    &__tech {
+      @extend .portfolio__project-head;
       text-align: justify;
     }
   
   
-    .tech-used {
-      @extend .project-blurb;
+    &__tech-list {
+      @extend .portfolio__project-blurb;
       list-style: none;
       text-align: justify;
       font-weight: bolder;
@@ -133,9 +129,9 @@
        
       }
     }
-  }
   
-  .project-link-container {
+  
+  &__links-wrapper {
     text-align: center;
     margin-top: 1%;
     margin-bottom: 2%;
@@ -143,30 +139,30 @@
     &--last {
       margin-bottom: 110px;
     }
-  
-    .project-links {
-      text-decoration: none;
-      font-family: $para2-font;
-      color: $teal;
-      font-size: 1.2em;
-    }
-  
-    a:hover {
+  }
+  &__links {
+    text-decoration: none;
+    font-family: $para2-font;
+    color: $teal;
+    font-size: 1.2em;
+
+    &:hover {
       color: teal;
       transition: all .4s ease;
       -webkit-transition: all .4s ease;
     }
   }
+}
 
 
-  @media (min-width: 960px) {
-    #portfolio-section {
-      .portfolio-section--inner {
-        width: 60%;
-      }
-      .screenshots {
-        padding: 10px 10px;
-        border: solid 2px $teal;
-      }
+@media (min-width: 960px) {
+  .portfolio {
+    &__content {
+      width: 60%;
+    }
+    &__screenshots {
+      padding: 10px 10px;
+      border: solid 2px $teal;
     }
   }
+}
