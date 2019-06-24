@@ -60,7 +60,7 @@
 }
 
 //iphone
-@media (max-width: 500px) {
+@media screen and (max-width: 500px) {
   .landing {
 
     &__name {
@@ -74,7 +74,7 @@
 }
 
 // tablet
-@media (min-width: 501px) {
+@media screen and (min-width: 501px) {
   .landing {
     &__content {
       padding-top: 85px;
@@ -85,11 +85,11 @@
   }
 }
 
-@media (min-width: 960px) {
+@media screen and (min-width: 960px) {
   .landing {
     &__name {
       font-size: 200px;
-      padding-top: 13%;
+      padding-top: 32px;
       background: $font-image;
       background-size: 100%;
       background-repeat: no-repeat;

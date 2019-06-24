@@ -1,16 +1,16 @@
 ///////////////CONTACT LINKS///////////////
-#contact-section {
+.contact {
     padding-top: 1em;
     background: #fff;
     margin-top: -2.2em;
 
-  .contact-section--inner {
-    width: 60%;
-    margin: 0 auto;
+  &__wrapper {
+   
+
     text-align: center
   }
   
-  .contact-head {
+  &__head {
     background: $font-image-secondary;
     background-size: 100%;
     background-repeat: no-repeat;
@@ -19,7 +19,7 @@
     display: block;
     font-family: $para2-font;
     font-weight: 200;
-    font-size: 3em;
+    font-size: 1.75em;
     padding-top: 1em;
     
   }
@@ -28,32 +28,52 @@
     padding-bottom: 2vh;
   }
 
-  .contact-links--inline {
+  &__icons {
+    display: inline-block;
+    margin: 0 auto;
+
+ 
     a {
       display: inline-block;
       padding-right: 1em;
+      text-decoration: none;
+      font-family: $para2-font;
+      color: $teal;
 
       &:last-child {
         padding-right: 0;
+      }
+
+      i {
+        font-size: 2.5em;
       }
     }
   }
   
   .contact-links {
-      text-decoration: none;
-      font-family: $para2-font;
-      color: $teal;
-      display: block;
-      font-size: 1.2em;
-      i {
-        font-size: 3em;
-      }
-    }
-  
-    a:hover {
-      color: teal;
-      transition: all .4s ease;
-      -webkit-transition: all .4s ease;
-    }
-  
+    text-decoration: none;
+    font-family: $para2-font;
+    color: $teal;
+    display: block;
+    font-size: 1.2em;
+
+    
   }
+  
+  a:hover {
+    color: teal;
+    transition: all .4s ease;
+    -webkit-transition: all .4s ease;
+  }
+}
+
+@media screen and (min-width: 700px) {
+  #contact-section .contact-head {
+    font-size: 3em;
+  }
+  .contact-links {
+    i {
+      font-size: 3em;
+    }
+  }
+}
