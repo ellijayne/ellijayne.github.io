@@ -78,9 +78,11 @@
       .landing__chevron a svg {
         width: 25px; }
 
-@media (max-width: 415px) {
+@media (max-width: 500px) {
   .landing__name {
-    padding-top: 160px; } }
+    padding-top: 175px; }
+  .landing__chevron {
+    display: none; } }
 @media (min-width: 960px) {
   .landing__name {
     font-size: 200px;
@@ -96,8 +98,10 @@
     animation: nameMoveIn 1.5s ease-in; }
   .landing__tag-line {
     font-size: 180px; }
-  .landing__chevron a svg {
-    width: 37px; } }
+  .landing__chevron {
+    display: block; }
+    .landing__chevron a svg {
+      width: 37px; } }
 @font-face {
   font-family: Claxton-Bold;
   src: url("fonts/Claxton-Typeface/Claxton-Bold.otf"); }

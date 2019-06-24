@@ -60,11 +60,15 @@
 }
 
 //iphone
-@media (max-width: 415px) {
+@media (max-width: 500px) {
   .landing {
 
     &__name {
-      padding-top: 160px;
+      padding-top: 175px;
+    }
+
+    &__chevron {
+      display: none;
     }
   }
 }
@@ -90,6 +94,7 @@
     }
 
     &__chevron {
+      display: block;
       a {
         svg {
           width: 37px;
