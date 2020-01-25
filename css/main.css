@@ -1,9 +1,9 @@
 @import url("https://fonts.googleapis.com/css?family=Roboto");
-@import url("https://fonts.googleapis.com/css?family=Raleway");
+@import url("https://fonts.googleapis.com/css?family=Raleway:400,600,700&display=swap");
 @import url("https://fonts.googleapis.com/css?family=Roboto+Condensed");
 @import url("https://fonts.googleapis.com/css?family=Permanent+Marker");
 @import url("https://fonts.googleapis.com/css?family=Roboto");
-@import url("https://fonts.googleapis.com/css?family=Raleway");
+@import url("https://fonts.googleapis.com/css?family=Raleway:400,600,700&display=swap");
 @import url("https://fonts.googleapis.com/css?family=Roboto+Condensed");
 @import url("https://fonts.googleapis.com/css?family=Permanent+Marker");
 @font-face {
@@ -183,6 +183,13 @@
   -webkit-clip-path: polygon(0 0, 100% 0, 100% 94%, 0 86%);
   padding-top: 10px;
   padding-bottom: 153px; }
+  .aboutme__links {
+    color: #92C7B6;
+    text-decoration: none;
+    font-weight: bold;
+    transition: 0.2s; }
+    .aboutme__links:hover {
+      color: teal; }
   .aboutme__content {
     width: 75%;
     margin: 0 auto; }

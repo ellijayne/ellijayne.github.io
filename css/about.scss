@@ -5,6 +5,17 @@
   -webkit-clip-path: polygon(0 0, 100% 0, 100% 94%, 0 86%);
   padding-top: 10px;
   padding-bottom: 153px;
+
+  &__links {
+    color: $teal;
+    text-decoration: none;
+    font-weight: bold;
+    transition: 0.2s;
+
+    &:hover {
+      color: teal;
+    }
+  }
   
   &__content {
     width: 75%;
