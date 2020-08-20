@@ -9,17 +9,13 @@
     position: relative;
     padding-bottom: 93px;
     background: #fff;
-    // -webkit-clip-path: polygon(0 0, 100% 0, 100% 50%, 0 93%);
-    // clip-path: polygon(0 0, 100% 0, 100% 50%, 0 93%);
-
   
   &__name {
     font-size: 125px;
-    background: $font-image-secondary;
+    background: $font-image;
     background-size: 100%;
     background-repeat: no-repeat;
     background-position-y: 80%;
-
     -webkit-text-fill-color: transparent;
       -webkit-background-clip: text;
       display: block;
@@ -31,7 +27,6 @@
     padding-top: 2%;
     font-size: 90px;
     background-position-y: 40%;
-    // @extend .name;
   }
 
   &__chevron {

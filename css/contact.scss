@@ -11,11 +11,7 @@
   }
   
   &__head {
-    background: $font-image-secondary;
-    background-size: 100%;
-    background-repeat: no-repeat;
-    -webkit-text-fill-color: transparent;
-    -webkit-background-clip: text;
+    color: $primary-font;
     display: block;
     font-family: $para2-font;
     font-weight: 200;
