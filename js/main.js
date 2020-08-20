@@ -3,24 +3,6 @@ $(document).ready(function() {
 
   console.log('are you there?');
 
-    // $('a[href^="#"]').bind('touchstart', function(e) {
-    //   console.log('touch event')
-      
-    //   let target = this.hash,
-    //     $target = $(target);
-    //     //if ($(window).width() > 500) {
-         
-    //       let newTop = $('body').scrollTop() + $target.position().top-120;
-    //       $('body').stop().animate({
-    //         'scrollTop': newTop
-    //       }, 1100, 'linear', function () {
-    //       });
-    //       return false;
-    // })
-
-
- 
-
   //smooth scroll function
   $('a[href^="#"]').on('click',function (e) {
     e.preventDefault();
@@ -28,15 +10,12 @@ $(document).ready(function() {
     let target = this.hash,
     $target = $(target);
     if ($(window).width() > 500) {
-      // console.log('window is OVER 450px');
       let newTop = $('html body').scrollTop() + $target.position().top-160;
       $('html, body').stop().animate({
         'scrollTop': newTop
       }, 1100, 'linear', function () {
       });
     } else {
-      // console.log('window is UNDER 450px');
-      console.log($target.position() );
       let newTop = $('#page-container').scrollTop() + $target.position().top-160;
       $('#page-container').stop().animate({
         'scrollTop': newTop
@@ -99,18 +78,6 @@ $(document).ready(function() {
        
     
   //       console.log(windowWidth);
-  // });
-  
-
-
-  //slick-slider
-
-  // $('.portfolio-section').slick({
-  //   dots: true,
-  //   infinite: true,
-  //   speed: 500,
-  //   fade: true,
-  //   cssEase: 'linear'
   // });
 
 }); //document.ready
