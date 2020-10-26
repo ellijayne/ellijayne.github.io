@@ -151,8 +151,8 @@
 }
 @media screen and (min-width: 1025px) {
   .landing {
-    clip-path: polygon(12% -2%, 98% 0%, 101% 91%, 0 100%);
-    -webkit-clip-path: polygon(12% -2%, 98% 0%, 101% 91%, 0 100%);
+    clip-path: polygon(12% -2%, 98% 0%, 101% 100%, 0 100%);
+    -webkit-clip-path: polygon(12% -2%, 98% 0%, 101% 100%, 0 100%);
   }
 }
 @font-face {
