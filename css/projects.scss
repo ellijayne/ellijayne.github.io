@@ -8,7 +8,6 @@
   position: relative;
 
     &__content {
-      padding-top: 5%;
       width: 90%;
       margin: 0 auto;
       display: flex;
@@ -24,6 +23,7 @@
       margin-bottom: 20px;
       display: flex;
       flex-flow: column nowrap;
+      margin-top: 5%;
     }
   
     &__header {
@@ -33,6 +33,7 @@
       font-weight: 200;
       font-family: $para2-font;
       text-align: center;
+      padding-top: 45px;
     }
 
     &__photo-container {

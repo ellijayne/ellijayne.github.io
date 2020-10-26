@@ -58,12 +58,14 @@
 
     &__content {
       width: 60%;
+      position: relative;
+      margin-top: 100px;
     }
 
     &__greeting {
-      max-width: 17vw;
-      margin-top: 35px;
-      margin-left: 4em;
+      max-width: 12vw;
+      position: absolute;
+      left: 12%;
     }
 
     &__img {

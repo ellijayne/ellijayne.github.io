@@ -3,12 +3,13 @@
 ///////LANDING//////////
   
 .landing {
-    // background: red;
     text-align: center;
     font-family: $light-font;
     position: relative;
     padding-bottom: 93px;
     background: #fff;
+    clip-path: polygon(12% -2%, 98% 0%, 101% 91%, 0 100%);
+    -webkit-clip-path: polygon(12% -2%, 98% 0%, 101% 91%, 0 100%);
   
   &__name {
     font-size: 125px;
@@ -32,8 +33,8 @@
   &__chevron {
     position: absolute;
     left: 50%;
-    bottom: 55px;
-    z-index:20;
+    bottom: 20%;
+    z-index: 20;
     text-align: center;
     animation: chevBounce 1s ease-in infinite;
     
@@ -73,6 +74,10 @@
   .landing {
     &__content {
       padding-top: 85px;
+      min-height: 80vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
     }
     &__name {
       padding-top: 22px;
