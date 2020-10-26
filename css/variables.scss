@@ -49,6 +49,12 @@ $yellow: #FFE55E;
 $yellow-t: rgba(255, 229, 94, 0.8);
 $font-image: url('../images/u-inky-patterns-bg-2.jpg');
 
+////// BREAKPOINTS //////
+$breakpoint-landscape: 666px;
+$breakpoint-tablet: 767px;
+$breakpoint-desktop: 1025px;
+$breakpoint-super: 1550px;
+
 
 ///////ANIMATIONS////////
 @keyframes nameMoveIn {

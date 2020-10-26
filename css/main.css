@@ -7,6 +7,10 @@
 @import url("https://fonts.googleapis.com/css?family=Raleway:400,600,700&display=swap");
 @import url("https://fonts.googleapis.com/css?family=Roboto+Condensed");
 @import url("https://fonts.googleapis.com/css?family=Permanent+Marker");
+@import url("https://fonts.googleapis.com/css?family=Roboto");
+@import url("https://fonts.googleapis.com/css?family=Raleway:400,600,700&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Roboto+Condensed");
+@import url("https://fonts.googleapis.com/css?family=Permanent+Marker");
 @font-face {
   font-family: Claxton-Bold;
   src: url("fonts/Claxton-Typeface/Claxton-Bold.otf");
@@ -292,6 +296,56 @@
     width: 30%;
   }
 }
+@font-face {
+  font-family: Claxton-Bold;
+  src: url("fonts/Claxton-Typeface/Claxton-Bold.otf");
+}
+@font-face {
+  font-family: Claxton-Light;
+  src: url("fonts/Claxton-Typeface/Claxton-Light.otf");
+}
+@font-face {
+  font-family: Moonshot;
+  src: url("fonts/Moonshot/Moonshot-Oblique.otf");
+}
+@font-face {
+  font-family: soak-bold;
+  src: url("fonts/soak-up-the-sun/suts-bold.otf");
+}
+@font-face {
+  font-family: soak-light;
+  src: url("fonts/soak-up-the-sun/suts.otf");
+}
+@keyframes nameMoveIn {
+  0% {
+    opacity: 0;
+    transform: translateY(100px);
+  }
+  80% {
+    transform: translateY(-10px);
+  }
+  100% {
+    opacity: 1;
+    transform: translate(0);
+  }
+}
+@keyframes chevBounce {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  15%, 95% {
+    transform: translateY(2px);
+  }
+  30%, 80% {
+    transform: translateY(4px);
+  }
+  40%, 60% {
+    transform: translateY(6px);
+  }
+  50% {
+    transform: translateY(8px);
+  }
+}
 .portfolio {
   margin-top: -3.1em;
   background-color: white;
@@ -301,19 +355,38 @@
   padding-top: 5%;
   width: 90%;
   margin: 0 auto;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  padding-bottom: 100px;
+}
+.portfolio__item {
+  width: 100%;
+  margin-bottom: 20px;
+  display: flex;
+  flex-flow: column nowrap;
 }
 .portfolio__header {
   text-align: justify;
+  display: block;
   font-size: 3rem;
   font-weight: 200;
   font-family: "Permanent Marker", cursive;
   text-align: center;
 }
+.portfolio__photo-container {
+  width: 100%;
+  height: 220px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: top;
+  box-shadow: 10px 10px #92C7B6;
+}
 .portfolio__screenshots {
   width: 100%;
   margin-top: 5%;
 }
-.portfolio__project-head, .portfolio__tech {
+.portfolio__project-head, .portfolio__tech-heading {
   color: #333333;
   display: block;
   font-family: "Permanent Marker", cursive;
@@ -377,14 +450,15 @@
   transition: 0.5s all;
   transform: rotate(360deg);
 }
-.portfolio__tech {
+.portfolio__tech-heading {
   text-align: justify;
 }
 .portfolio__tech-list {
   list-style: none;
   text-align: justify;
   font-weight: bolder;
-  margin-bottom: 10px;
+  margin: 0px;
+  margin-bottom: 1em;
 }
 .portfolio__tech-list li {
   display: inline;
@@ -398,8 +472,7 @@
 }
 .portfolio__links-wrapper {
   text-align: center;
-  margin-top: 1%;
-  margin-bottom: 2%;
+  margin-top: auto;
 }
 .portfolio__links-wrapper--last {
   margin-bottom: 110px;
@@ -416,13 +489,28 @@
   -webkit-transition: all 0.4s ease;
 }
 
-@media (min-width: 960px) {
+@media (min-width: 665px) {
+  .portfolio__photo-container {
+    height: 335px;
+  }
+}
+@media (min-width: 767px) {
   .portfolio__content {
     width: 60%;
   }
-  .portfolio__screenshots {
+}
+@media (min-width: 1025px) {
+  .portfolio__content {
+    width: 60%;
+  }
+  .portfolio__photo-container {
+    height: 220px;
     padding: 10px 10px;
     border: solid 2px #92C7B6;
+  }
+  .portfolio__item {
+    width: 40%;
+    min-height: 500px;
   }
 }
 .contact {

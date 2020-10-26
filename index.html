@@ -78,12 +78,12 @@
 			</section>
 
 			<section id="portfolio-section" class="portfolio">
-					<div class="portfolio__content">
-					<h2 class="portfolio__header">My Work</h2>
-
+				<h2 class="portfolio__header">My Work</h2>
+				<div class="portfolio__content">
+					
 					<div class="portfolio__item js-portfolio-item">
-						<div class="portfolio__photo-container">
-							<a target="_blank" rel="noopener" href="https://kana-manabu.herokuapp.com/"><img class="portfolio__screenshots" src="images/kanamanabu.png" alt="kana-o-manabu-screenshot" /></a>
+						<div class="portfolio__photo-container" style="background-image: url(images/kanamanabu.png);">
+							<a target="_blank" rel="noopener" href="https://kana-manabu.herokuapp.com/" ></a>
 						</div>
 
 						<h3 class="portfolio__project-head">Kana-o-Manabu! (Learn the Hiragana Alphabet)</h3>
@@ -106,17 +106,16 @@
 							</div>
 						</div>
 
-						<h4 class="portfolio__tech">Tech Stack</h4>
-
+						<div class="portfolio__tech">
+							<h4 class="portfolio__tech-heading">Tech Stack</h4>
 							<ul class="portfolio__tech-list">
-								<li>HTML || </li>
 								<li>SassCSS || </li>
 								<li>jQuery || </li>
-								<li>WanaKana.js || </li>
+								<li>API: WanaKana.js || </li>
 								<li>Ruby on Rails || </li>
-								<li>PostgreSQL || </li>
-								<li>Cloud Deployment to Heroku</li>
+								<li>PostgreSQL</li>
 							</ul>
+						</div>
 
 							<div class="portfolio__links-wrapper">
 								<a class="portfolio__links" target="_blank" rel="noopener" href="https://github.com/ellijayne/japanese_kana_app">GitHub</a> |
@@ -129,9 +128,9 @@
 					</div>
 
 					<div class="portfolio__item js-portfolio-item">
-						<div class="portfolio__photo-container">
+						<div class="portfolio__photo-container" style="background-image: url(images/audiomain.png);">
 							
-							<a target="_blank" rel="noopener" href="https://audiophiles.herokuapp.com/"><img class="portfolio__screenshots" src="images/audiomain.png" alt="audiophiles-screenshot" /></a>
+							<a target="_blank" rel="noopener" href="https://audiophiles.herokuapp.com/"></a>
 						
 						</div>
 
@@ -148,18 +147,18 @@
 					
 						</div>
 
-						<h4 class="portfolio__tech">Tech Stack</h4>
+						<div class="portfolio__tech">
+							<h4 class="portfolio__tech-heading">Tech Stack</h4>
 							<ul class="portfolio__tech-list">
-								<li>HTML || </li>
 								<li>CSS || </li>
-								<li>Bootstrap || </li>
+								<li>jQuery || </li>
 								<li>Ruby on Rails || </li>
-								<li>PostgreSQL || </li>
-								<li>Vivus.js</li>
+								<li>PostgreSQL</li>
 							</ul>
+						</div>
 
 							<div class="portfolio__links-wrapper">
-								<a class="portfolio__links" target="_blank" rel="noopener" href="https://github.com/ellijayne/vinyls">Git</a> |
+								<a class="portfolio__links" target="_blank" rel="noopener" href="https://github.com/ellijayne/vinyls">GitHub</a> |
 								<a class="portfolio__links" target="_blank" rel="noopener" href="https://audiophiles.herokuapp.com/">Live Site</a>
 							</div> 
 							<div class="hr-separator">
@@ -170,33 +169,33 @@
 
 					<div class="portfolio__item js-portfolio-item">
 
-						<div class="portfolio__photo-container">
+						<div class="portfolio__photo-container" style="background-image: url(images/todomain.png);">
 						
-							<a class="project-links" target="_blank" rel="noopener" href="https://todo-meetyou.herokuapp.com/"><img class="portfolio__screenshots" src="images/todomain.png" alt="dating app screenshot"/></a>
+							<a class="project-links" target="_blank" rel="noopener" href="https://todo-meetyou.herokuapp.com/"></a>
 						
 						</div>
 
-						<h3 class="portfolio__project-head">//TODO: Meet You - Dating App for Web Developers.</h3>
+						<h3 class="portfolio__project-head">Dating App for Web Developers.</h3>
 				
 						<div class="portfolio__project-blurb">
 							<p class="portfolio__project-blurb--main">
-								On //TODO: Meet You is a dating app for web developers that we built in 5 days as part of a group project at general Assembly. Developers can create an account and profile after they pass a basic code test. Once developers have an account they are able to browse other members, 'like' them and chat with them. &hearts;
+								On //TODO: Meet You is a dating app for web developers that we built in 5 days as part of a group project at GA. Developers can create an account and profile after they pass a basic code test. <button class="accordion__title-button">Read more</button>
+							</p>
+							<p class="portfolio__project-blurb--secondary">
+								Once developers have an account they are able to browse other members, 'like' them and chat with them. &hearts;
 							</p>
 						</div>
 
-						<h4 class="portfolio__tech">Tech Stack</h4>
+						<div class="portfolio__tech">
+							<h4 class="portfolio__tech-heading">Tech Stack</h4>
 							<ul class="portfolio__tech-list">
-								<li>HTML & SassCSS || </li>
+								<li>SassCSS || </li>
 								<li>Ruby on Rails || </li>
-								<li>jQuery || </li>
-								<li>Vanilla JavaScript || </li>
-								<li>AJAX || </li>
+								<li>JavaScript || </li>
 								<li>PostgreSQL || </li>
-								<li>Heroku || </li>
-								<li>Slick (for image carousel) || </li>
-								<li>Cloundinary & Attachinary (for multiple image upload) || </li>
-								<li>APIs & Gems: Google Maps API/Geocoder Gem, Open Trivia API & Zodiac Gem</li>
+								<li>APIs & Gems: Google Maps API/Geocoder Gem, Open Trivia API & Zodiac Gem, Cloudinary</li>
 							</ul>
+						</div>
 
 							<div class="portfolio__links-wrapper">
 								<a class="portfolio__links" target="_blank" rel="noopener" href="https://github.com/shelleyyz/dating-web">GitHub</a> |
@@ -209,14 +208,8 @@
 					</div>
 					
 					<div class="portfolio__item js-portfolio-item">
-						<div class="portfolio__photo-container">
-							<a target="_blank" rel="noopener" href="https://ellijayne.github.io/project0/">
-								
-								<video controls autoplay class="portfolio__screenshots" >
-									<source src="images/tttgameplay.mov" type="video/mp4">
-								</video>
-				
-							</a>
+						<div class="portfolio__photo-container" style="background-image: url(images/tictactoe.png);">
+							<a class="project-links" target="_blank" rel="noopener" href="https://ellijayne.github.io/project0/"></a>
 						</div>
 
 						<h3 class="portfolio__project-head">Tic-Tac-Toe</h3>
@@ -231,15 +224,16 @@
 							</p>
 						</div>
 
-						<h4 class="portfolio__tech">Tech Stack</h4>
+						<div class="portfolio__tech">
+							<h4 class="portfolio__tech-heading">Tech Stack</h4>
 							<ul class="portfolio__tech-list">
 								<li>HTML || </li>
 								<li>CSS || </li>
-								<li>jQuery || </li>
 								<li>JavaScript</li>
 							</ul>
+						</div>
 
-							<div class="portfolio__links-wrapper portfolio__links-wrapper--last">
+							<div class="portfolio__links-wrapper">
 								<a class="portfolio__links" target="_blank" rel="noopener" href="https://github.com/ellijayne/project0">GitHub</a> |
 								<a class="portfolio__links" target="_blank" rel="noopener" href="https://ellijayne.github.io/project0/">Live Demo</a>
 							</div>
