@@ -8,8 +8,6 @@
     position: relative;
     padding-bottom: 93px;
     background: #fff;
-    clip-path: polygon(12% -2%, 98% 0%, 101% 91%, 0 100%);
-    -webkit-clip-path: polygon(12% -2%, 98% 0%, 101% 91%, 0 100%);
   
   &__name {
     font-size: 125px;
@@ -113,5 +111,12 @@
         }
       }
     }
+  }
+}
+
+@media screen and (min-width: $breakpoint-desktop) {
+  .landing {
+    clip-path: polygon(12% -2%, 98% 0%, 101% 91%, 0 100%);
+    -webkit-clip-path: polygon(12% -2%, 98% 0%, 101% 91%, 0 100%);
   }
 }
