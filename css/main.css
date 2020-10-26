@@ -271,13 +271,13 @@
 .aboutme__greeting {
   max-width: 21vw;
   transform: rotate(-20deg);
-  margin-top: 12px;
+  margin-top: 22px;
   margin-bottom: 18px;
 }
 .aboutme__img {
   position: relative;
   border-radius: 100%;
-  width: 50%;
+  width: 30vw;
   margin: auto;
   margin-bottom: 10px;
   margin-top: -50px;
@@ -300,12 +300,12 @@
     margin-top: 100px;
   }
   .aboutme__greeting {
-    max-width: 12vw;
+    max-width: 10vw;
     position: absolute;
-    left: 12%;
+    left: 18%;
   }
   .aboutme__img {
-    width: 30%;
+    width: 15vw;
   }
 }
 @font-face {
