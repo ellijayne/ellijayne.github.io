@@ -10,16 +10,16 @@ $(document).ready(function() {
     let target = this.hash,
     $target = $(target);
     if ($(window).width() > 500) {
-      let newTop = $('html body').scrollTop() + $target.position().top-160;
-      $('html, body').stop().animate({
+      let newTop = $('html body').scrollTop() + $target.position().top-100;
+      $('html, body').animate({
         'scrollTop': newTop
-      }, 1100, 'linear', function () {
+      }, 400, 'linear', function () {
       });
     } else {
-      let newTop = $('#page-container').scrollTop() + $target.position().top-160;
-      $('#page-container').stop().animate({
+      let newTop = $('#page-container').scrollTop() + $target.position().top-100;
+      $('#page-container').animate({
         'scrollTop': newTop
-      }, 1100, 'linear', function () {
+      }, 400, 'linear', function () {
       });
     }
   });
