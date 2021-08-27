@@ -594,7 +594,10 @@
 * {
   margin: 0;
   padding: 0;
+<<<<<<< HEAD
   scroll-behavior: smooth;
+=======
+>>>>>>> 6b377ee729be65e268b2ead4e52218d279d8d8a7
 }
 
 body {
