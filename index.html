@@ -1,18 +1,66 @@
 <!DOCTYPE html>
 <html>
-	<head>
-		<title>EJ Willard | Developer</title>
-		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-		<link rel="stylesheet" href="css/main.css">
-		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
+
+<head>
+	<title>EJ Willard | Developer</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<link rel="stylesheet" href="css/main.css">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css"
+		integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
 	<link rel="shortcut icon" href="images/donut.ico" type="image/x-icon">
 
-	</head>
+</head>
 
 
-	<body>
+<body>
 
-		<nav class="nav active">
+	<!-- <nav class="nav" role="navigation">
+		<div id="menuToggle">
+			<input type="checkbox" />
+			<span></span>
+			<span></span>
+			<span></span>
+			<ul id="menu" class="nav__links">
+				<a id="aboutme-btn" href="#aboutme-section">
+					<li>About Me</li>
+				</a>
+				<a id="portfolio-btn" href="#portfolio-section">
+					<li>Portfolio</li>
+				</a>
+				<a id="contact-btn" href="#contact-section">
+					<li>Contact</li>
+				</a>
+				<a id="resume-btn" href="images/ej-willard-resume-updated.pdf" target="_blank">
+					<li>Resume</li>
+				</a>
+			</ul>
+		</div>
+	</nav> -->
+
+	<nav class="hamburger open">
+		<div class="hamburger__wrapper">
+			<span></span>
+			<span></span>
+			<span></span>
+		</div>
+
+		<ul class="hamburger__menu">
+			<li class="hamburger__item">
+				<a class="hamburger__link" id="aboutme-btn" href="#aboutme-section">About Me</a>
+			</li>
+			<li class="hamburger__item">
+				<a class="hamburger__link" id="portfolio-btn" href="#portfolio-section">Portfolio</a>
+			</li>
+			<li class="hamburger__item">
+				<a class="hamburger__link" id="contact-btn" href="#contact-section">Contact</a>
+			</li>
+			<li class="hamburger__item">
+				<a class="hamburger__link" id="resume-btn" href="images/ej-willard-resume-updated.pdf" target="_blank">Resume</a>
+			</li>
+		</ul>
+	</nav>
+
+	<!-- <nav class="nav active">
 			<div class="nav__icon"><svg aria-hidden="true" data-prefix="fas" data-icon="bars" class="svg-inline--fa fa-bars fa-w-14" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path fill="currentColor" d="M16 132h416c8.837 0 16-7.163 16-16V76c0-8.837-7.163-16-16-16H16C7.163 60 0 67.163 0 76v40c0 8.837 7.163 16 16 16zm0 160h416c8.837 0 16-7.163 16-16v-40c0-8.837-7.163-16-16-16H16c-8.837 0-16 7.163-16 16v40c0 8.837 7.163 16 16 16zm0 160h416c8.837 0 16-7.163 16-16v-40c0-8.837-7.163-16-16-16H16c-8.837 0-16 7.163-16 16v40c0 8.837 7.163 16 16 16z"></path></svg></div>
 			<ul class="nav__links">
 
@@ -33,145 +81,163 @@
 				</li>
 			</ul>
 
-		</nav>
+		</nav> -->
 
-		<main>
-	
-			<section class="landing">
-				<div class="landing__content">
-					<h1 class="landing__name">EJ Willard</h1>
-					<p class="landing__tag-line">Frontend Engineer</p>
+	<main>
+
+		<section class="landing">
+			<div class="landing__content">
+				<h1 class="landing__name">EJ Willard</h1>
+				<p class="landing__tag-line">Frontend Engineer</p>
+			</div>
+
+			<div class="chevron landing__chevron">
+				<a href="#aboutme-section"><svg aria-hidden="true" width="3vw" data-prefix="fas" data-icon="chevron-down"
+						class="svg-inline--fa fa-chevron-down fa-w-14" role="img" xmlns="http://www.w3.org/2000/svg"
+						viewBox="0 0 448 512">
+						<path fill="currentColor"
+							d="M207.029 381.476L12.686 187.132c-9.373-9.373-9.373-24.569 0-33.941l22.667-22.667c9.357-9.357 24.522-9.375 33.901-.04L224 284.505l154.745-154.021c9.379-9.335 24.544-9.317 33.901.04l22.667 22.667c9.373 9.373 9.373 24.569 0 33.941L240.971 381.476c-9.373 9.372-24.569 9.372-33.942 0z">
+						</path>
+					</svg></a>
+			</div>
+
+			<div class="clipped clipped--right">
+			</div>
+		</section>
+
+
+		<section id="aboutme-section" class="aboutme">
+			<div class="aboutme__content">
+				<div class="aboutme__head-shot">
+					<img class="aboutme__greeting" src="images/u-hello-2.png" />
+					<img class="aboutme__img" src="images/ejcolorsquare.png" alt="EJ Willard | Frontend Engineer" />
 				</div>
 
-				<div class="chevron landing__chevron">
-					<a href="#aboutme-section"><svg aria-hidden="true" width="3vw" data-prefix="fas" data-icon="chevron-down" class="svg-inline--fa fa-chevron-down fa-w-14" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path fill="currentColor" d="M207.029 381.476L12.686 187.132c-9.373-9.373-9.373-24.569 0-33.941l22.667-22.667c9.357-9.357 24.522-9.375 33.901-.04L224 284.505l154.745-154.021c9.379-9.335 24.544-9.317 33.901.04l22.667 22.667c9.373 9.373 9.373 24.569 0 33.941L240.971 381.476c-9.373 9.372-24.569 9.372-33.942 0z"></path></svg></a>
+				<div class="aboutme__blurb">
+
+					<p>Hey! I'm EJ, and I'm a creative frontend engineer who uses the pronouns she/her/hers. I am currently based
+						in Sydney (on Gadigal & Wangal land), and am working as a Frontend Engineer at <a class="aboutme__links"
+							href="https://jaxsta.com">Jaxsta</a>.</p><br />
+
+					<p>I first became interested in web development after attending a one-day workshop on HTML & CSS basics at
+						General Assembly in 2016. From the minute I saw the magic that a little HTML and CSS could create in a
+						browser, I was hooked!</p><br />
+
+					<p>In June 2018, I mustered the courage to quit my legal career, and enrolled in General Assembly's immersive
+						course in Software Engineering. Coding continues to thrill me as much as it did when I first started, and I
+						learn new things every day.</p><br />
+
+					<p>When I'm not coding, you'll find me listening to records, learning Japanese (日本語を勉強しています！　日本が好きです。),
+						reading true crime, listening to true crime podcasts, or watching true crime documentaries (that's a lot of
+						true crime, I know...but I swear it's a healthy interest and I'm a very normal person).</p>
+
+				</div>
+			</div>
+		</section>
+
+		<section id="portfolio-section" class="portfolio">
+			<h2 class="portfolio__header">My Work</h2>
+			<div class="portfolio__content">
+
+				<div class="portfolio__item js-portfolio-item">
+					<div class="portfolio__photo-container" style="background-image: url(images/jaxsta.png);">
+						<a target="_blank" rel="noopener" href="https://jaxsta.com"></a>
+					</div>
+
+					<h3 class="portfolio__project-head">Jaxsta</h3>
+					<div class="portfolio__project-blurb">
+						<p class="portfolio__project-blurb--main">
+							Jaxsta is a massive database of officially sourced music credits and latest music news that aims to give
+							credit where credit is due.
+							I have been working on the Frontend and in the Database to deliver new features and improve our data.
+						</p>
+					</div>
+
+					<div class="portfolio__tech">
+						<h4 class="portfolio__tech-heading">Tech Stack</h4>
+						<ul class="portfolio__tech-list">
+							<li>Ember.js || </li>
+							<li>Third party APIs || </li>
+							<li>PostgreSQL || </li>
+							<li>PostCSS || </li>
+							<li>AWS || </li>
+							<li>Drupal</li>
+						</ul>
+					</div>
+
+					<div class="portfolio__links-wrapper">
+						<a class="portfolio__links" target="_blank" rel="noopener" href="https://jaxsta.com">Live Site</a>
+					</div>
+					<div class="hr-separator">
+						<hr align="center">
+					</div>
 				</div>
 
-				<div class="clipped clipped--right">
+				<div class="portfolio__item js-portfolio-item">
+					<div class="portfolio__photo-container" style="background-image: url(images/greenslips.png);">
+						<a target="_blank" rel="noopener" href="https://www.greenslips.nsw.gov.au/price-check"></a>
+					</div>
+
+					<h3 class="portfolio__project-head">Green Slip Checker (SIRA)</h3>
+					<div class="portfolio__project-blurb">
+						<p class="portfolio__project-blurb--main">
+							This is a price comparison tool comissioned by the State Insurance Regulatory Authority.
+							I worked on integrating three new 3rd party API endpoints into this exisitng project.
+						</p>
+					</div>
+
+					<div class="portfolio__tech">
+						<h4 class="portfolio__tech-heading">Tech Stack</h4>
+						<ul class="portfolio__tech-list">
+							<li>JavaScript || </li>
+							<li>Third party APIs || </li>
+							<li>SCSS || </li>
+							<li>Squiz Matrix (CMS)</li>
+						</ul>
+					</div>
+
+					<div class="portfolio__links-wrapper">
+						<a class="portfolio__links" target="_blank" rel="noopener"
+							href="https://www.greenslips.nsw.gov.au/price-check">Live Site</a>
+					</div>
+					<div class="hr-separator">
+						<hr align="center">
+					</div>
 				</div>
-			</section>
 
-
-			<section id="aboutme-section" class="aboutme">
-				<div class="aboutme__content">
-					<div class="aboutme__head-shot">
-						<img class="aboutme__greeting" src="images/u-hello-2.png" />
-						<img class="aboutme__img" src="images/ejcolorsquare.png" alt="EJ Willard | Frontend Engineer"/>
+				<div class="portfolio__item js-portfolio-item">
+					<div class="portfolio__photo-container" style="background-image: url(images/wollongong.png);">
+						<a target="_blank" rel="noopener" href="https://wollongong.nsw.gov.au/"></a>
 					</div>
-			
-					<div class="aboutme__blurb">
-					
-						<p>Hey! I'm EJ, and I'm a creative frontend engineer who uses the pronouns she/her/hers. I am currently based in Sydney (on Gadigal & Wangal land), and am working as a Frontend Engineer at <a class="aboutme__links" href="https://jaxsta.com">Jaxsta</a>.</p><br />
 
-						<p>I first became interested in web development after attending a one-day workshop on HTML & CSS basics at General Assembly in 2016. From the minute I saw the magic that a little HTML and CSS could create in a browser, I was hooked!</p><br />
+					<h3 class="portfolio__project-head">Wollongong City Council</h3>
+					<div class="portfolio__project-blurb">
+						<p class="portfolio__project-blurb--main">
+							This was a website overall of the Wollongong City Council's existing site. This was the very first
+							commercial site I ever worked on and it was
+							incredibly exciting to take the design team's ideas and bring them to life.
+						</p>
+					</div>
 
-						<p>In June 2018, I mustered the courage to quit my legal career, and enrolled in General Assembly's immersive course in Software Engineering. Coding continues to thrill me as much as it did when I first started, and I learn new things every day.</p><br />
+					<div class="portfolio__tech">
+						<h4 class="portfolio__tech-heading">Tech Stack</h4>
+						<ul class="portfolio__tech-list">
+							<li>JavaScript || </li>
+							<li>SCSS || </li>
+							<li>Squiz Matrix (CMS)</li>
+						</ul>
+					</div>
 
-						<p>When I'm not coding, you'll find me listening to records, learning Japanese (日本語を勉強しています！　日本が好きです。), reading true crime, listening to true crime podcasts, or watching true crime documentaries (that's a lot of true crime, I know...but I swear it's a healthy interest and I'm a very normal person).</p>
-						
+					<div class="portfolio__links-wrapper">
+						<a class="portfolio__links" target="_blank" rel="noopener" href="https://wollongong.nsw.gov.au/">Live
+							Site</a>
+					</div>
+					<div class="hr-separator">
+						<hr align="center">
 					</div>
 				</div>
-			</section>
 
-			<section id="portfolio-section" class="portfolio">
-				<h2 class="portfolio__header">My Work</h2>
-				<div class="portfolio__content">
-
-					<div class="portfolio__item js-portfolio-item">
-						<div class="portfolio__photo-container" style="background-image: url(images/jaxsta.png);">
-							<a target="_blank" rel="noopener" href="https://jaxsta.com"></a>
-						</div>
-
-						<h3 class="portfolio__project-head">Jaxsta</h3>
-						<div class="portfolio__project-blurb">
-							<p class="portfolio__project-blurb--main">
-								Jaxsta is a massive database of officially sourced music credits and latest music news that aims to give credit where credit is due. 
-								I have been working on the Frontend and in the Database to deliver new features and improve our data.
-							</p>
-						</div>
-
-						<div class="portfolio__tech">
-							<h4 class="portfolio__tech-heading">Tech Stack</h4>
-							<ul class="portfolio__tech-list">
-								<li>Ember.js || </li>
-								<li>Third party APIs || </li>
-								<li>PostgreSQL || </li>
-								<li>PostCSS || </li>
-								<li>AWS || </li>
-								<li>Drupal</li>
-							</ul>
-						</div>
-
-							<div class="portfolio__links-wrapper">
-								<a class="portfolio__links" target="_blank" rel="noopener" href="https://jaxsta.com">Live Site</a>
-							</div>
-							<div class="hr-separator">
-								<hr align="center">
-							</div>
-					</div>
-
-					<div class="portfolio__item js-portfolio-item">
-						<div class="portfolio__photo-container" style="background-image: url(images/greenslips.png);">
-							<a target="_blank" rel="noopener" href="https://www.greenslips.nsw.gov.au/price-check" ></a>
-						</div>
-
-						<h3 class="portfolio__project-head">Green Slip Checker (SIRA)</h3>
-						<div class="portfolio__project-blurb">
-							<p class="portfolio__project-blurb--main">
-								This is a price comparison tool comissioned by the State Insurance Regulatory Authority. 
-								I worked on integrating three new 3rd party API endpoints into this exisitng project.
-							</p>
-						</div>
-
-						<div class="portfolio__tech">
-							<h4 class="portfolio__tech-heading">Tech Stack</h4>
-							<ul class="portfolio__tech-list">
-								<li>JavaScript || </li>
-								<li>Third party APIs || </li>
-								<li>SCSS || </li>
-								<li>Squiz Matrix (CMS)</li>
-							</ul>
-						</div>
-
-							<div class="portfolio__links-wrapper">
-								<a class="portfolio__links" target="_blank" rel="noopener" href="https://www.greenslips.nsw.gov.au/price-check">Live Site</a>
-							</div>
-							<div class="hr-separator">
-								<hr align="center">
-							</div>
-					</div>
-
-					<div class="portfolio__item js-portfolio-item">
-						<div class="portfolio__photo-container" style="background-image: url(images/wollongong.png);">
-							<a target="_blank" rel="noopener" href="https://wollongong.nsw.gov.au/"></a>
-						</div>
-
-						<h3 class="portfolio__project-head">Wollongong City Council</h3>
-						<div class="portfolio__project-blurb">
-							<p class="portfolio__project-blurb--main">
-								This was a website overall of the Wollongong City Council's existing site. This was the very first commercial site I ever worked on and it was 
-								incredibly exciting to take the design team's ideas and bring them to life.
-							</p>
-						</div>
-
-						<div class="portfolio__tech">
-							<h4 class="portfolio__tech-heading">Tech Stack</h4>
-							<ul class="portfolio__tech-list">
-								<li>JavaScript || </li>
-								<li>SCSS || </li>
-								<li>Squiz Matrix (CMS)</li>
-							</ul>
-						</div>
-
-							<div class="portfolio__links-wrapper">
-								<a class="portfolio__links" target="_blank" rel="noopener" href="https://wollongong.nsw.gov.au/">Live Site</a>
-							</div>
-							<div class="hr-separator">
-								<hr align="center">
-							</div>
-					</div>
-					
-					<!-- <div class="portfolio__item js-portfolio-item">
+				<!-- <div class="portfolio__item js-portfolio-item">
 						<div class="portfolio__photo-container" style="background-image: url(images/kanamanabu.png);">
 							<a target="_blank" rel="noopener" href="https://kana-manabu.herokuapp.com/" ></a>
 						</div>
@@ -218,88 +284,96 @@
 
 					</div> -->
 
-					<div class="portfolio__item js-portfolio-item">
-						<div class="portfolio__photo-container" style="background-image: url(images/audiomain.png);">
-							
-							<a target="_blank" rel="noopener" href="https://audiophiles.herokuapp.com/"></a>
-						
-						</div>
+				<div class="portfolio__item js-portfolio-item">
+					<div class="portfolio__photo-container" style="background-image: url(images/audiomain.png);">
 
-						<h3 class="portfolio__project-head">Audiophiles Vinyl Database</h3>
-
-						<div class="portfolio__project-blurb">
-							<p class="portfolio__project-blurb--main">
-								Audiophiles is the place YOUR music lives! Designed so you can keep track of your favourite records and musicians. Create an account and add vinyls to your collection! 
-							</p>
-
-							<p class="portfolio__project-blurb--secondary">
-								Audiophiles was built in 5 days and is the second project I completed during my bootcamp at General Assembly. I have a pretty extensive collection and wanted to develop an app to keep track of them all.
-							</p> 
-							<button class="accordion__title-button">Read more</button>
-						</div>
-
-						<div class="portfolio__tech">
-							<h4 class="portfolio__tech-heading">Tech Stack</h4>
-							<ul class="portfolio__tech-list">
-								<li>CSS || </li>
-								<li>jQuery || </li>
-								<li>Ruby on Rails || </li>
-								<li>PostgreSQL</li>
-							</ul>
-						</div>
-
-							<div class="portfolio__links-wrapper">
-								<a class="portfolio__links" target="_blank" rel="noopener" href="https://github.com/ellijayne/vinyls">GitHub</a> |
-								<a class="portfolio__links" target="_blank" rel="noopener" href="https://audiophiles.herokuapp.com/">Live Site</a>
-							</div> 
-							<div class="hr-separator">
-								<hr align="center">
-							</div>
+						<a target="_blank" rel="noopener" href="https://audiophiles.herokuapp.com/"></a>
 
 					</div>
 
-					<div class="portfolio__item js-portfolio-item">
+					<h3 class="portfolio__project-head">Audiophiles Vinyl Database</h3>
 
-						<div class="portfolio__photo-container" style="background-image: url(images/todomain.png);">
-						
-							<a class="project-links" target="_blank" rel="noopener" href="https://todo-meetyou.herokuapp.com/"></a>
-						
-						</div>
+					<div class="portfolio__project-blurb">
+						<p class="portfolio__project-blurb--main">
+							Audiophiles is the place YOUR music lives! Designed so you can keep track of your favourite records and
+							musicians. Create an account and add vinyls to your collection!
+						</p>
 
-						<h3 class="portfolio__project-head">Dating App for Web Developers.</h3>
-				
-						<div class="portfolio__project-blurb">
-							<p class="portfolio__project-blurb--main">
-								On //TODO: Meet You is a dating app for web developers that we built in 5 days as part of a group project at GA. Developers can create an account and profile after they pass a basic code test.
-							</p>
-							<p class="portfolio__project-blurb--secondary">
-								Once developers have an account they are able to browse other members, 'like' them and chat with them. &hearts;
-							</p>
-							<button class="accordion__title-button">Read more</button>
-						</div>
+						<p class="portfolio__project-blurb--secondary">
+							Audiophiles was built in 5 days and is the second project I completed during my bootcamp at General
+							Assembly. I have a pretty extensive collection and wanted to develop an app to keep track of them all.
+						</p>
+						<button class="accordion__title-button">Read more</button>
+					</div>
 
-						<div class="portfolio__tech">
-							<h4 class="portfolio__tech-heading">Tech Stack</h4>
-							<ul class="portfolio__tech-list">
-								<li>SassCSS || </li>
-								<li>Ruby on Rails || </li>
-								<li>JavaScript || </li>
-								<li>PostgreSQL || </li>
-								<li>APIs & Gems: Google Maps API/Geocoder Gem, Open Trivia API & Zodiac Gem, Cloudinary</li>
-							</ul>
-						</div>
+					<div class="portfolio__tech">
+						<h4 class="portfolio__tech-heading">Tech Stack</h4>
+						<ul class="portfolio__tech-list">
+							<li>CSS || </li>
+							<li>jQuery || </li>
+							<li>Ruby on Rails || </li>
+							<li>PostgreSQL</li>
+						</ul>
+					</div>
 
-							<div class="portfolio__links-wrapper">
-								<a class="portfolio__links" target="_blank" rel="noopener" href="https://github.com/shelleyyz/dating-web">GitHub</a> |
-								<a class="portfolio__links" target="_blank" rel="noopener" href="https://todo-meetyou.herokuapp.com/">Live Site</a>
-							</div>
-							<div class="hr-separator">
-								<hr align="center">
-							</div>
+					<div class="portfolio__links-wrapper">
+						<a class="portfolio__links" target="_blank" rel="noopener"
+							href="https://github.com/ellijayne/vinyls">GitHub</a> |
+						<a class="portfolio__links" target="_blank" rel="noopener" href="https://audiophiles.herokuapp.com/">Live
+							Site</a>
+					</div>
+					<div class="hr-separator">
+						<hr align="center">
+					</div>
+
+				</div>
+
+				<div class="portfolio__item js-portfolio-item">
+
+					<div class="portfolio__photo-container" style="background-image: url(images/todomain.png);">
+
+						<a class="project-links" target="_blank" rel="noopener" href="https://todo-meetyou.herokuapp.com/"></a>
 
 					</div>
-					
-					<!-- <div class="portfolio__item js-portfolio-item">
+
+					<h3 class="portfolio__project-head">Dating App for Web Developers.</h3>
+
+					<div class="portfolio__project-blurb">
+						<p class="portfolio__project-blurb--main">
+							On //TODO: Meet You is a dating app for web developers that we built in 5 days as part of a group project
+							at GA. Developers can create an account and profile after they pass a basic code test.
+						</p>
+						<p class="portfolio__project-blurb--secondary">
+							Once developers have an account they are able to browse other members, 'like' them and chat with them.
+							&hearts;
+						</p>
+						<button class="accordion__title-button">Read more</button>
+					</div>
+
+					<div class="portfolio__tech">
+						<h4 class="portfolio__tech-heading">Tech Stack</h4>
+						<ul class="portfolio__tech-list">
+							<li>SassCSS || </li>
+							<li>Ruby on Rails || </li>
+							<li>JavaScript || </li>
+							<li>PostgreSQL || </li>
+							<li>APIs & Gems: Google Maps API/Geocoder Gem, Open Trivia API & Zodiac Gem, Cloudinary</li>
+						</ul>
+					</div>
+
+					<div class="portfolio__links-wrapper">
+						<a class="portfolio__links" target="_blank" rel="noopener"
+							href="https://github.com/shelleyyz/dating-web">GitHub</a> |
+						<a class="portfolio__links" target="_blank" rel="noopener" href="https://todo-meetyou.herokuapp.com/">Live
+							Site</a>
+					</div>
+					<div class="hr-separator">
+						<hr align="center">
+					</div>
+
+				</div>
+
+				<!-- <div class="portfolio__item js-portfolio-item">
 						<div class="portfolio__photo-container" style="background-image: url(images/tictactoe.png);">
 							<a class="project-links" target="_blank" rel="noopener" href="https://ellijayne.github.io/project0/"></a>
 						</div>
@@ -335,39 +409,45 @@
 							</div>
 
 					</div> -->
+			</div>
+			<div class="clipped clipped--left">
+			</div>
+		</section>
+
+
+
+		<section id="contact-section" class="contact">
+			<div class="contact__wrapper">
+				<h2 class="contact__head">Get in touch</h2>
+
+				<div class="contact__icons">
+
+					<a class="contact__icon" target="_blank" href="https://github.com/ellijayne"><i class="fab fa-github"></i></a>
+
+					<a class="contact__icon" target="_blank" href="https://codepen.io/ellijayne/"><i
+							class="fab fa-codepen"></i></a>
+
+					<a class="contact__icon" target="_blank" href="https://www.linkedin.com/in/ej-willard/"><i
+							class="fab fa-linkedin"></i></a>
+
+					<a class="contact__icon" target="_blank" href="https://twitter.com/elli_jayne"><i
+							class="fab fa-twitter-square"></i></a>
 				</div>
-				<div class="clipped clipped--left">
-				</div>
-			</section>
 
-				
+				<a class="contact-links" target="_blank"
+					href="mailto:ellijayne.m.willard@gmail.com">ellijayne.m.willard@gmail.com</a>
 
-			<section id="contact-section" class="contact">
-				<div class="contact__wrapper">
-					<h2 class="contact__head">Get in touch</h2>
+				<a id="resume-bottom" class="contact-links" href="images/ej-willard-resume-updated.pdf"
+					target="_blank">Resume</a>
 
-					<div class="contact__icons">
-					
-						<a class="contact__icon" target="_blank" href="https://github.com/ellijayne"><i class="fab fa-github"></i></a>
-
-						<a class="contact__icon" target="_blank" href="https://codepen.io/ellijayne/"><i class="fab fa-codepen"></i></a>
-
-						<a class="contact__icon" target="_blank" href="https://www.linkedin.com/in/ej-willard/"><i class="fab fa-linkedin"></i></a>
-
-						<a class="contact__icon" target="_blank" href="https://twitter.com/elli_jayne"><i class="fab fa-twitter-square"></i></a>
-					</div>
-
-					<a class="contact-links" target="_blank" href="mailto:ellijayne.m.willard@gmail.com">ellijayne.m.willard@gmail.com</a>
-
-					<a id="resume-bottom" class="contact-links" href="images/ej-willard-resume-updated.pdf" target="_blank">Resume</a>
-					
-				</div>
-			</section>
-		</main>
+			</div>
+		</section>
+	</main>
 
 
 	<!--SCRIPT TAGS -->
-		<script src="js/jquery.js"></script>
-		<script src="js/main.js"></script>
-	</body>
+	<script src="js/jquery.js"></script>
+	<script src="js/main.js"></script>
+</body>
+
 </html>

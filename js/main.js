@@ -1,7 +1,18 @@
+var nav = document.querySelector('.hamburger');
+
+nav.addEventListener('click', function () {
+  console.log('opened')
+  nav.classList.toggle('open');
+})
+
+
+
 $(document).ready(function() {
 
 
   console.log('are you there?');
+
+
 
   //smooth scroll function
   // $('a[href^="#"]').on('click',function (e) {
@@ -23,6 +34,7 @@ $(document).ready(function() {
   //     });
   //   }
   // });
+
 
 
   //read more dropdown

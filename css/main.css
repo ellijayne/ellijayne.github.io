@@ -205,47 +205,72 @@
     transform: translateY(8px);
   }
 }
-.nav {
-  position: fixed;
-  top: 0;
+.hamburger {
   background-color: rgba(255, 255, 255, 0.9);
-  width: 100vw;
-  z-index: 21;
-}
-.nav__links {
-  text-align: right;
-  padding: 1rem 1rem 0 1rem;
-  font-family: "Permanent Marker", cursive;
-  position: relative;
-  margin-right: 1.5rem;
-}
-.nav__links li {
-  margin-bottom: 0.5rem;
-  list-style: none;
-  display: inline-block;
-  font-size: 25px;
-  padding-right: 10px;
-}
-.nav__links li a {
-  text-decoration: none;
   color: #333333;
-  transition: 0.3s;
+  font-family: "soak-bold", sans-serif;
+  height: 58px;
+  position: fixed;
+  right: 0;
+  top: 0;
+  width: 100%;
+  z-index: 1;
 }
-.nav__links li a:hover,
-.nav__links li a :focus {
-  color: teal;
-  transition: 0.3s;
-  font-size: 28px;
+.hamburger__wrapper {
+  position: absolute;
+  top: 25px;
+  right: 25px;
 }
-.nav__icon {
-  width: 2rem;
+.hamburger__wrapper > span {
+  background: #232323;
+  border-radius: 3px;
+  display: block;
+  height: 5px;
+  margin-bottom: 5px;
+  position: relative;
+  width: 40px;
+  transform-origin: 4px 0px;
+  transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1), background 0.5s cubic-bezier(0.77, 0.2, 0.05, 1), opacity 0.55s ease;
+}
+.hamburger__menu {
+  background-color: white;
+  height: 100vh;
+  list-style-type: none;
+  padding: 45px 0 25px 0;
+  position: absolute;
+  right: -101vw;
+  text-align: center;
+  top: 50px;
+  transition: right 0.8s;
+  width: 100vw;
+}
+.hamburger__item {
+  margin-bottom: 30px;
+}
+.hamburger__item:last-child {
+  margin-bottom: 0;
+}
+.hamburger__link {
+  color: #333333;
+  font-size: 60px;
+  text-decoration: none;
+}
+.hamburger.open {
+  background-color: white;
+}
+.hamburger.open span {
+  opacity: 1;
+  transform: rotate(45deg) translate(-9px, -11px);
+}
+.hamburger.open span:nth-last-child(3) {
+  opacity: 0;
   display: none;
 }
-.nav__icon svg {
-  max-height: 34px;
+.hamburger.open span:nth-last-child(2) {
+  transform: rotate(-45deg) translate(-14px, 11px);
 }
-.nav .active {
-  display: inline-block;
+.hamburger.open .hamburger__menu {
+  right: 0;
 }
 
 .aboutme {
