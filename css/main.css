@@ -36,8 +36,11 @@
     opacity: 0;
     transform: translateX(200px);
   }
-  75% {
+  50% {
     opacity: 0.2;
+  }
+  75% {
+    opacity: 0.5;
   }
   100% {
     opacity: 1;
@@ -206,8 +209,11 @@
     opacity: 0;
     transform: translateX(200px);
   }
-  75% {
+  50% {
     opacity: 0.2;
+  }
+  75% {
+    opacity: 0.5;
   }
   100% {
     opacity: 1;
@@ -451,8 +457,11 @@
     opacity: 0;
     transform: translateX(200px);
   }
-  75% {
+  50% {
     opacity: 0.2;
+  }
+  75% {
+    opacity: 0.5;
   }
   100% {
     opacity: 1;
