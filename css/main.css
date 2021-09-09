@@ -31,6 +31,35 @@
   font-family: soak-light;
   src: url("fonts/soak-up-the-sun/suts.otf");
 }
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+    transform: translateX(200px);
+  }
+  50% {
+    opacity: 0.2;
+  }
+  75% {
+    opacity: 0.5;
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0%);
+  }
+}
+@keyframes fadeOut {
+  0% {
+    opacity: 1;
+    transform: translateX(0%);
+  }
+  75% {
+    opacity: 0.2;
+  }
+  100% {
+    opacity: 0;
+    transform: translateX(500px);
+  }
+}
 @keyframes nameMoveIn {
   0% {
     opacity: 0;
@@ -98,7 +127,7 @@
   transition: 0.3s ease;
 }
 .landing__chevron a:hover {
-  color: teal;
+  color: #92C7B6;
   transition: all 0.3s ease;
 }
 .landing__chevron a svg {
@@ -175,6 +204,35 @@
   font-family: soak-light;
   src: url("fonts/soak-up-the-sun/suts.otf");
 }
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+    transform: translateX(200px);
+  }
+  50% {
+    opacity: 0.2;
+  }
+  75% {
+    opacity: 0.5;
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0%);
+  }
+}
+@keyframes fadeOut {
+  0% {
+    opacity: 1;
+    transform: translateX(0%);
+  }
+  75% {
+    opacity: 0.2;
+  }
+  100% {
+    opacity: 0;
+    transform: translateX(500px);
+  }
+}
 @keyframes nameMoveIn {
   0% {
     opacity: 0;
@@ -207,7 +265,6 @@
 }
 .hamburger {
   background-color: rgba(255, 255, 255, 0.9);
-  color: #333333;
   font-family: "soak-bold", sans-serif;
   height: 58px;
   position: fixed;
@@ -222,15 +279,21 @@
   right: 25px;
 }
 .hamburger__wrapper > span {
-  background: #232323;
+  background: #333333;
   border-radius: 3px;
   display: block;
-  height: 5px;
+  height: 4px;
   margin-bottom: 5px;
   position: relative;
-  width: 40px;
+  width: 31px;
   transform-origin: 4px 0px;
   transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1), background 0.5s cubic-bezier(0.77, 0.2, 0.05, 1), opacity 0.55s ease;
+}
+.hamburger__wrapper:hover {
+  cursor: pointer;
+}
+.hamburger__wrapper:hover > span {
+  background-color: #92C7B6;
 }
 .hamburger__menu {
   background-color: white;
@@ -260,17 +323,53 @@
 }
 .hamburger.open span {
   opacity: 1;
-  transform: rotate(45deg) translate(-9px, -11px);
+  transform: rotate(45deg) translate(-5px, -11px);
 }
 .hamburger.open span:nth-last-child(3) {
   opacity: 0;
   display: none;
 }
 .hamburger.open span:nth-last-child(2) {
-  transform: rotate(-45deg) translate(-14px, 11px);
+  transform: rotate(-45deg) translate(-9px, 11px);
 }
 .hamburger.open .hamburger__menu {
   right: 0;
+}
+.hamburger.open .hamburger__item {
+  opacity: 0;
+  animation: fadeIn cubic-bezier(0.3, -0.01, 0.49, 1) 1s forwards;
+  animation-delay: 1s;
+}
+.hamburger.open .hamburger__item:nth-child(1) {
+  animation-delay: 0ms;
+}
+.hamburger.open .hamburger__item:nth-child(2) {
+  animation-delay: 100ms;
+}
+.hamburger.open .hamburger__item:nth-child(3) {
+  animation-delay: 200ms;
+}
+.hamburger.open .hamburger__item:nth-child(4) {
+  animation-delay: 300ms;
+}
+.hamburger.closed .hamburger__menu {
+  transition-delay: 250ms;
+}
+.hamburger.closed .hamburger__item {
+  opacity: 1;
+  animation: fadeOut cubic-bezier(0.3, -0.01, 0.49, 1) 0.3s forwards;
+}
+.hamburger.closed .hamburger__item:nth-child(1) {
+  animation-delay: 0ms;
+}
+.hamburger.closed .hamburger__item:nth-child(2) {
+  animation-delay: 50ms;
+}
+.hamburger.closed .hamburger__item:nth-child(3) {
+  animation-delay: 100ms;
+}
+.hamburger.closed .hamburger__item:nth-child(4) {
+  animation-delay: 150ms;
 }
 
 .aboutme {
@@ -352,6 +451,35 @@
 @font-face {
   font-family: soak-light;
   src: url("fonts/soak-up-the-sun/suts.otf");
+}
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+    transform: translateX(200px);
+  }
+  50% {
+    opacity: 0.2;
+  }
+  75% {
+    opacity: 0.5;
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0%);
+  }
+}
+@keyframes fadeOut {
+  0% {
+    opacity: 1;
+    transform: translateX(0%);
+  }
+  75% {
+    opacity: 0.2;
+  }
+  100% {
+    opacity: 0;
+    transform: translateX(500px);
+  }
 }
 @keyframes nameMoveIn {
   0% {

@@ -57,6 +57,39 @@ $breakpoint-super: 1550px;
 
 
 ///////ANIMATIONS////////
+$bezier: cubic-bezier(0.3, -0.01, 0.49, 1);
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+    transform: translateX(200px);
+  }
+  50% {
+    opacity: 0.2;
+  }
+  75% {
+    opacity: 0.5;
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0%);
+  }
+}
+
+@keyframes fadeOut {
+  0% {
+    opacity: 1;
+    transform: translateX(0%);
+  }
+  75% {
+    opacity: 0.2;
+  }
+  100% {
+    opacity: 0;
+    transform: translateX(500px);
+  }
+}
+
 @keyframes nameMoveIn {
   0% {
     opacity: 0;
